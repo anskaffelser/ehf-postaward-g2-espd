@@ -243,7 +243,7 @@
                 <Value type="EXAMPLE">Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</Value>
             </Element>
 
-            <Element cardinality="1..n">
+            <Element cardinality="0..n">
                 <Term>ccv:LegislationReference</Term>
                 <Name>Legislation reference</Name>
                 <Description>The specific piece(s) of Legislation(s) where the criterion is defined or mentioned</Description>
@@ -341,7 +341,7 @@
                     <Value type="EXAMPLE">7c637c0c-7703-4389-ba52-02997a055bd7</Value>
                 </Element>
 
-                <Element cardinality="1..n">
+                <Element cardinality="0..n">
                     <Term>ccv:Requirement</Term>
                     <Name>Criterion requirement</Name>
                     <Description>Requirement to fulfill an specific criterion.</Description>
