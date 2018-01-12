@@ -32,6 +32,20 @@
         <Value type="EXAMPLE">0000/S 000-000000</Value>
     </Element>
     
+    <Element cardinality="0..1">
+        <Term>cbc:IssueDate</Term>
+        <Name>Issue date</Name>
+        <Description>The date, assigned by the sender, on which the document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
+        <Value type="EXAMPLE">2017-12-26</Value>
+    </Element>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:IssueTime</Term>
+        <Name>Issue time</Name>
+        <Description>The time, assigned by the sender, at which the document was issued. Format "hh:mm:ss", no timezone information allowed</Description>
+        <Value type="EXAMPLE">08:16:09</Value>
+    </Element>
+    
     <Element>
         <Term>cbc:DocumentTypeCode</Term>
         <Name>Document content type code</Name>
@@ -54,6 +68,14 @@
         </Attribute>
         
         <Value type="EXAMPLE">TED_CN</Value>
+    </Element>
+    
+    
+    <Element cardinality="0..1">
+        <Term>cbc:DocumentDescription</Term>
+        <Name>Document description</Name>
+        <Description>A description of the document</Description>
+        <Value type="EXAMPLE">ESPD request document</Value>
     </Element>
     
     <Element cardinality="0..1">
