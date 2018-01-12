@@ -8,9 +8,6 @@
         <assert id="EHF-ESPD-R101"
                 test="/espd:ESPDRequest or not(ccv:Response) or count(ccv:Response/*) = 1"
                 flag="fatal">Response MUST contain only the specified response type.</assert>
-        <assert id="DEBUG"
-                test="false()"
-                flag="fatal">Test</assert>
     </rule>
 
     <rule context="ccv:Response">
