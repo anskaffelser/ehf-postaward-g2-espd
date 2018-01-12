@@ -28,3 +28,4 @@
 
 // documentation
 :link-xsd: https://test-vefa.difi.no/ehf/guide/espd/1.0/files/schema.zip[]
+:link-taxonomy: https://test-vefa.difi.no/ehf/guide/espd/1.0/files/CriteriaTaxonomy.xlsx[Criteria Taxonomy]
