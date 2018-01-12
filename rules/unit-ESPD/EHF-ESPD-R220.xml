@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-espd-request-1.0">
+    <assert>
+        <scope>EHF-ESPD-R220</scope>
+        <description>Verify TED is provided in ESPD response only.</description>
+    </assert>
+    <test>
+        <assert>
+            <success>EHF-ESPD-R220</success>
+        </assert>
+        <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                           xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
+
+            <cac:AdditionalDocumentReference>
+                <cbc:DocumentTypeCode>ESPD_REQUEST</cbc:DocumentTypeCode>
+            </cac:AdditionalDocumentReference>
+
+        </ESPDResponse>
+    </test>
+    <test>
+        <assert>
+            <error>EHF-ESPD-R220</error>
+        </assert>
+        <ESPDRequest xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                           xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1">
+
+            <cac:AdditionalDocumentReference>
+                <cbc:DocumentTypeCode>ESPD_REQUEST</cbc:DocumentTypeCode>
+            </cac:AdditionalDocumentReference>
+
+        </ESPDRequest>
+    </test>
+</testSet>

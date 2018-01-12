@@ -5,6 +5,7 @@
     <Identifier>DocRefContentType</Identifier>
     <Version>1.0.2</Version>
     <Agency>DG GROW (European Commission)</Agency>
+    <Subset>Norwegian subset defined by Difi</Subset>
 
     <Code>
         <Id>TED_CN</Id>
@@ -17,43 +18,8 @@
     </Code>
 
     <Code>
-        <Id>TECC016</Id>
-        <Name>Letter of Intent</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC017</Id>
-        <Name>Status of the legal entity</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC018</Id>
-        <Name>Notice of appointment of the persons authorised to represent the tenderer</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC019</Id>
-        <Name>VAT registration document</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC020</Id>
-        <Name>Identity document</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC021</Id>
-        <Name>Reason for VAT exemption</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC022</Id>
-        <Name>Subcontracting justification</Name>
-    </Code>
-
-    <Code>
-        <Id>TECC024</Id>
-        <Name>Power of Attorney</Name>
+        <Id>NGOJ</Id>
+        <Name>Identifier of procurement in Doffin.</Name>
     </Code>
 
 </CodeList>

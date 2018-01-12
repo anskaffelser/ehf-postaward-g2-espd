@@ -8,27 +8,6 @@
         <Description>All ESPDRequest instances, MUST always include an Additional Document Reference indicating the TeD reference number
             of the Contract Notice the ESPDResponse is related to. This reference number MUST be specified in the field `cbc:ID`of the element cac:AdditionalDocumentReference component,
             and MUST follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137).</Description>
-        
-        <Attribute>
-            <Term>schemeID</Term>
-            <Value type="FIXED">COM-GROW-TEMPORARY-ID</Value>
-        </Attribute>
-        
-        <Attribute>
-            <Term>schemeAgencyID</Term>
-            <Value type="FIXED">EU-COM-GROW</Value>
-        </Attribute>
-        
-        <Attribute>
-            <Term>schemeAgencyName</Term>
-            <Value type="FIXED">DG GROW (European Commission)</Value>
-        </Attribute>
-        
-        <Attribute>
-            <Term>schemeVersionID</Term>
-            <Value type="FIXED">1.1</Value>
-        </Attribute>
-        
         <Value type="EXAMPLE">0000/S 000-000000</Value>
     </Element>
     
@@ -69,15 +48,7 @@
         
         <Value type="EXAMPLE">TED_CN</Value>
     </Element>
-    
-    
-    <Element cardinality="0..1">
-        <Term>cbc:DocumentDescription</Term>
-        <Name>Document description</Name>
-        <Description>A description of the document</Description>
-        <Value type="EXAMPLE">ESPD request document</Value>
-    </Element>
-    
+
     <Element cardinality="0..1">
         <Term>cac:Attachment</Term>
         <Name>Attachment</Name>
@@ -90,7 +61,7 @@
                 <Term>cbc:URI</Term>
                 <Name>Attachement URI</Name>
                 <Description>The Uniform Resource Identifier (URI) that identifies where the document is located.</Description>
-                <Value type="EXAMPLE">https://test-vefa.difi.no/ehf/guide/espd/1.0</Value>
+                <Value type="EXAMPLE">https://example.com/document.pdf</Value>
             </Element>
             
             <Element cardinality="0..1">
