@@ -3,7 +3,7 @@
 
 	<package>EHF ESPD 1.0</package>
 
-	<!-- <testfolder>example</testfolder> -->
+	<testfolder>example</testfolder>
 	<testfolder>unit-ESPD</testfolder>
 
 	<!-- Request -->
