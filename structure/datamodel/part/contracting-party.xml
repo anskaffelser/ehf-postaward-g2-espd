@@ -10,12 +10,6 @@
         <Name>Party information</Name>
 
         <Element cardinality="0..1">
-            <Term>cbc:WebsiteURI</Term>
-            <Name>Contracting body website</Name>
-            <Value type="EXAMPLE">https://www.difi.no/</Value>
-        </Element>
-
-        <Element cardinality="0..1">
             <Term>cbc:EndpointID</Term>
             <Name>Contracting body electronic address identifier</Name>
 
@@ -31,11 +25,12 @@
 
         <Element>
             <Term>cac:PartyIdentification</Term>
-            <Name>Party body identifier</Name>
+            <Name>Party identifier</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Organization number</Name>
+                <Name>Contracting body identifier</Name>
+                <Description>The identifier of a contracting body as it is legally registered</Description>
 
                 <Attribute>
                     <Term>schemeID</Term>
