@@ -2,7 +2,7 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-espd-request-1.0">
     <assert>
         <scope>EHF-ESPD-R112</scope>
-        <description>Verify Response is not provided upon "GROUP_FULFILLED.ON_TRUE" set to 'false'.</description>
+        <description>Verify Response is not provided upon "GROUP_FULFILLED.ON_TRUE" is set to 'false' twice in a row.</description>
     </assert>
     <test>
         <assert>
@@ -27,10 +27,18 @@
                     <ccv:Requirement>
                         <!-- No response -->
                     </ccv:Requirement>
+
                     <ccv:RequirementGroup>
                         <ccv:Requirement>
-                            <!-- No response -->
+                            <ccv:Response>
+                                <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
+                            </ccv:Response>
                         </ccv:Requirement>
+                        <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                            <ccv:Requirement> <!-- JACKPOT! -->
+                                <!-- No response -->
+                            </ccv:Requirement>
+                        </ccv:RequirementGroup>
                     </ccv:RequirementGroup>
                 </ccv:RequirementGroup>
             </ccv:RequirementGroup>
@@ -60,10 +68,18 @@
                     <ccv:Requirement>
                         <ccv:Response/>
                     </ccv:Requirement>
+
                     <ccv:RequirementGroup>
                         <ccv:Requirement>
-                            <ccv:Response/>
+                            <ccv:Response>
+                                <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
+                            </ccv:Response>
                         </ccv:Requirement>
+                        <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                            <ccv:Requirement> <!-- JACKPOT! -->
+                                <ccv:Response/>
+                            </ccv:Requirement>
+                        </ccv:RequirementGroup>
                     </ccv:RequirementGroup>
                 </ccv:RequirementGroup>
             </ccv:RequirementGroup>

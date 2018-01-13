@@ -2,11 +2,11 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-espd-request-1.0">
     <assert>
         <scope>EHF-ESPD-R113</scope>
-        <description>Verify Response is not provided upon "GROUP_FULFILLED.ON_FALSE" set to 'true'.</description>
+        <description>Verify use of Response in special group.</description>
     </assert>
     <test>
         <assert>
-            <success>EHF-ESPD-R113</success>
+            <success number="3">EHF-ESPD-R113</success>
         </assert>
         <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
                       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -15,31 +15,20 @@
                       xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
 
             <ccv:RequirementGroup>
-                <ccv:Requirement>
-                    <ccv:Response>
-                        <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
-                    </ccv:Response>
+                <cbc:ID >c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</cbc:ID>
+                <ccv:Requirement responseDataType="DATE">
                 </ccv:Requirement>
-                <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_FALSE">
-                    <ccv:Requirement>
-                        <!-- No response -->
-                    </ccv:Requirement>
-                    <ccv:Requirement>
-                        <!-- No response -->
-                    </ccv:Requirement>
-                    <ccv:RequirementGroup>
-                        <ccv:Requirement>
-                            <!-- No response -->
-                        </ccv:Requirement>
-                    </ccv:RequirementGroup>
-                </ccv:RequirementGroup>
+                <ccv:Requirement responseDataType="DATE">
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="AMOUNT">
+                </ccv:Requirement>
             </ccv:RequirementGroup>
 
         </ESPDResponse>
     </test>
     <test>
         <assert>
-            <error>EHF-ESPD-R113</error>
+            <error number="2">EHF-ESPD-R113</error>
         </assert>
         <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
                       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -48,24 +37,14 @@
                       xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
 
             <ccv:RequirementGroup>
-                <ccv:Requirement>
-                    <ccv:Response>
-                        <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
-                    </ccv:Response>
+                <cbc:ID >c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</cbc:ID>
+                <ccv:Requirement responseDataType="DATE">
                 </ccv:Requirement>
-                <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_FALSE">
-                    <ccv:Requirement>
-                        <ccv:Response/>
-                    </ccv:Requirement>
-                    <ccv:Requirement>
-                        <ccv:Response/>
-                    </ccv:Requirement>
-                    <ccv:RequirementGroup>
-                        <ccv:Requirement>
-                            <ccv:Response/>
-                        </ccv:Requirement>
-                    </ccv:RequirementGroup>
-                </ccv:RequirementGroup>
+                <ccv:Requirement responseDataType="DATE">
+                    <ccv:Response/>
+                </ccv:Requirement>
+                <ccv:Requirement responseDataType="AMOUNT">
+                </ccv:Requirement>
             </ccv:RequirementGroup>
 
         </ESPDResponse>

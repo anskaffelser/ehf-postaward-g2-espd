@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-espd-request-1.0">
     <assert>
-        <scope>EHF-ESPD-R100</scope>
-        <description>Verify existence of Response.</description>
+        <scope>EHF-ESPD-R102</scope>
+        <description>Verify Response is not provided.</description>
     </assert>
     <test>
         <assert>
-            <success>EHF-ESPD-R100</success>
+            <success>EHF-ESPD-R102</success>
         </assert>
-        <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+        <ESPDRequest xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
                       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                       xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1"
-                      xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
-
-            <ccv:Requirement>
-                <ccv:Response/>
-            </ccv:Requirement>
-
-        </ESPDResponse>
-    </test>
-    <test>
-        <assert>
-            <error>EHF-ESPD-R100</error>
-        </assert>
-        <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                      xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1"
-                      xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
+                      xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1">
 
             <ccv:Requirement>
                 <!-- <ccv:Response/> -->
             </ccv:Requirement>
 
-        </ESPDResponse>
+        </ESPDRequest>
+    </test>
+    <test>
+        <assert>
+            <error>EHF-ESPD-R102</error>
+        </assert>
+        <ESPDRequest xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                      xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1"
+                      xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1">
+
+            <ccv:Requirement>
+                <ccv:Response/>
+            </ccv:Requirement>
+
+        </ESPDRequest>
     </test>
 </testSet>

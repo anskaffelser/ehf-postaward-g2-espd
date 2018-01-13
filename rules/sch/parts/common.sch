@@ -3,43 +3,42 @@
 
     <!-- Requirement -->
 
-    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][../parent::node()[@pi='GROUP_FULFILLED.ON_TRUE']/../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator = 'false'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']/ccv:Requirement">
-        <assert id="EHF-ESPD-R114"
-                test="not(ccv:Response)"
-                flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
-    </rule>
-
-    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']/ccv:Requirement">
-        <assert id="EHF-ESPD-R110"
-                test="not(ccv:Response)"
-                flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
-    </rule>
-
-    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']/ccv:RequirementGroup/ccv:Requirement">
+    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']//ccv:RequirementGroup[@pi]//ccv:Requirement">
         <assert id="EHF-ESPD-R112"
                 test="not(ccv:Response)"
                 flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
     </rule>
 
-    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_FALSE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'true']/ccv:Requirement">
+    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']//ccv:Requirement">
+        <assert id="EHF-ESPD-R110"
+                test="not(ccv:Response)"
+                flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
+    </rule>
+
+    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_FALSE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'true']//ccv:Requirement">
         <assert id="EHF-ESPD-R111"
                 test="not(ccv:Response)"
                 flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
     </rule>
 
-    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_FALSE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'true']/ccv:RequirementGroup/ccv:Requirement">
+    <rule context="ccv:RequirementGroup[normalize-space(cbc:ID) = 'c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16']/ccv:Requirement[/espd:ESPDResponse]">
         <assert id="EHF-ESPD-R113"
-                test="not(ccv:Response)"
-                flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
+                test="ccv:Response or count(../ccv:Requirement/ccv:Response) = 0"
+                flag="fatal">Response MUST be provided for all requirements in this group.</assert>
     </rule>
 
-    <rule context="ccv:Requirement">
+    <rule context="ccv:Requirement[/espd:ESPDResponse]">
         <assert id="EHF-ESPD-R100"
-                test="(/espd-req:ESPDRequest and not(ccv:Response)) or (/espd:ESPDResponse and ccv:Response)"
-                flag="fatal">Response MUST be provided in ESPD Response and MUST NOT be provided in ESPD Request.</assert>
+                test="ccv:Response"
+                flag="fatal">Response MUST be provided.</assert>
         <assert id="EHF-ESPD-R101"
-                test="/espd:ESPDRequest or not(ccv:Response) or count(ccv:Response/*) - count(ccv:Response/cbc:ID) = 1"
+                test="not(ccv:Response) or count(ccv:Response/*) - count(ccv:Response/cbc:ID) = 1"
                 flag="fatal">Response MUST contain only the specified response type.</assert>
+    </rule>
+    <rule context="ccv:Requirement[/espd-req:ESPDRequest]">
+        <assert id="EHF-ESPD-R102"
+                test="not(ccv:Response)"
+                flag="fatal">Response MUST NOT be provided in ESPD Request.</assert>
     </rule>
 
     <!-- Response -->
@@ -118,10 +117,7 @@
 
     <!-- Additional Document Reference -->
 
-    <rule context="cac:AdditionalDocumentReference[normalize-space(cbc:DocumentTypeCode) = 'TED_CN']">
-        <assert id="EHF-ESPD-R210"
-                test="/espd:ESPDResponse"
-                flag="fatal">ESPD Request MUST NOT contain reference to TED.</assert>
+    <rule context="cac:AdditionalDocumentReference[/espd:ESPDResponse][normalize-space(cbc:DocumentTypeCode) = 'TED_CN']">
         <assert id="EHF-ESPD-R211"
                 test="not(cbc:IssueDate) and not(cbc:IssueTime)"
                 flag="fatal">TED reference MUST NOT contain issue date and issue time.</assert>
@@ -136,10 +132,7 @@
                 flag="fatal">TED reference MUST not be a temporary value.</assert>
     </rule>
 
-    <rule context="cac:AdditionalDocumentReference[normalize-space(cbc:DocumentTypeCode) = 'ESPD_REQUEST']">
-        <assert id="EHF-ESPD-R220"
-                test="/espd:ESPDResponse"
-                flag="fatal">ESPD Request reference MUST NOT contain reference to another ESPD Requesy.</assert>
+    <rule context="cac:AdditionalDocumentReference[/espd:ESPDResponse][normalize-space(cbc:DocumentTypeCode) = 'ESPD_REQUEST']">
         <assert id="EHF-ESPD-R221"
                 test="not(cac:Attachment/cbc:URI)"
                 flag="fatal">NGOJ reference MUST NOT contain issue date, issue time and attachment.</assert>

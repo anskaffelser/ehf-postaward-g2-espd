@@ -716,9 +716,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9b4497e6-a166-46f9-8581-7fc39ff975c4</cbc:ID>
                         <cbc:Description>Has this breach of obligations been established by means other
                      than a judicial or administrative decision?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3cb7abf1-662a-4756-b61c-7bc716c1fafc</cbc:ID>
@@ -736,9 +734,7 @@
                         <cbc:Description>If this breach of obligations was established through a judicial
                      or administrative decision, was this decision final and
                      binding?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">815422d6-f8a1-418a-8bf0-3524f7c8f721</cbc:ID>
@@ -762,9 +758,7 @@
                      entering into a binding arrangement with a view to paying the taxes or social
                      security contributions due, including, where applicable, any interest accrued
                      or fines?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6c3609e1-9add-4fa9-9409-62ce72ae4548</cbc:ID>
@@ -872,9 +866,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9b4497e6-a166-46f9-8581-7fc39ff975c4</cbc:ID>
                         <cbc:Description>Has this breach of obligations been established by means other
                      than a judicial or administrative decision?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3cb7abf1-662a-4756-b61c-7bc716c1fafc</cbc:ID>
@@ -892,9 +884,7 @@
                         <cbc:Description>If this breach of obligations was established through a judicial
                      or administrative decision, was this decision final and
                      binding?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">815422d6-f8a1-418a-8bf0-3524f7c8f721</cbc:ID>
@@ -918,9 +908,7 @@
                      entering into a binding arrangement with a view to paying the taxes or social
                      security contributions due, including, where applicable, any interest accrued
                      or fines?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">6c3609e1-9add-4fa9-9409-62ce72ae4548</cbc:ID>
@@ -1015,9 +1003,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -1069,9 +1055,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -1123,9 +1107,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -1607,9 +1589,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -1659,9 +1639,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -1783,9 +1761,7 @@
                         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">20c5361b-7599-4ee6-b030-7f8323174d1e</cbc:ID>
                         <cbc:Description>Have you taken measures to demonstrate your reliability
                      (&quot;Self-Cleaning&quot;)?</cbc:Description>
-                        <ccv:Response>
-                            <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                        </ccv:Response>
+
                     </ccv:Requirement>
                     <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">74e6c7b4-757b-4b40-ada6-fad6a997c310</cbc:ID>
@@ -2102,9 +2078,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d9996ef5-49f9-4cf8-a2f5-31c9f4efd894</cbc:ID>
                             <cbc:Description>d) Does the registration or certification cover all of the
                         required selection criteria?</cbc:Description>
-                            <ccv:Response>
-                                <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-                            </ccv:Response>
+
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
                 </ccv:RequirementGroup>
