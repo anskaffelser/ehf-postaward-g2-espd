@@ -46,6 +46,24 @@
                       xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
 
             <ccv:Requirement>
+                <ccv:Response>
+                    <cbc:ID/>
+                    <Some/>
+                </ccv:Response>
+            </ccv:Requirement>
+
+        </ESPDResponse>
+    </test>
+    <test>
+        <assert>
+            <success>EHF-ESPD-R101</success>
+        </assert>
+        <ESPDResponse xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                      xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1"
+                      xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1">
+
+            <ccv:Requirement>
             </ccv:Requirement>
 
         </ESPDResponse>
