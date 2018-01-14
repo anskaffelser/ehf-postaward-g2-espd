@@ -2,7 +2,7 @@
     <Term>cac:AdditionalDocumentReference</Term>
     <Name>Additional document reference</Name>
     
-    <Property key="doc">structure/docs/additional-docs.adoc</Property>
+    <Property key="doc">structure/docs/AdditionalDocumentReference.adoc</Property>
     
     <Element>
         <Term>cbc:ID</Term>
