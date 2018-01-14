@@ -112,15 +112,15 @@
     <!-- Files -->
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/espd-request.xml</Path>
+        <Path>rules/example/example-espd-request.xml</Path>
         <Title>Example file for EHF ESPD 1.0 Request (TODO)</Title>
-        <Property key="download">espd-request.xml</Property>
+        <Property key="download">example-espd-request.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/espd-response.xml</Path>
+        <Path>rules/example/example-espd-response.xml</Path>
         <Title>Example file for EHF ESPD 1.0 Response (TODO)</Title>
-        <Property key="download">espd-response.xml</Property>
+        <Property key="download">example-espd-response.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>

@@ -1629,14 +1629,5 @@
          </ccv:RequirementGroup>
       </ccv:RequirementGroup>
    </ccv:Criterion>
-    <cac:AdditionalDocumentReference>
-        <cbc:ID schemeID="COM-GROW-TEMPORARY-ID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">0000/S 000-000000</cbc:ID>
-        <cbc:DocumentTypeCode listID="ReferencesTypeCodes" listAgencyID="EU-COM-GROW" listVersionID="1.0">TED_CN</cbc:DocumentTypeCode>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:Description>Test description</cbc:Description>
-            </cac:ExternalReference>
-        </cac:Attachment>
-    </cac:AdditionalDocumentReference>
 </espd:ESPDRequest>
 

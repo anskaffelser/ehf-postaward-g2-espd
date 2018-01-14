@@ -1,4 +1,4 @@
-<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="1..n">
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
     <Term>cac:AdditionalDocumentReference</Term>
     <Name>Additional document reference</Name>
     

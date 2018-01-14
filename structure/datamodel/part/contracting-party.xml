@@ -13,11 +13,13 @@
             <Term>cbc:EndpointID</Term>
             <Name>Contracting body electronic address identifier</Name>
 
+            <Reference type="RULE">EHF-ESPD-R022</Reference>
+
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Identifier qualifier</Name>
                 <Reference type="CODE_LIST">ICD</Reference>
-                <Value type="EXAMPLE">NO:ORGNR</Value>
+                <Value type="FIXED">NO:ORGNR</Value>
             </Attribute>
 
             <Value type="EXAMPLE">991825827</Value>

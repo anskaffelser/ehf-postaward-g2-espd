@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils">
 
     <!-- Requirement -->
 
@@ -157,5 +157,26 @@
                 test="not(/espd:ESPDResponse)"
                 flag="fatal">ESPD Responst MUST contain only document references 'TED_CN', 'ESPD_REQUEST' and 'NGOJ'.</assert>
     </rule>
+
+    <!-- Formatting -->
+
+    <rule context="cbc:IssueDate | cbc:BirthDate | cbc:Date">
+        <assert id="EHF-ESPD-R020"
+                test="(normalize-space(text()) castable as xs:date) and string-length(normalize-space(text())) = 10"
+                flag="fatal">A date must be formatted YYYY-MM-DD.</assert>
+    </rule>
+
+    <rule context="cbc:IssueTime">
+        <assert id="EHF-ESPD-R021"
+                test="(normalize-space(text()) castable as xs:time) and string-length(normalize-space(text())) = 8"
+                flag="fatal">A time must be formatted hh:mm:ss.</assert>
+    </rule>
+
+    <rule context="espd-cac:EconomicOperatorParty/cac:Party/cac:PartyIdentification/cbc:ID | cbc:EndpointID">
+        <assert id="EHF-ESPD-R022"
+                test="matches(normalize-space(text()), '^[0-9]{9}$') and u:mod11(normalize-space(text()))"
+                flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed</assert>
+    </rule>
+
 
 </pattern>
