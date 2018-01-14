@@ -99,7 +99,7 @@
 
     <rule context="ccv:Requirement[/espd:ESPDResponse][@responseDataType = 'QUANTITY_INTEGER']/ccv:Response">
         <assert id="EHF-ESPD-R129"
-                test="cbc:Quantity"
+                test="cbc:Quantity[not(@unitCode)]"
                 flag="fatal">Quantity element MUST be provided as response when specified.</assert>
     </rule>
 
@@ -111,7 +111,7 @@
 
     <rule context="ccv:Requirement[/espd:ESPDResponse][@responseDataType = 'QUANTITY']/ccv:Response">
         <assert id="EHF-ESPD-R131"
-                test="cbc:Quantity"
+                test="cbc:Quantity[@unitCode and @unitCode != 'YEAR']"
                 flag="fatal">Quantity element MUST be provided as response when specified.</assert>
     </rule>
 

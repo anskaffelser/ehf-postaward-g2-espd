@@ -17,7 +17,7 @@
 
             <ccv:Requirement responseDataType="QUANTITY">
                 <ccv:Response>
-                    <cbc:Quantity/>
+                    <cbc:Quantity unitCode="STK"/>
                 </ccv:Response>
             </ccv:Requirement>
 
@@ -36,7 +36,7 @@
 
             <ccv:Requirement responseDataType="QUANTITY">
                 <ccv:Response>
-                    <!-- <cbc:Quantity/> -->
+                    <!-- <cbc:Quantity unitCode="STK"/> -->
                 </ccv:Response>
             </ccv:Requirement>
 
