@@ -67,7 +67,12 @@
             <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.0</Value>
         </Element>
 
-        <!-- Element ProfileID not in use. -->
+        <Element cardinality="0..1">
+            <Term>cbc:ProfileID</Term>
+            <Name>Profile identifier</Name>
+            <Description>Used when sending ESPD document as standalone document in PEPPOL.</Description>
+            <Reference type="CODE_LIST">ProfileID</Reference>
+        </Element>
 
         <!-- Element cbc:ProfileExecutionID not in use. -->
 
@@ -342,7 +347,7 @@
                     <Value type="EXAMPLE">https://www.difi.no/</Value>
                 </Element>
                 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:EndpointID</Term>
                     <Name>Economic operator electronic address identifier</Name>
 
@@ -675,15 +680,21 @@
                     <Term>ccv:Requirement</Term>
                     <Name>Criterion requirement</Name>
                     <Description>Requirement to fulfill an specific criterion.</Description>
-                    
+                    <Reference type="RULE">EHF-ESPD-R100</Reference>
+                    <Reference type="RULE">EHF-ESPD-R101</Reference>
+                    <Reference type="RULE">EHF-ESPD-R110</Reference>
+                    <Reference type="RULE">EHF-ESPD-R111</Reference>
+                    <Reference type="RULE">EHF-ESPD-R112</Reference>
+                    <Reference type="RULE">EHF-ESPD-R113</Reference>
+
                     <Property key="sch:context">AS_ROOT</Property>
                     
-                    <Attribute usage="Dependent">
+                    <!-- <Attribute usage="Dependent">
                         <Term>pi</Term>
                         <Name>Processing instruction</Name>
                         <Description>In the case of the RequirementGroup element the ESPD Service uses this attribute to specify whether the elements within the group must be shown or not.</Description>
                         <Value type="EXAMPLE">GROUP_FULFILLED.ON_TRUE</Value>
-                    </Attribute>
+                    </Attribute> -->
                     
                     <Attribute>
                         <Term>responseDataType</Term>
@@ -730,6 +741,7 @@
 
                 <Element cardinality="0..n">
                     <Term>ccv:RequirementGroup</Term>
+                    <Property key="recursive">../</Property>
                 </Element>
             </Element>
         </Element>

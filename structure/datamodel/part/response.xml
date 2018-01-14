@@ -3,6 +3,19 @@
     <Name>Criterion requirement response</Name>
     <Description>Used by the economic operator to answer a specific Requirement issued by the contracting body.</Description>
 
+    <Reference type="RULE">EHF-ESPD-R120</Reference>
+    <Reference type="RULE">EHF-ESPD-R121</Reference>
+    <Reference type="RULE">EHF-ESPD-R122</Reference>
+    <Reference type="RULE">EHF-ESPD-R123</Reference>
+    <Reference type="RULE">EHF-ESPD-R124</Reference>
+    <Reference type="RULE">EHF-ESPD-R125</Reference>
+    <Reference type="RULE">EHF-ESPD-R126</Reference>
+    <Reference type="RULE">EHF-ESPD-R127</Reference>
+    <Reference type="RULE">EHF-ESPD-R128</Reference>
+    <Reference type="RULE">EHF-ESPD-R129</Reference>
+    <Reference type="RULE">EHF-ESPD-R130</Reference>
+    <Reference type="RULE">EHF-ESPD-R131</Reference>
+
     <Element cardinality="0..1">
         <Term>cbc:ID</Term>
         <Name>Criterion response identifier</Name>
