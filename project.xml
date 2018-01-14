@@ -40,22 +40,22 @@
 
     <!-- Code lists -->
 
-    <Resource>
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ActivityTypeCode.xml</Path>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/DocRefContentType.xml</Path>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/AmountTypeCodes.xml</Path>
-    </Resource>
-    <Resource>
+    </Resource> -->
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ContractType.xml</Path>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
@@ -88,10 +88,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProfileID.xml</Path>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProcedureType.xml</Path>
-    </Resource>
+    </Resource> -->
     <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProfileExecutionID.xml</Path>
@@ -110,7 +110,7 @@
     </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ESPDQuantityYear.xml</Path>
+        <Path>structure/codelist/EconomicOperatorIdentifierType.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -121,13 +121,13 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/example-espd-request.xml</Path>
-        <Title>Example file for EHF ESPD 1.0 Request (TODO)</Title>
+        <Title>Example file for EHF ESPD 1.0 Request</Title>
         <Property key="download">example-espd-request.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/example-espd-response.xml</Path>
-        <Title>Example file for EHF ESPD 1.0 Response (TODO)</Title>
+        <Title>Example file for EHF ESPD 1.0 Response</Title>
         <Property key="download">example-espd-response.xml</Property>
     </Resource>
     <Resource>
@@ -154,7 +154,7 @@
     <Resource>
         <Type>native:File</Type>
         <Path>structure/codelist/CriteriaTaxonomy.xml</Path>
-        <Title>Criteria taxonomy as XML (TODO)</Title>
+        <Title>Criteria taxonomy as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>
         <Property key="download">CriteriaTaxonomy.xml</Property>
     </Resource>
