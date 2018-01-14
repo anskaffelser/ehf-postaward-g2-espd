@@ -14,17 +14,25 @@ The ESPD uses the following data for referencing additional documents:
 	* The URL where to access its content.
 
 
-****
-IMPORTANT: All ESPD XML instances MUST always include an Additional Document Reference indicating the TeD reference number of the Contract Notice the ESPD is related to.  This reference number MUST be specified in the field `cbc:ID` of the element cac:AdditionalDocumentReference component, and MUST follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137).
-****
-
 .Example of additional document reference used in the ESPDRequest XML document.
 [source, xml, indent=0]
 ----
-include::../shared/files/snippet1.xml[tags=ted-cn]
+include::../shared/files/snippet1.xml[tags=doffin]
 ----
-<1> Unique ID for this document (Must be a special pattern [][][][]/S [][][]-[][][][][][].)
+<1> Doffin referanse
 <2> The code for this type of content
-<3> A title for the document
-<4> A description of the content and intended use of this document
-<5> Doffin referanse
+
+****
+IMPORTANT: All ESPD Response instances MUST always include an Additional Document Reference indicating the TeD reference number of the Contract Notice the ESPD is related to.  This reference number MUST be specified in the field `cbc:ID` of the element cac:AdditionalDocumentReference component, and MUST follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (e.g. 2015/S 252-461137).
+****
+
+.Example of additional document reference used in the ESPDResponse XML document.
+[source, xml, indent=0]
+----
+include::../shared/files/snippet-response.xml[tags=docs]
+----
+<1> UUID for the ESPD Request
+<2> Issue date of the ESPD Request
+<3> Issue time of the ESPD request
+<4> Ted reference number of the Contract Notice
+<5> Document type code

@@ -20,5 +20,5 @@ Operators and sub-contractors participate in the tender.
 .Example of economic operator
 [source, xml, indent=0]
 ----
-include::../shared/files/response.xml[tags=eo]
+include::../shared/files/snippet-response.xml[tags=eo]
 ----

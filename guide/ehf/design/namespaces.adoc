@@ -53,12 +53,12 @@ The example below illustrates the header of an ESPD Response XML document instan
 [source, xml, tabsize=0, indent=0]
 .Declaration of the namespaces and prefixes in the ESPD Response XML document instance
 ----
-include::../shared/files/response-example.xml[tags=namespace]
+include::../shared/files/snippet-response.xml[tags=namespace]
 ----
 
 [source, xml, tabsize=0, indent=0]
 .Example of use of the namespace prefixes in the ESPD Response XML document instance
 ----
-include::../shared/files/response-example.xml[tags=cev]
+include::../shared/files/snippet-response.xml[tags=cev]
 ----
 <1> Notice that in the XML instance namespaces that are not referred to in the XSD schema of the ESPDResponse document are needed as they instantiate elements from other inner schemata of the data architecture, e.g. "cev:Evidence"

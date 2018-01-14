@@ -13,7 +13,7 @@ image::shared/images/response.png[align="center", width="600", height="400"]
 .Example of evidence
 [source, xml, indent=0]
 ----
-include::../shared/files/response.xml[tags=evidence]
+include::../shared/files/snippet-response.xml[tags=evidence]
 ----
 <1> Response fulfillment indicator
 <2> Evidence document identifier
