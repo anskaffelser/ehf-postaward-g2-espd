@@ -181,5 +181,37 @@
         <Type>Namespace-1</Type>
         <Path>structure/namespace/cbc.xml</Path>
     </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ccv-cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ccv-cbc.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cev-cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cev-cbc.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/espd.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/espd-cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/espd-cbc.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/espd-req.xml</Path>
+    </Resource>
 
 </Project>
