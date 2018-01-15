@@ -641,7 +641,6 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>e1886054-ada4-473c-9afc-2fde82c24cf4</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
-      <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="074f6031-55f9-4e99-b9a4-c4363e8bc315" required="false">
@@ -740,7 +739,6 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
       <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
-      <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="7604bd40-4462-4086-8763-a50da51a869c" required="false">
@@ -853,7 +851,6 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
-      <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="3aaca389-4a7b-406b-a4b9-080845d127e7" required="false">
@@ -1323,7 +1320,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
    </Criterion>
    <Criterion id="588e9cbb-aaaf-48de-b5df-46254e5d2742" required="false">
-      <Type>CRITERION.EXCLUSION.NATIONAL.LAERLING</Type>
+      <Type>CRITERION.EXCLUSION.NATIONAL.GRAVE.MISCONDUCT</Type>
       <Name>
          <Source>Grave misconduct</Source>
          <Translation lang="nb">Alvorlige feil som medfører tvil om hans yrkesmessige integritet</Translation>
