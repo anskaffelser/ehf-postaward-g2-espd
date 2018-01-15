@@ -11,6 +11,7 @@
 
     <xsd:complexType name="CriteriaTaxonomyType">
         <xsd:sequence>
+            <xsd:element name="Version" type="xsd:string"/>
             <xsd:element name="Criterion" type="CriterionType" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="RequirementGroup" type="RequirementGroupType" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="Requirement" type="RequirementType" minOccurs="0" maxOccurs="unbounded"/>
@@ -28,6 +29,7 @@
             <xsd:element name="Article" type="xsd:string" minOccurs="0"/>
             <xsd:element name="URI" type="xsd:string" minOccurs="0"/>
             <xsd:element ref="RequirementGroupId" maxOccurs="unbounded"/>
+            <xsd:element name="Comment" type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="xsd:string" use="required"/>
         <xsd:attribute name="required" type="xsd:string" use="required"/>
@@ -38,6 +40,7 @@
             <xsd:element name="ProsessingInstruction" type="xsd:string" minOccurs="0"/>
             <xsd:element ref="RequirementId" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element ref="RequirementGroupId" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="Comment" type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="xsd:string" use="required"/>
     </xsd:complexType>
@@ -46,6 +49,7 @@
         <xsd:sequence>
             <xsd:element name="Description" type="TranslatableType"/>
             <xsd:element name="Response" type="xsd:string"/>
+            <xsd:element name="Comment" type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="xsd:string" use="required"/>
     </xsd:complexType>

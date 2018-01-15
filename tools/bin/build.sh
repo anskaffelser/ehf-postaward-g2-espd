@@ -33,6 +33,9 @@ info "Generate Criteria Taxonomy artifacts"
 echo " * Generate Schematron"
 dc ct-schematron
 
+echo " * Generate HTML document."
+dc ct-html
+
 echo " * Generate snippet file"
 dc ct-snippet
 

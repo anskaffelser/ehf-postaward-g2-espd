@@ -21,6 +21,13 @@ services:
      - .:/src
      - ./target/generated:/target
 
+  ct-html:
+    image: "klakegg/saxon"
+    command: -s:structure/codelist/CriteriaTaxonomy.xml -xsl:tools/xslt/CriteriaTaxonomy-table.xslt -o:/target/CriteriaTaxonomy.html pattern_only=true
+    volumes:
+     - .:/src
+     - ./target/generated:/target
+
   ct-snippet:
     image: "klakegg/saxon"
     command: -s:structure/codelist/CriteriaTaxonomy.xml -xsl:tools/xslt/CriteriaTaxonomy-snippet.xslt -o:/target/CriteriaTaxonomy-snippet.xml

@@ -154,9 +154,15 @@
     <Resource>
         <Type>native:File</Type>
         <Path>structure/codelist/CriteriaTaxonomy.xml</Path>
-        <Title>Criteria taxonomy as XML</Title>
+        <Title>Criteria taxonomy for EHF ESPD 1.0 as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>
         <Property key="download">CriteriaTaxonomy.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>target/generated/CriteriaTaxonomy.html</Path>
+        <Title>Outline of Criteria taxonomy for EHF ESPD 1.0</Title>
+        <Description>Criteria taxonomy outlined.</Description>
     </Resource>
     <Resource>
         <Type>native:File</Type>

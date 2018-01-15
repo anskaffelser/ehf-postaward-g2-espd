@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CriteriaTaxonomy xmlns="urn:fdc:difi.no:2017:vefa:espd:CriteriaTaxonomy-1">
+   <Version>2018-01-15</Version>
    <Criterion id="005eb9ed-1347-4ca3-bb29-9bc0db64e1ab" required="false">
       <Type>CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</Type>
       <Name code="crit_eu_title_grounds_criminal_conv">
@@ -617,6 +618,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="b16cb9fc-6cb7-4585-9302-9533b415cf48" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.AVERAGE_YEARLY</Type>
@@ -639,6 +641,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>e1886054-ada4-473c-9afc-2fde82c24cf4</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <!-- TODO -->
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="074f6031-55f9-4e99-b9a4-c4363e8bc315" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_YEARLY</Type>
@@ -665,6 +669,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="d3dfb714-f558-4512-bbc5-e456fa2339de" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_AVERAGE</Type>
@@ -687,6 +692,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>e1886054-ada4-473c-9afc-2fde82c24cf4</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="77f481ce-ffb6-483f-8e2b-c78db5e68292" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP</Type>
@@ -730,6 +736,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <!-- TODO -->
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="7604bd40-4462-4086-8763-a50da51a869c" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.RISK_INDEMNITY_INSURANCE</Type>
@@ -753,6 +761,18 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>42dc8062-974d-4201-91ba-7f2ea90338fd</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
    </Criterion>
+   <Criterion id="ab0e7f2e-6418-40e2-8870-6713123e41ad" required="false">
+      <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.OTHER_REQUIREMENTS</Type>
+      <Name>
+         <Source>Concerning the other economic or financial requirements, if any, that may have been specified in the relevant notice or the procurement documents, the economic operator declares that:</Source>
+      </Name>
+      <!-- TODO -->
+      <Description>
+         <Source></Source>
+      </Description>
+      <RequirementGroupId>488ca189-bcdb-4bf4-80c7-3ad507fd89fb</RequirementGroupId>
+      <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+   </Criterion>
    <Criterion id="cdd3bb3e-34a5-43d5-b668-2aab86a73822" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.REFERENCES.WORKS_PERFORMANCE</Type>
       <Name code="crit_selection_technical_work_contracts_performance_works_main">
@@ -774,6 +794,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <!-- TODO -->
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="3a18a175-1863-4b1d-baef-588ce61960ca" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.REFERENCES.SUPPLIES_DELIVERY_PERFORMANCE</Type>
@@ -796,6 +818,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <!-- TODO -->
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="5e506c16-26ab-4e32-bb78-b27f87dc0565" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.REFERENCES.SERVICES_DELIVERY_PERFORMANCE</Type>
@@ -818,6 +842,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <!-- TODO -->
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="3aaca389-4a7b-406b-a4b9-080845d127e7" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.TECHNICIANS_FOR_QUALITY_CONTROL</Type>
@@ -1017,6 +1043,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="1f49b3f0-d50f-43f6-8b30-4bafab108b9b" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.AVERAGE_ANNUAL_MANPOWER</Type>
@@ -1041,6 +1068,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
+      <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="cc18c023-211d-484d-a32e-52f3f970285f" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.EQUIPMENT</Type>
@@ -1271,9 +1299,32 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementGroupId>3e5c2859-68a7-4312-92e4-01ae79c00cb8</RequirementGroupId>
       <RequirementGroupId>ab335516-73a4-41f7-977b-a98c13a51060</RequirementGroupId>
    </Criterion>
+   <Criterion id="aef56865-3cdc-42a8-87ed-7e5e93088279" required="false">
+      <Type>CRITERION.EXCLUSION.NATIONAL.BOT</Type>
+      <!-- TODO -->
+      <Name>
+         <Source></Source>
+      </Name>
+      <Description>
+         <Source></Source>
+      </Description>
+      <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
+   </Criterion>
+   <Criterion id="588e9cbb-aaaf-48de-b5df-46254e5d2742" required="false">
+      <Type>CRITERION.EXCLUSION.NATIONAL.LAERLING</Type>
+      <!-- TODO -->
+      <Name>
+         <Source></Source>
+      </Name>
+      <Description>
+         <Source></Source>
+      </Description>
+      <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
+   </Criterion>
    <RequirementGroup id="7c637c0c-7703-4389-ba52-02997a055bd7">
       <RequirementId>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</RequirementId>
       <RequirementGroupId>f5276600-a2b6-4ff6-a90e-b31fe19dae41</RequirementGroupId>
+      <Comment>RequirementGroup '41dd2e..' is replaced with 'f52766..'. This is done to align towards the ESPD Service. Identifier '41dd2e..' is also used for a different RequirementGroup.</Comment>
    </RequirementGroup>
    <RequirementGroup id="f5276600-a2b6-4ff6-a90e-b31fe19dae41">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
@@ -1300,6 +1351,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementId>f4313bb6-21b6-499e-bdff-debe10e11d2c</RequirementId>
       <RequirementId>1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</RequirementId>
       <RequirementId>c3ccfa31-0c5e-4e3a-a3fd-db9fb83d78d4</RequirementId>
+      <Comment>Requirement 'c3ccfa..' is not part of the official 1.0.2, however it is added to align towards the ESPD Service and the Norwegian schema.</Comment>
    </RequirementGroup>
    <RequirementGroup id="098fd3cc-466e-4233-af1a-affe09471bce">
       <RequirementId>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</RequirementId>
@@ -1368,6 +1420,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="30450436-f559-4dfa-98ba-f0842ed9d2a0">
       <RequirementId>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</RequirementId>
       <RequirementGroupId>73f0fe4c-4ed9-4343-8096-d898cf200146</RequirementGroupId>
+      <Comment>RequirementGroupo '73f0fe..' is not part of this RequirementGroup in the the official 1.0.2, however it is added to align towards the ESPD Service and the Norwegian schema.</Comment>
    </RequirementGroup>
    <RequirementGroup id="73f0fe4c-4ed9-4343-8096-d898cf200146">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
@@ -1436,6 +1489,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    </RequirementGroup>
    <RequirementGroup id="575f7550-8a2d-4bad-b9d8-be07ab570076">
       <RequirementId>15778db8-0d84-42ba-931b-774c1b3d3f9f</RequirementId>
+      <Comment>Requirement '3aaca3..' is the correct Requirement according to the standard, however '15778d..' is used to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </RequirementGroup>
    <RequirementGroup id="cb73544d-e8bb-4cc6-819b-b8e04f1e240e">
       <RequirementId>15335c12-ad77-4728-b5ad-3c06a60d65a4</RequirementId>
@@ -1443,6 +1497,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="4887c3d7-05fc-4e3e-b066-f338910f0c4c">
       <RequirementId>15335c12-ad77-4728-b5ad-3c06a60d65a4</RequirementId>
       <RequirementGroupId>83f2f79e-0455-4918-89ff-d7829e8bf758</RequirementGroupId>
+      <Comment>RequirementGroup '83f2f7..' is not part of the official 1.0.2 format, however it is kept to align to the service.</Comment>
    </RequirementGroup>
    <RequirementGroup id="83f2f79e-0455-4918-89ff-d7829e8bf758">
       <ProsessingInstruction>GROUP_FULFILLED.ON_FALSE</ProsessingInstruction>
@@ -1475,6 +1530,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    </RequirementGroup>
    <RequirementGroup id="64162276-7014-408f-a9af-080426bfe1fd">
       <RequirementGroupId>ecb5127b-9018-4fb8-8327-a6a7a2c73195</RequirementGroupId>
+      <Comment>This is completely rewritten in the ESPD Service, changes are kept to align towards the ESPD Service.</Comment>
    </RequirementGroup>
    <RequirementGroup id="ecb5127b-9018-4fb8-8327-a6a7a2c73195">
       <ProsessingInstruction>GROUP_FULFILLED.ON_FALSE</ProsessingInstruction>
