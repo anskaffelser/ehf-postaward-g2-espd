@@ -27,5 +27,5 @@
 :policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
 
 // documentation
-:link-xsd: https://test-vefa.difi.no/ehf/guide/espd/1.0/files/schema.zip[]
-:link-taxonomy: https://test-vefa.difi.no/ehf-pre/guide/espd/1.0/[Criteria Taxonomy]
+:link-xsd: https://vefa.difi.no/ehf-pre/guide/espd/1.0/files/schema.zip[]
+:link-taxonomy: https://vefa.difi.no/ehf-pre/guide/espd/1.0/[Criteria Taxonomy]
