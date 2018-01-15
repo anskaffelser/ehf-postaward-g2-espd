@@ -7,7 +7,7 @@
 The UML diagram below shows in detail the classes of the Core Evidence used in the ESPD Response XML document.
 
 .UML diagram
-image::shared/images/response.png[align="center", width="600", height="400"]
+image::images/response.png[align="center", width="600", height="400"]
 
 
 .Example of evidence

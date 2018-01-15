@@ -6,12 +6,11 @@
 The UML diagram below shows in detail the classes of the Core Criterion used in the ESPDRequest XML document.
 
 .UML diagram
-image::shared/images/criterion.png[align="center", width="600", height="400"]
+image::images/criterion.png[align="center", width="600", height="400"]
 
 The above UML diagram SHOULD be interpreted as follows:
 
 * One Criterion contains one or more Groups of Requirements
-* One Criterion MAY have sub-Criteria
 * One Criterion MAY be linked to a specific Legislation
 * One Group of Requirements contains one or More Requirements
 
