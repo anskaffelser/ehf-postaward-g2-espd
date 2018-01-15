@@ -4,6 +4,10 @@
 This EHF ESPD is based on the ESDP datamodel from the EU commission, and its method of structuring the criterions.
 Each criterion has a defined set of requirement groups and requirements, all documented by the EU Commission in the {link-taxonomy}.
 
+****
+IMPORTANT: Please note that a file with all criteria and their corresponding Norwegian translation are provided, to enable the Norwegian text in user interfaces.
+****
+
 Please note that requirement groups can be nested within other requirement groups.
 
 The following "rules" has been established on how to build up a data structure:
