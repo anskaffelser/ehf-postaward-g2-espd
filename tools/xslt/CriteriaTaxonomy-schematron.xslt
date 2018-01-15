@@ -53,6 +53,14 @@
 
     <xsl:template name="pattern">
         <pattern>
+            <rule context="espd-req:ESPDRequest | espd:ESPDResponse">
+                <xsl:for-each select="ct:Criterion[@required = 'true']">
+                    <assert id="{concat($prefix, '-C00', u:pid(position() + 1))}"
+                            test="{concat('ccv:Criterion[cbc:ID[text() = ''', @id , ''']]')}"
+                            flag="fatal">Criterion '<xsl:value-of select="@id" />' MUST be provided.</assert>
+                </xsl:for-each>
+            </rule>
+
             <xsl:for-each select="ct:Criterion">
                 <xsl:call-template name="Criterion"/>
             </xsl:for-each>

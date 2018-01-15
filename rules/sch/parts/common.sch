@@ -144,8 +144,10 @@
     <rule context="cac:AdditionalDocumentReference[normalize-space(cbc:DocumentTypeCode) = 'NGOJ']">
         <assert id="EHF-ESPD-R231"
                 test="not(cac:Attachment) and not(cbc:IssueDate) and not(cbc:IssueTime)"
-                flag="fatal">NGOJ reference MUST NOT contain issue date, issue time and attachment.</assert>
-        <!-- TODO Formatering av identifikator fra Doffin. -->
+                flag="fatal">Doffin reference MUST NOT contain issue date, issue time and attachment.</assert>
+        <assert id="EHF-ESPD-R233"
+                test="matches(normalize-space(cbc:ID/text()), '^[0-9]{4}\-[0-9]{6}$')"
+                flag="fatal">Doffin reference MUST match 'YYYY-[][][][][][]' (e.g. 2017-461137).</assert>
     </rule>
 
     <rule context="cac:AdditionalDocumentReference">

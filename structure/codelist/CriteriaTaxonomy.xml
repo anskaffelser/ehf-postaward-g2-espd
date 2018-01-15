@@ -9,7 +9,7 @@
       <Description code="crit_eu_text_grounds_criminal_conv">
          <Source>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).</Source>
          <Translation lang="nb">Er leverandøren selv eller en person, som er medlem av leverandørens administrasjons-, ledelses- eller kontrollorgan eller har kompetanse til å representere eller kontrollere eller treffe beslutninger i slike organer, ved rettskraftig dom blitt dømt for deltakelse i en kriminell organisasjon ved en dom avsagt for ikke mer enn fem år siden, eller en avvisningsperiode fastsatt direkte i dommen som fortsatt gjelder? Deltakelse i en kriminell organisasjon som definert i artikkel 2 i Rådets rammeavgjørelse 2008/841/RIA av 24. oktober 2008 om bekjempelse av organisert kriminalitet (EUT L 300 av 11.11.2008, s. 42)</Translation>
-      </Description>?
+      </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
          <Translation lang="nb">Europaparlaments- og rådsdirektiv 2014/24/EU av 26. februar 2014 om offentlige anskaffelser som avløser direktiv 2004/18/EU.</Translation>
@@ -167,7 +167,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
          <Translation lang="nb">Betaling av trygdeavgifter</Translation>
       </Name>
       <Description code="crit_eu_text_payment_social_security">
-         <Source>Has the economic operator breached its obligations relating to the payment social security contributions, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?</Source>
+         <Source>Has the economic operator breached its obligations relating to the payment social security contributions, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?</Source>
          <Translation lang="nb">Har leverandør unnlatt å oppfylle alle sine forpliktelser til å betale trygdeavgifter både i det land han er etablert i, og i oppdragsgivers medlemsstat, hvis dette er et annet land enn det han er etablert i?</Translation>
       </Description>
       <LegislationTitle>
@@ -891,7 +891,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
          <Source>Study and research facilities</Source>
          <Translation lang="nb">Undersøkelses- og forskningsfasiliteter</Translation>
       </Name>
-      <Description code=crit_selection_technical_study_research_facilities_description">
+      <Description code="crit_selection_technical_study_research_facilities_description">
          <Source>It uses the following study and research facilities are as follows:</Source>
          <Translation lang="nb">Leverandørens undersøkelses- og forskningsfasiliter er som følger:</Translation>
       </Description>
@@ -1024,7 +1024,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
          <Source>Average annual manpower</Source>
          <Translation lang="nb">Gjennomsnittlige årlige arbeidsstyrke</Translation>
       </Name>
-      <Description codecrit_selection_technical_average_annual_manpower_description
+      <Description code="codecrit_selection_technical_average_annual_manpower_description">
          <Source>The economic operator’s average annual manpower for the last three years were as follows:</Source>
          <Translation lang="nb">Leverandørens gjennomsnittlige årlige arbeidsstyrke i løpet av de siste tre årene har vært som følger:</Translation>
       </Description>
@@ -1263,7 +1263,7 @@ createeo_first_name=Fornavn</Translation>
          <Translation lang="nb">Denne oppfyller de objektive og ikke-diskriminerende kriterier eller regler som skal anvendes for å velge ut antallet av leverandører på følgende måte: 
 Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis for hver enkelt om leverandøren er i besittelse av dokumentene som etterspørres: 
 </Translation>
-      </Name>:
+      </Name>
       <Description code="createcafinish_text_eo_declares_that">
          <Source>If some of these certificates or forms of documentary evidence are available electronically, please indicate for each:</Source>
          <Translation lang="nb">Hvis noen av disse attestene eller andre former for dokumentasjon er tilgjengelige i elektronisk form, angis dette for hver enkelt:</Translation>
@@ -1870,7 +1870,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
          <Source>c) Please state the references on which the registration or certification is based, and, where applicable, the classification obtained in the official list:</Source>
          <Translation lang="nb">c) Angi hvilke opplysninger som har dannet grunnlag for registeringen eller utstedelsen av attesten og, hvis aktuelt, hvilken klassifisering som følger av listen :Opplysningene og klassifiseringen, hvis aktuelt, fremgår av attesten.</Translation>
       </Description>
-      <Response>DESCRIPTION</Response>hvis den relevante
+      <Response>DESCRIPTION</Response>
    </Requirement>
    <Requirement id="d9996ef5-49f9-4cf8-a2f5-31c9f4efd894">
       <Description code="createeo_all_selection_covered">
