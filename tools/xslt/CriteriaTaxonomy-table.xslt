@@ -20,7 +20,7 @@
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
             </head>
             <body>
-                <div class="container-fluid">
+                <div class="container">
                     <h1>Critieria Taxonomy</h1>
 
                     <p class="lead">This documents outlines the ESPD criteria taxonomy version '<xsl:value-of select="ct:Version"/>' part of EHF ESPD 1.0.</p>
@@ -31,7 +31,6 @@
                                 <th style="width: 80pt;">Tree</th>
                                 <th style="width: 60pt;">UUID</th>
                                 <th>Description</th>
-                                <th style="width: 200pt;">Processing instruction</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -49,10 +48,9 @@
         </tr>
         <tr>
             <td>C</td>
-            <td><span title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), ' ')" /></span> <small>[..]</small></td>
+            <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
             <xsl:if test="string-length(ct:Description/ct:Source/text()) &gt; 120"><td><xsl:value-of select="substring(ct:Description/ct:Source/text(), 1, 120)"/> <small>[..]</small></td></xsl:if>
             <xsl:if test="string-length(ct:Description/ct:Source/text()) &lt;= 120"><td><xsl:value-of select="ct:Description/ct:Source/text()"/></td></xsl:if>
-            <td></td>
         </tr>
         <xsl:apply-templates select="ct:Comment"/>
 
@@ -66,8 +64,8 @@
         <xsl:variable name="location" select="concat($parent, '.G')"/>
         <tr>
             <td><xsl:value-of select="$location" /></td>
-            <td><span title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), ' ')" /></span> <small>[..]</small></td>            <td></td>
-            <xsl:if test="ct:ProsessingInstruction"><td><xsl:value-of select="ct:ProsessingInstruction/text()"/></td></xsl:if>
+            <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
+            <xsl:if test="ct:ProsessingInstruction"><td><span class="label label-info" title="Processing instruction"><xsl:value-of select="ct:ProsessingInstruction/text()"/></span></td></xsl:if>
             <xsl:if test="not(ct:ProsessingInstruction)"><td></td></xsl:if>
         </tr>
         <xsl:apply-templates select="ct:Comment"/>
@@ -84,16 +82,16 @@
         <xsl:variable name="location" select="concat($parent, '.R')"/>
         <tr>
             <td><xsl:value-of select="$location" /></td>
-            <td><span title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), ' ')" /></span> <small>[..]</small></td>            <td><xsl:value-of select="ct:Description/ct:Source/text()"/></td>
-            <td></td>
+            <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
+            <td><xsl:value-of select="ct:Description/ct:Source/text()"/></td>
         </tr>
         <xsl:apply-templates select="ct:Comment"/>
     </xsl:template>
 
     <xsl:template match="ct:Comment">
         <tr>
-            <td><small>Comment</small></td>
-            <td colspan="3"><small><xsl:value-of select="text()"/></small></td>
+            <td colspan="2"></td>
+            <td><small><xsl:value-of select="text()"/></small></td>
         </tr>
     </xsl:template>
 

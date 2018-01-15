@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils">
 
+    <let name="special_rg" value="tokenize('c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16 096686e1-82ca-4de0-8710-d74d90da0f0c 96defecc-7d32-4957-82e9-aad5f3c5b736 96f00020-0a25-402e-b850-2378e83b5695', '\s')"/>
+
     <!-- Requirement -->
 
     <rule context="ccv:RequirementGroup[/espd:ESPDResponse][@pi='GROUP_FULFILLED.ON_TRUE'][normalize-space(../ccv:Requirement[1]/ccv:Response/ccv-cbc:Indicator) = 'false']//ccv:RequirementGroup[@pi]//ccv:Requirement">
@@ -21,7 +23,7 @@
                 flag="fatal">Response MUST NOT be provided when response is not expected.</assert>
     </rule>
 
-    <rule context="ccv:RequirementGroup[normalize-space(cbc:ID) = 'c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16']/ccv:Requirement[/espd:ESPDResponse]">
+    <rule context="ccv:RequirementGroup[/espd:ESPDResponse][some $code in $special_rg satisfies normalize-space(cbc:ID) = $code]/ccv:Requirement">
         <assert id="EHF-ESPD-R113"
                 test="ccv:Response or count(../ccv:Requirement/ccv:Response) = 0"
                 flag="fatal">Response MUST be provided for all requirements in this group.</assert>
@@ -179,6 +181,5 @@
                 test="matches(normalize-space(text()), '^[0-9]{9}$') and u:mod11(normalize-space(text()))"
                 flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed</assert>
     </rule>
-
 
 </pattern>

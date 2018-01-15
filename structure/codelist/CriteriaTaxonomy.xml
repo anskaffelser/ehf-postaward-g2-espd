@@ -735,6 +735,10 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <Article>58(3)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
+      <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
+      <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
+      <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
+      <RequirementGroupId>096686e1-82ca-4de0-8710-d74d90da0f0c</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
@@ -764,11 +768,10 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
    <Criterion id="ab0e7f2e-6418-40e2-8870-6713123e41ad" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.OTHER_REQUIREMENTS</Type>
       <Name>
-         <Source>Concerning the other economic or financial requirements, if any, that may have been specified in the relevant notice or the procurement documents, the economic operator declares that:</Source>
+         <Source>Other economic or financial requirements</Source>
       </Name>
-      <!-- TODO -->
       <Description>
-         <Source></Source>
+         <Source>Concerning the other economic or financial requirements, if any, that may have been specified in the relevant notice or the procurement documents, the economic operator declares that:</Source>
       </Description>
       <RequirementGroupId>488ca189-bcdb-4bf4-80c7-3ad507fd89fb</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
@@ -793,8 +796,11 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
-      <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="3a18a175-1863-4b1d-baef-588ce61960ca" required="false">
@@ -817,8 +823,11 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
-      <!-- TODO -->
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
    <Criterion id="5e506c16-26ab-4e32-bb78-b27f87dc0565" required="false">
@@ -840,6 +849,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <!-- TODO -->
@@ -1300,24 +1311,26 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementGroupId>ab335516-73a4-41f7-977b-a98c13a51060</RequirementGroupId>
    </Criterion>
    <Criterion id="aef56865-3cdc-42a8-87ed-7e5e93088279" required="false">
-      <Type>CRITERION.EXCLUSION.NATIONAL.BOT</Type>
-      <!-- TODO -->
+      <Type>CRITERION.EXCLUSION.NATIONAL.NO.ACCEPTED.FINE</Type>
       <Name>
-         <Source></Source>
+         <Source>Accepted fine for criminal behaviour</Source>
+         <Translation lang="nb">Vedtatt forelegg for staffbare forhold</Translation>
       </Name>
       <Description>
-         <Source></Source>
+         <Source>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein accepted a fine for the circumstances listed above, within the meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (2) a-f?</Source>
+         <Translation lang="nb">Har leverandøren selv eller en person, som er medlem av leverandørens administrasjons-, ledelses- eller kontrollorgan eller har kompetanse til å representere eller kontrollere eller treffe beslutninger i slike organer, vedtatt forelegg for noen av de straffbare forhold som er nevnt over, j.f. anskaffelsesforskriftens § 24-2, (2) ledd, a-f?</Translation>
       </Description>
       <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
    </Criterion>
    <Criterion id="588e9cbb-aaaf-48de-b5df-46254e5d2742" required="false">
       <Type>CRITERION.EXCLUSION.NATIONAL.LAERLING</Type>
-      <!-- TODO -->
       <Name>
-         <Source></Source>
+         <Source>Grave misconduct</Source>
+         <Translation lang="nb">Alvorlige feil som medfører tvil om hans yrkesmessige integritet</Translation>
       </Name>
       <Description>
-         <Source></Source>
+         <Source>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein commited significant breaches of his professonial integrety, within the meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (3) i?</Source>
+         <Translation lang="nb">Har leverandøren for øvrig har begått alvorlige feil som medfører tvil om hans yrkesmessige integritet, j.f. anskaffelsesforskriftens § 24-2, (3) bokstav i?</Translation>
       </Description>
       <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
    </Criterion>
