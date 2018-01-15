@@ -4,7 +4,7 @@
     <Name>EHF ESPD 1.0</Name>
 
     <Documentation path="ehf/">EHF ESPD (European Single Procurement document)</Documentation>
-    <Documentation path="edm/">ESPD Response XML Instantiation Guide</Documentation>
+    <Documentation path="edm/">ESPD Response XML Instantiation Guide (EU Commission)</Documentation>
 
     <!-- Data models -->
 
