@@ -156,7 +156,6 @@
                 </ccv:Response>
             </ccv:Requirement>
             
-            <!-- Code omitted for clarity -->
             
 <!-- end::indicator[] -->   
             <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
