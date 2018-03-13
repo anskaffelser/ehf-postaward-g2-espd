@@ -145,7 +145,7 @@
                 </ccv:RequirementGroup>
             </ccv:RequirementGroup>
         </ccv:RequirementGroup>
-        <!-- tag::indicator[] -->
+<!-- tag::indicator[] -->
         <ccv:RequirementGroup>
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
             <ccv:Requirement responseDataType="INDICATOR"><!--1-->
@@ -158,7 +158,7 @@
             
             <!-- Code omitted for clarity -->
             
-            <!-- end::indicator[] -->    
+<!-- end::indicator[] -->   
             <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
                 <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
                 <ccv:Requirement responseDataType="EVIDENCE_URL">
