@@ -18,6 +18,7 @@
     <ns prefix="espd-cac" uri="urn:grow:names:specification:ubl:schema:xsd:ESPD-CommonAggregateComponents-1"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="u" uri="utils"/>
+    <ns prefix="lots" uri="urn:fdc:difi.no:2017:vefa:espd:Lots-1"/>
 
     <!-- Functions -->
 

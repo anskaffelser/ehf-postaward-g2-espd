@@ -22,7 +22,7 @@
     <Document>
         <Term>espd-req:ESPDRequest</Term>
         <Name>EHF ESPD Request document</Name>
-        
+
         <Element cardinality="0..1">
             <Term>ext:UBLExtensions</Term>
 
