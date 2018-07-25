@@ -64,7 +64,7 @@
                 <Value type="FIXED">3.0</Value>
             </Attribute>
 
-            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.0</Value>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.1</Value>
         </Element>
 
         <Element cardinality="0..1">

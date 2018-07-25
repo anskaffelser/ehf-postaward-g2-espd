@@ -2,7 +2,7 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" schemaVersion="iso" queryBinding="xslt2"
         xmlns:u="utils" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <title>EHF ESPD 1.0 Response</title>
+    <title>EHF ESPD 1.1 Response</title>
 
     <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>

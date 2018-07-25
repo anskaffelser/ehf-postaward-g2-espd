@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>EHF ESPD 1.0</Name>
+    <Name>EHF ESPD 1.1</Name>
 
     <Documentation path="ehf/">EHF ESPD (European Single Procurement document)</Documentation>
     <Documentation path="edm/">ESPD Response XML Instantiation Guide (EU Commission)</Documentation>
@@ -121,13 +121,13 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/example-espd-request.xml</Path>
-        <Title>Example file for EHF ESPD 1.0 Request</Title>
+        <Title>Example file for EHF ESPD 1.1 Request</Title>
         <Property key="download">example-espd-request.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/example-espd-response.xml</Path>
-        <Title>Example file for EHF ESPD 1.0 Response</Title>
+        <Title>Example file for EHF ESPD 1.1 Response</Title>
         <Property key="download">example-espd-response.xml</Property>
     </Resource>
     <Resource>
@@ -154,14 +154,14 @@
     <Resource>
         <Type>native:File</Type>
         <Path>structure/codelist/CriteriaTaxonomy.xml</Path>
-        <Title>Criteria taxonomy for EHF ESPD 1.0 as XML</Title>
+        <Title>Criteria taxonomy for EHF ESPD 1.1 as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>
         <Property key="download">CriteriaTaxonomy.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>target/generated/CriteriaTaxonomy.html</Path>
-        <Title>Outline of Criteria taxonomy for EHF ESPD 1.0</Title>
+        <Title>Outline of Criteria taxonomy for EHF ESPD 1.1</Title>
         <Description>Criteria taxonomy outlined.</Description>
     </Resource>
     <Resource>
@@ -174,7 +174,7 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/EHF-ESPD-REQUEST.sch</Path>
-        <Title>Schematron for EHF ESPD 1.0 Request</Title>
+        <Title>Schematron for EHF ESPD 1.1 Request</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">EHF-ESPD-REQUEST.sch</Property>
         <!-- <Property key="filter">schematron</Property>
@@ -183,7 +183,7 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/EHF-ESPD-RESPONSE.sch</Path>
-        <Title>Schematron for EHF ESPD 1.0 Response</Title>
+        <Title>Schematron for EHF ESPD 1.1 Response</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">EHF-ESPD-RESPONSE.sch</Property>
         <!-- <Property key="filter">schematron</Property>

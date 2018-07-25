@@ -1,6 +1,6 @@
 //
-:revision: 0.7.0
-:release: 2017-11-14
+:revision: 1.1.0
+:release: 2018-09-12
 
 
 // Folders
@@ -27,5 +27,5 @@
 :policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
 
 // documentation
-:link-xsd: https://vefa.difi.no/ehf-pre/guide/espd/1.0/files/schema.zip[]
-:link-taxonomy: https://vefa.difi.no/ehf-pre/guide/espd/1.0/[Criteria Taxonomy]
+:link-xsd: https://vefa.difi.no/ehf-pre/guide/espd/1.1/files/schema.zip[]
+:link-taxonomy: https://vefa.difi.no/ehf-pre/guide/espd/1.1/[Criteria Taxonomy]
