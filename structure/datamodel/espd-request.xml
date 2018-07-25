@@ -16,12 +16,49 @@
     <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
     <Namespace prefix="ccv">urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1</Namespace>
     <Namespace prefix="espd-req">urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1</Namespace>
+    <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
+    <Namespace prefix="lots">urn:fdc:difi.no:2017:vefa:espd:Lots-1</Namespace>
 
     <Document>
         <Term>espd-req:ESPDRequest</Term>
         <Name>EHF ESPD Request document</Name>
+        
+        <Element cardinality="0..1">
+            <Term>ext:UBLExtensions</Term>
 
-        <!-- Element ext:UBLExtensions not in use. -->
+            <Element>
+                <Term>ext:UBLExtension</Term>
+
+                <Element>
+                    <Term>lots:Lots</Term>
+                    <Element>
+                        <Term>lots:VersionID</Term>
+                        <Value type="FIXED">1.0</Value>
+                    </Element>
+                    <Element cardinality="1..n">
+                        <Term>lots:Lot</Term>
+                        <Element>
+                            <Term>lots:ID</Term>
+                            <Value type="EXAMPLE">lot-01</Value>
+                        </Element>
+                        <Element>
+                            <Term>lots:Title</Term>
+                        </Element>
+                        <Element cardinality="0..1">
+                            <Term>lots:Description</Term>
+                        </Element>
+                        <Element cardinality="0..1">
+                            <Term>lots:OptionalCritierias</Term>
+                            <Element cardinality="1..n">
+                                <Term>lots:ID</Term>
+                                <Reference type="CODE_LIST">CriteriaOptional</Reference>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+
+            </Element>
+        </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:UBLVersionID</Term>
