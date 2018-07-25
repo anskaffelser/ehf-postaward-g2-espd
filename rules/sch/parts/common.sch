@@ -152,6 +152,10 @@
                 flag="fatal">Doffin reference MUST match 'YYYY-[][][][][][]' (e.g. 2017-461137).</assert>
     </rule>
 
+    <rule context="cac:AdditionalDocumentReference[/espd:ESPDResponse][normalize-space(cbc:DocumentTypeCode) = 'LOTS']">
+        <!-- TODO -->
+    </rule>
+
     <rule context="cac:AdditionalDocumentReference">
         <!-- Not allowed type -->
         <assert id="EHF-ESPD-R200"
@@ -159,7 +163,7 @@
                 flag="fatal">ESPD Request MUST contain only document reference 'NGOJ'.</assert>
         <assert id="EHF-ESPD-R201"
                 test="not(/espd:ESPDResponse)"
-                flag="fatal">ESPD Responst MUST contain only document references 'TED_CN', 'ESPD_REQUEST' and 'NGOJ'.</assert>
+                flag="fatal">ESPD Responst MUST contain only document references 'TED_CN', 'ESPD_REQUEST', 'NGOJ' and 'LOTS'.</assert>
     </rule>
 
     <!-- Formatting -->

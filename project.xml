@@ -153,6 +153,13 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
+        <Path>tools/xsd/Lots-1.0.xsd</Path>
+        <Title>XSD Schema for Lots 1.0</Title>
+        <Description>XSD Schema file for Lots provided by Difi.</Description>
+        <Property key="download">Lots-1.0.xsd</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
         <Path>structure/codelist/CriteriaTaxonomy.xml</Path>
         <Title>Criteria taxonomy for EHF ESPD 1.1 as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>

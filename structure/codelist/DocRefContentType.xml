@@ -22,4 +22,9 @@
         <Name>Identifier of procurement in Doffin.</Name>
     </Code>
 
+    <Code>
+        <Id>LOTS</Id>
+        <Name>List of lots if any.</Name>
+    </Code>
+
 </CodeList>

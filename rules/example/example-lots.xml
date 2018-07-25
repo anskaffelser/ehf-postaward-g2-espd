@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lots xmlns="urn:fdc:difi.no:2017:vefa:espd:Lots-1">
+    <VersionID>1.0</VersionID>
+    <Lot>
+        <ID>lot-01</ID>
+        <Title>Fixing roof</Title>
+        <OptionalCritierias>
+            <ID>e4d37adc-08cd-4f4d-a8d8-32b62b0a1f46</ID>
+        </OptionalCritierias>
+    </Lot>
+    <Lot>
+        <ID>lot-02</ID>
+        <Title>Gardening</Title>
+        <Description>Plant five trees at the driveway.</Description>
+    </Lot>
+</Lots>
