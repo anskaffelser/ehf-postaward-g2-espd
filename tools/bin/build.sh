@@ -45,6 +45,9 @@ dc ct-rule
 echo " * Generate documentation"
 dc ct-doc
 
+echo " * Generate codelist containing optional criterias"
+dc ct-codelist-optional
+
 
 info "Prepare zip containing XSD files"
 

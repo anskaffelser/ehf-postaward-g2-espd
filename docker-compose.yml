@@ -48,6 +48,13 @@ services:
     volumes:
      - .:/src
 
+  ct-codelist-optional:
+    image: "klakegg/saxon"
+    command: -s:structure/codelist/CriteriaTaxonomy.xml -xsl:tools/xslt/CriteriaTaxonomy-codelist-optional.xslt -o:target/generated/CriteriaTaxonomy-Optional.xml
+    volumes:
+     - .:/src
+     - ./target/generated:/target
+
   schema-zip:
     image: "kramos/alpine-zip"
     command: -x espd-1.0.2-schema/maindoc/bindings.xjb -r /target/schema.zip /espd-1.0.2-schema

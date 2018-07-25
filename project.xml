@@ -70,6 +70,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>target/generated/CriteriaTaxonomy-Optional.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/CurrencyCode.xml</Path>
     </Resource>
     <Resource>
