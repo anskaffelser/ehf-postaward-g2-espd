@@ -19,13 +19,48 @@
     <Namespace prefix="espd-cac">urn:grow:names:specification:ubl:schema:xsd:ESPD-CommonAggregateComponents-1</Namespace>
     <Namespace prefix="espd-cbc">urn:grow:names:specification:ubl:schema:xsd:ESPD-CommonBasicComponents-1</Namespace>
     <Namespace prefix="cev-cac">urn:isa:names:specification:ubl:schema:xsd:CEV-CommonAggregateComponents-1</Namespace>
+    <Namespace prefix="lots">urn:fdc:difi.no:2017:vefa:espd:Lots-1</Namespace>
 
     <Document>
         <Term>espd:ESPDResponse</Term>
         <Name>EHF ESPD Response document</Name>
 
 
-        <!-- Element ext:UBLExtensions not in use. -->
+        <Element>
+            <Term>lots:Lots</Term>
+            <Description>The contract is divided into lots.</Description>
+            <Element>
+                <Term>lots:VersionID</Term>
+                <Description>The version of the lot/document that has been identified with the document ID.</Description>
+                <Value type="FIXED">1.0</Value>
+            </Element>
+            <Element cardinality="1..n">
+                <Term>lots:Lot</Term>
+                <Description>The specific lot.</Description>
+                <Element>
+                    <Term>lots:ID</Term>
+                    <Description>The document ID.</Description>
+                    <Value type="EXAMPLE">lot-01</Value>
+                </Element>
+                <Element>
+                    <Term>lots:Title</Term>
+                    <Description>A title for the lot.</Description>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>lots:Description</Term>
+                    <Description>A description of its content.</Description>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>lots:OptionalCritierias</Term>
+                    <Description>Optional criterias regarding to lot.</Description>
+                    <Element cardinality="1..n">
+                        <Term>lots:ID</Term>
+                        <Description>The document ID.</Description>
+                        <Reference type="CODE_LIST">CriteriaOptional</Reference>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:UBLVersionID</Term>
