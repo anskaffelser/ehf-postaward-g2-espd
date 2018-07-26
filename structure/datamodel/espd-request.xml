@@ -25,26 +25,26 @@
 
         <Element cardinality="0..1">
             <Term>ext:UBLExtensions</Term>
-            <Description>A container for all extensions present in the document.</Description>
+            <!--<Description>A container for all extensions present in the document.</Description>-->
 
             <Element>
                 <Term>ext:UBLExtension</Term>
-                <Description>A single extension.</Description>
+                <!--<Description>A single extension.</Description>-->
 
                 <Element>
                     <Term>lots:Lots</Term>
-                    <Description>The contract is divided into lots.</Description>
+                    <Description>A container for all lots present in the document. </Description>
                     <Element>
                         <Term>lots:VersionID</Term>
-                        <Description>The version of the lot/document that has been identified with the document ID.</Description>
+                        <Description>The version of the lot that has been identified with the document ID.</Description>
                         <Value type="FIXED">1.0</Value>
                     </Element>
                     <Element cardinality="1..n">
                         <Term>lots:Lot</Term>
-                        <Description>The specific lot.</Description>
+                        <Description>A single lot.</Description>
                         <Element>
                             <Term>lots:ID</Term>
-                            <Description>The document ID.</Description>
+                            <Description>The document ID to the single lot.</Description>
                             <Value type="EXAMPLE">lot-01</Value>
                         </Element>
                         <Element>
@@ -60,7 +60,7 @@
                             <Description>Optional criterias regarding to lot.</Description>
                             <Element cardinality="1..n">
                                 <Term>lots:ID</Term>
-                                <Description>The document ID.</Description>
+                                <!--<Description>The document ID.</Description>-->
                                 <Reference type="CODE_LIST">CriteriaOptional</Reference>
                             </Element>
                         </Element>
