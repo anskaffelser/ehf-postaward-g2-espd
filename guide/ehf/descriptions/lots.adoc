@@ -1,0 +1,9 @@
+= Lots
+
+// TODO Kort beskrive at det er funksjonalitet for å beskrive lots i ESPD.
+
+// TODO Beskrive at kriterier kan bli valgfrie for spesifikke lot basert på angivelse i lot.
+
+// TODO Eksempel (toppen av ESPD) som viser inkludering av Lots.
+
+// TODO Informere om at de som skal generere ESPD respons _må_ ta med lots fra ESPD forespørsel om den finnes.

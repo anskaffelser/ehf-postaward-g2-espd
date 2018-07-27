@@ -6,7 +6,11 @@ This chapter describes selected blocks of information that is used in both the E
 :leveloffset: +1
 
 include::contracting-party.adoc[]
+
 include::economic-operator-party.adoc[]
+
 include::additional-docs.adoc[]
+
+include::lots.adoc[]
 
 :leveloffset: -1
