@@ -1,9 +1,51 @@
 = Lots
 
 // TODO Kort beskrive at det er funksjonalitet for å beskrive lots i ESPD.
-
 // TODO Beskrive at kriterier kan bli valgfrie for spesifikke lot basert på angivelse i lot.
+
+
+There is a functionality to describe lots in ESPD.
+The procurement procedure can be divided into lots, which is again divided into lot element(s).
+A lot must include title and ID, but can be specified with optional criterias which varies from lot to lot.
+The optional criteria(s) are chosen from the selection criteria(s).
+Remark, that you need to answer the exclusion criteria(s), but not the optional.
+
+//Every lot include selection criteria(s),
+//Lots is based on several lot functions, where a lot can include optional criterias.
+
+The example below illustrate the use of the lots in the ESPD XML document.
 
 // TODO Eksempel (toppen av ESPD) som viser inkludering av Lots.
 
+[source,xml]
+.Example of use of the lots in the ESPD XML document.
+----
+<ext:UBLExtensions>
+  <ext:UBLExtension>
+    <cbc:ID>urn:fdc:difi.no:2017:vefa:espd:Lots-1</cbc:ID>
+    <cbc:Name>Lots description</cbc:Name>
+    <ext:ExtensionContent>
+      <Lots xmlns="urn:fdc:difi.no:2017:vefa:espd:Lots-1">
+        <VersionID>1.0</VersionID>
+        <Lot>
+          <ID>lot-01</ID>
+          <Title>Fixing roof</Title>
+          <OptionalCritierias>
+            <ID>e4d37adc-08cd-4f4d-a8d8-32b62b0a1f46</ID>
+          </OptionalCritierias>
+        </Lot>
+        <Lot>
+          <ID>lot-02</ID>
+          <Title>Gardening</Title>
+          <Description>Plant five trees at the driveway.</Description>
+        </Lot>
+      </Lots>
+    </ext:ExtensionContent>
+  </ext:UBLExtension>
+</ext:UBLExtensions>
+----
+
 // TODO Informere om at de som skal generere ESPD respons _må_ ta med lots fra ESPD forespørsel om den finnes.
+
+NOTE: Before generating ESPD Response you MUST include existing lots from ESPD Request.
+
