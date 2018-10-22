@@ -4,7 +4,7 @@
 .Example of additional document reference used in the ESPDRequest XML document.
 [source, xml, indent=0]
 ----
-include::guide/ehf/shared/files/snippet1.xml[tags=doffin]
+include::docs/espd-1.1/ehf/shared/files/snippet1.xml[tags=doffin]
 ----
 <1> Doffin referanse
 <2> The code for this type of content
@@ -13,7 +13,7 @@ include::guide/ehf/shared/files/snippet1.xml[tags=doffin]
 .Example of additional document reference used in the ESPDResponse XML document.
 [source, xml, indent=0]
 ----
-include::guide/ehf/shared/files/snippet-response.xml[tags=docs]
+include::docs/espd-1.1/ehf/shared/files/snippet-response.xml[tags=docs]
 ----
 <1> UUID for the ESPD Request
 <2> Issue date of the ESPD Request

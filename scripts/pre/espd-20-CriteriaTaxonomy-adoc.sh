@@ -1,7 +1,7 @@
 #!/bin/sh
 
-PROJECT=$(dirname $(readlink -f "$0"))/../..
-TARGET=$PROJECT/target/generated/doc
+PROJECT=/src
+TARGET=/target/taxonomy/doc
 
 mkdir -p $TARGET
 
@@ -11,7 +11,7 @@ for id in $(cat $PROJECT/structure/codelist/CriteriaTaxonomy.xml | grep "<Criter
 .Expected \`Criterion\` element with id '$id'
 [source, xml, indent=0]
 ----
-include::target/generated/CriteriaTaxonomy-snippet.xml[tags=criterion-$id]
+include::target/taxonomy/CriteriaTaxonomy-snippet.xml[tags=criterion-$id]
 ----
 " > $TARGET/criterion-$id.adoc
 done
@@ -22,7 +22,7 @@ for id in $(cat $PROJECT/structure/codelist/CriteriaTaxonomy.xml | grep "<Requir
 .Expected \`RequirementGroup\` element with id '$id'
 [source, xml, indent=0]
 ----
-include::target/generated/CriteriaTaxonomy-snippet.xml[tags=requirement-group-$id]
+include::target/taxonomy/CriteriaTaxonomy-snippet.xml[tags=requirement-group-$id]
 ----
 " > $TARGET/requirement-group-$id.adoc
 done
@@ -33,7 +33,7 @@ for id in $(cat $PROJECT/structure/codelist/CriteriaTaxonomy.xml | grep "<Requir
 .Expected \`Requirement\` element with id '$id'
 [source, xml, indent=0]
 ----
-include::target/generated/CriteriaTaxonomy-snippet.xml[tags=requirement-$id]
+include::target/taxonomy/CriteriaTaxonomy-snippet.xml[tags=requirement-$id]
 ----
 " > $TARGET/requirement-$id.adoc
 done

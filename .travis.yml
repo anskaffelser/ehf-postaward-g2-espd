@@ -6,5 +6,4 @@ services:
   - docker
 
 script:
-  - sh tools/bin/pull.sh
-  - sh tools/bin/build.sh
+  - make

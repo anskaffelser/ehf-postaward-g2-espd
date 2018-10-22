@@ -10,4 +10,4 @@
 :source-highlighter: coderay
 :source-language: xml
 
-include::../../espd-edm/docs/src/main/asciidoc/index_response.adoc[]
+include::../../../espd-edm/docs/src/main/asciidoc/index_response.adoc[]

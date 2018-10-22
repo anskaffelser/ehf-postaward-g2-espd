@@ -3,20 +3,33 @@
 
     <Name>EHF ESPD 1.1</Name>
 
-    <Documentation path="ehf/">EHF ESPD (European Single Procurement document)</Documentation>
-    <Documentation path="edm/">ESPD Response XML Instantiation Guide (EU Commission)</Documentation>
+    <!-- Documentation -->
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>espd-1.1/ehf/</Path>
+        <Title>EHF ESPD (European Single Procurement document)</Title>
+        <Tag>espd-1.1</Tag>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>espd-1.1/edm/</Path>
+        <Title>ESPD Response XML Instantiation Guide (EU Commission)</Title>
+        <Tag>espd-1.1</Tag>
+    </Resource>
 
     <!-- Data models -->
 
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/datamodel/espd-request.xml</Path>
+        <Path>structure/syntax/espd-request.xml</Path>
         <Title>ESPD Request</Title>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/datamodel/espd-response.xml</Path>
+        <Path>structure/syntax/espd-response.xml</Path>
         <Title>ESPD Response</Title>
+        <Tag>espd-1.1</Tag>
     </Resource>
 
     <!-- Rules -->
@@ -24,115 +37,100 @@
     <Resource>
         <Identifier>common</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/common.sch</Path>
+        <Path>rules/espd-1.1/sch/parts/common.sch</Path>
         <Title>Common rules</Title>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Identifier>empty-elements</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/empty-elements.sch</Path>
+        <Path>rules/espd-1.1/sch/parts/empty-elements.sch</Path>
         <Title>Empty elements</Title>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>Rule-1</Type>
-        <Path>target/generated/CriteriaTaxonomy.xml</Path>
+        <Path>target/taxonomy/CriteriaTaxonomy.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
 
     <!-- Code lists -->
 
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ActivityTypeCode.xml</Path>
-    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/DocRefContentType.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/AmountTypeCodes.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ContractType.xml</Path>
-    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/CriterionJurisdictionLevel.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/CriteriaTypeCode.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>target/generated/CriteriaTaxonomy-Optional.xml</Path>
+        <Path>target/taxonomy/CriteriaTaxonomy-Optional.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/CurrencyCode.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/LanguageCodeEU.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/PeriodMeasureTypeCodes.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ProfileID.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProcedureType.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProfileExecutionID.xml</Path>
-    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ResponseDataType.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/TechnicalCapabilityTypeCode.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/TendererRole.xml</Path>
-    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/EconomicOperatorIdentifierType.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>
+        <Tag>espd-1.1</Tag>
     </Resource>
 
     <!-- Files -->
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/example-espd-request.xml</Path>
-        <Title>Example file for EHF ESPD 1.1 Request</Title>
-        <Property key="download">example-espd-request.xml</Property>
-    </Resource>
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/example/example-espd-response.xml</Path>
-        <Title>Example file for EHF ESPD 1.1 Response</Title>
-        <Property key="download">example-espd-response.xml</Property>
+        <Title>Example files</Title>
+        <Description>Zip file containing examples for EHF ESPD 1.1.</Description>
+        <Property key="download">ehf-espd-1.1-examples.zip</Property>
+        <Property key="filename">examples.zip</Property>
+        <Property key="virtual">true</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
@@ -140,6 +138,7 @@
         <Title>Criteria taxonomy</Title>
         <Description>Official criteria taxonomy part of ESPD 1.0.2.</Description>
         <Property key="download">CriteriaTaxonomy.xlsx</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
@@ -147,20 +146,25 @@
         <Title>Code lists</Title>
         <Description>Official code lists part of ESPD 1.0.2.</Description>
         <Property key="download">ESPD-CodeLists.xls</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>target/generated/schema.zip</Path>
         <Title>XSD Schema for ESPD 1.0.2</Title>
         <Description>Official XSD Schema files for ESPD 1.0.2</Description>
-        <Property key="download">schema.zip</Property>
+        <Property key="download">xsd-espd-1.0.2.zip</Property>
+        <Property key="filename">xsd-espd-1.0.2.zip</Property>
+        <Property key="virtual">true</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>tools/xsd/Lots-1.0.xsd</Path>
         <Title>XSD Schema for Lots 1.0</Title>
         <Description>XSD Schema file for Lots provided by Difi.</Description>
-        <Property key="download">Lots-1.0.xsd</Property>
+        <Property key="download">xsd-lots-1.0.zip</Property>
+        <Property key="filename">xsd-lots-1.0.zip</Property>
+        <Property key="virtual">true</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
@@ -168,41 +172,36 @@
         <Title>Criteria taxonomy for EHF ESPD 1.1 as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>
         <Property key="download">CriteriaTaxonomy.xml</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>target/generated/CriteriaTaxonomy.html</Path>
+        <Path>target/taxonomy/CriteriaTaxonomy.html</Path>
         <Title>Outline of Criteria taxonomy for EHF ESPD 1.1</Title>
         <Description>Criteria taxonomy outlined.</Description>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>tools/xsd/CriteriaTaxonomy.xsd</Path>
         <Title>XSD Schema for Criteria taxonomy as XML</Title>
         <Description>XSD Schema file for Criteria taxonomy file provided by Difi.</Description>
-        <Property key="download">CriteriaTaxonomy.xsd</Property>
+        <Property key="download">xsd-criteria-taxonomy-1.0.zip</Property>
+        <Property key="filename">xsd-criteria-taxonomy-1.0.zip</Property>
+        <Property key="virtual">true</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/EHF-ESPD-REQUEST.sch</Path>
-        <Title>Schematron for EHF ESPD 1.1 Request</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">EHF-ESPD-REQUEST.sch</Property>
-        <!-- <Property key="filter">schematron</Property>
-        <Property key="step">POST_ARTIFACTS</Property> -->
-    </Resource>
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/EHF-ESPD-RESPONSE.sch</Path>
-        <Title>Schematron for EHF ESPD 1.1 Response</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">EHF-ESPD-RESPONSE.sch</Property>
-        <!-- <Property key="filter">schematron</Property>
-        <Property key="step">POST_ARTIFACTS</Property> -->
+        <Title>Schematron files</Title>
+        <Description>Zip file containing Schematron files part of EHF ESPD 1.1.</Description>
+        <Property key="download">ehf-espd-1.1-schematron.zip</Property>
+        <Property key="filename">schematron.zip</Property>
+        <Property key="virtual">true</Property>
+        <Tag>espd-1.1</Tag>
     </Resource>
 
     <!-- Namespace -->
-    <Resource>
+    <!-- <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/cac.xml</Path>
     </Resource>
@@ -241,6 +240,11 @@
     <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/espd-req.xml</Path>
-    </Resource>
+    </Resource> -->
+
+    <Tag>
+      <Identifier>espd-1.1</Identifier>
+      <Title>EHF ESPD 1.1</Title>
+    </Tag>
 
 </Project>

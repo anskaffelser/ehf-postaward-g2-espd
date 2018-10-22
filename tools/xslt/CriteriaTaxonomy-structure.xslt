@@ -22,13 +22,13 @@
         <Rule>
             <Identifier><xsl:value-of select="@id" /></Identifier>
             <xsl:if test="matches(parent::node()/@context, 'ccv:Criterion\[cbc:ID\[text\(\) = ''(.+)''\]\]')">
-                <Property key="doc">target/generated/doc/criterion-<xsl:value-of select="replace(parent::node()/@context, 'ccv:Criterion\[cbc:ID\[text\(\) = ''(.+)''\]\].*', '$1')"/>.adoc</Property>
+                <Property key="doc">target/taxonomy/doc/criterion-<xsl:value-of select="replace(parent::node()/@context, 'ccv:Criterion\[cbc:ID\[text\(\) = ''(.+)''\]\].*', '$1')"/>.adoc</Property>
             </xsl:if>
             <xsl:if test="matches(parent::node()/@context, 'ccv:RequirementGroup\[cbc:ID\[text\(\) = ''(.+)''\]\]')">
-                <Property key="doc">target/generated/doc/requirement-group-<xsl:value-of select="replace(parent::node()/@context, 'ccv:RequirementGroup\[cbc:ID\[text\(\) = ''(.+)''\]\]', '$1')"/>.adoc</Property>
+                <Property key="doc">target/taxonomy/doc/requirement-group-<xsl:value-of select="replace(parent::node()/@context, 'ccv:RequirementGroup\[cbc:ID\[text\(\) = ''(.+)''\]\]', '$1')"/>.adoc</Property>
             </xsl:if>
             <xsl:if test="matches(parent::node()/@context, 'ccv:Requirement\[cbc:ID\[text\(\) = ''(.+)''\]\]')">
-                <Property key="doc">target/generated/doc/requirement-<xsl:value-of select="replace(parent::node()/@context, 'ccv:Requirement\[cbc:ID\[text\(\) = ''(.+)''\]\]', '$1')"/>.adoc</Property>
+                <Property key="doc">target/taxonomy/doc/requirement-<xsl:value-of select="replace(parent::node()/@context, 'ccv:Requirement\[cbc:ID\[text\(\) = ''(.+)''\]\]', '$1')"/>.adoc</Property>
             </xsl:if>
             <Context><xsl:value-of select="parent::node()/@context" /></Context>
             <Test><xsl:value-of select="@test" /></Test>

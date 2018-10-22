@@ -1,5 +1,5 @@
 
-include::guide/settings.adoc[]
+include::docs/espd-1.1/settings.adoc[]
 
 = Contracting body
 
@@ -8,5 +8,5 @@ The contracting body must be identified, hence information about the party is re
 .Example of contracting body
 [source, xml, indent=0]
 ----
-include::guide/ehf/shared/files/snippet1.xml[tags=ca]
+include::docs/espd-1.1/ehf/shared/files/snippet1.xml[tags=ca]
 ----
