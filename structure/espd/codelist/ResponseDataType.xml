@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Response Data Types</Title>
-    <Identifier>ResponseDataType</Identifier>
+    <Identifier>espd-ResponseDataType</Identifier>
     <Version>1.0.2</Version>
     <Agency>DG GROW (European Commission)</Agency>
 

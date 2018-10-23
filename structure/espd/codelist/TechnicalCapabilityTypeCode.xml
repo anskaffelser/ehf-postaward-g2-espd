@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Technical Capability Type Codes</Title>
-    <Identifier>TechnicalCapabilityTypeCode</Identifier>
+    <Identifier>espd-TechnicalCapabilityTypeCode</Identifier>
     <Version>1.0</Version>
     <Agency>European Commission</Agency>
 

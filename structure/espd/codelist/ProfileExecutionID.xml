@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>ProfileExecutionID</Title>
-    <Identifier>ProfileExecutionID</Identifier>
+    <Identifier>espd-ProfileExecutionID</Identifier>
     <Version>1.0</Version>
     <Agency>European Commission</Agency>
 

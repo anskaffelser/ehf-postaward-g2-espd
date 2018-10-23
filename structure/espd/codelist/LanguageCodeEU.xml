@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>ISO 639-1 Language Codes</Title>
-    <Identifier>LanguageCodeEU</Identifier>
+    <Identifier>espd-LanguageCodeEU</Identifier>
     <Version>1.0.2</Version>
     <Agency>European Comission</Agency>
     <Subset>Language codes within European Union</Subset>

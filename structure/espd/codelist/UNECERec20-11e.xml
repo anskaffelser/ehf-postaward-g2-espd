@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>UN/ECE Recommandation 20</Title>
-    <Identifier>UNECERec20</Identifier>
+    <Identifier>espd-UNECERec20</Identifier>
     <Version>Revision 11e</Version>
     <Agency>UN/ECE</Agency>
 

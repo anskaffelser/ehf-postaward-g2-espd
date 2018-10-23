@@ -61,7 +61,7 @@
                         <Element cardinality="1..n">
                             <Term>lots:ID</Term>
                             <Name>Optional critieria identifier</Name>
-                            <Reference type="CODE_LIST">CriteriaOptional</Reference>
+                            <Reference type="CODE_LIST">espd-CriteriaOptional</Reference>
                         </Element>
 
                     </Element>

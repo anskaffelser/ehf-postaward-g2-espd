@@ -53,7 +53,7 @@ clean:
 ifeq "$(RULE_CLEAN)" "true"
 	$(call docker_run,clean,Removing old target folder,\
 			-v $(PROJECT):/src \
-			alpine:3.6 \
+			alpine:3.8 \
 			rm -rf /src/target)
 else
 	$(call skip,cleaning)
@@ -61,7 +61,7 @@ endif
 ownership:
 	$(call docker_run,ownership,Fixing ownership,\
 			-v $(PROJECT):/src \
-			alpine:3.6 \
+			alpine:3.8 \
 			chown -R $(shell id -g ${USER}).$(shell id -g ${USER}) /src/target)
 serve:
 	$(call docker_run,serve,Serve serve,\
@@ -72,11 +72,11 @@ serve:
 			python3 -m http.server 8000 -b 0.0.0.0)
 pull:
 	$(call fold_start,docker_pull,Pulling Docker images)
-	$(call docker_pull,alpine:3.6)
+	$(call docker_pull,alpine:3.8)
 	$(call docker_pull,difi/vefa-structure:0.7)
 	$(call docker_pull,difi/vefa-validator)
-	$(call docker_pull,difi/asciidoctor)
 	$(call docker_pull,klakegg/schematron)
+	$(call docker_pull,asciidoctor/docker-asciidoctor)
 	$(call docker_pull,alpine/git)
 	$(call fold_end,docker_pull)
 env:
@@ -94,10 +94,12 @@ RULE_DOCS=$(shell test -e $(PROJECT)/$(DOCS_FOLDER) && echo true || echo false)
 docs:
 ifeq "$(RULE_DOCS)" "true"
 	$(call docker_run,docs,Creating documentation,\
-			-v $(PROJECT):/documents \
+			-v $(PROJECT):/src \
 			-v $(PROJECT)/target/site:/target \
-			-w /documents/$(DOCS_FOLDER) \
-			difi/asciidoctor)
+			-w /src/$(DOCS_FOLDER) \
+			-e DIAGRAM=true \
+			asciidoctor/docker-asciidoctor \
+			sh /src/tools/ehf.sh trigger_asciidoctor)
 else
 	$(call skip,documentation)
 endif
@@ -135,7 +137,7 @@ endif
 RULE_SCRIPTS_PRE=$(shell test -d $(PROJECT)/scripts/pre && find $(PROJECT)/scripts/pre -maxdepth 1 -name '*.sh' | wc -l | xargs test "0" != && echo true || echo false)
 scripts_pre:
 ifeq "$(RULE_SCRIPTS_PRE)" "true"
-	$(call docker_run,scripts,Running pre scripts,\
+	$(call docker_run,scripts_pre,Running pre scripts,\
 			-v $(PROJECT):/src \
 			-v $(PROJECT)/target:/target \
 			klakegg/schematron \
@@ -146,7 +148,7 @@ endif
 RULE_SCRIPTS_POST=$(shell test -d $(PROJECT)/scripts/post && find $(PROJECT)/scripts/post -maxdepth 1 -name '*.sh' | wc -l | xargs test "0" != && echo true || echo false)
 scripts_post:
 ifeq "$(RULE_SCRIPTS_POST)" "true"
-	$(call docker_run,scripts,Running post scripts,\
+	$(call docker_run,scripts_post,Running post scripts,\
 			-v $(PROJECT):/src \
 			-v $(PROJECT)/target:/target \
 			klakegg/schematron \

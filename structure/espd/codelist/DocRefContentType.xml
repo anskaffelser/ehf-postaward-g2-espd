@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Document Reference Content Types</Title>
-    <Identifier>DocRefContentType</Identifier>
+    <Identifier>espd-DocRefContentType</Identifier>
     <Version>1.0.2</Version>
     <Agency>DG GROW (European Commission)</Agency>
     <Subset>Norwegian subset defined by Difi</Subset>

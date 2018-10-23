@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Activity Type Codes</Title>
-    <Identifier>ActivityTypeCode</Identifier>
+    <Identifier>espd-ActivityTypeCode</Identifier>
     <Version>1.0</Version>
     <Agency>OJEU</Agency>
 

@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Criterion Jurisdiction Level</Title>
-    <Identifier>CriterionJurisdictionLevel</Identifier>
+    <Identifier>espd-CriterionJurisdictionLevel</Identifier>
     <Version>1.0.2</Version>
     <Agency>DG GROW (European Commission)</Agency>
 

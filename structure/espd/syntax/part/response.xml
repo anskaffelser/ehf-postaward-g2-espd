@@ -44,7 +44,7 @@
         <Attribute>
             <Term>currencyID</Term>
             <Name>Currency code</Name>
-            <Reference type="CODE_LIST">CurrencyCode</Reference>
+            <Reference type="CODE_LIST">espd-CurrencyCode</Reference>
             <Value type="EXAMPLE">NOK</Value>
         </Attribute>
 
@@ -80,8 +80,8 @@
         <Attribute usage="Dependent">
             <Term>unitCode</Term>
             <Name>Unit of measure</Name>
-            <Reference type="CODE_LIST">PeriodMeasureTypeCodes</Reference>
-            <Reference type="CODE_LIST">UNECERec20</Reference>
+            <Reference type="CODE_LIST">espd-PeriodMeasureTypeCodes</Reference>
+            <Reference type="CODE_LIST">espd-UNECERec20</Reference>
 
             <Value type="EXAMPLE">YEAR</Value>
         </Attribute>

@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Procedure Types</Title>
-    <Identifier>ProcedureType</Identifier>
+    <Identifier>espd-ProcedureType</Identifier>
     <Version>1.0</Version>
     <Agency>OJEU</Agency>
 

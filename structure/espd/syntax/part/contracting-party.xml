@@ -4,7 +4,7 @@
     <Name>Contracting Body</Name>
     <Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described
         in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
-    <Property key="doc">structure/docs/contracting-party.adoc</Property>
+    <Property key="doc">structure/espd/docs/contracting-party.adoc</Property>
 
     <Element>
         <Term>cac:Party</Term>
@@ -19,7 +19,7 @@
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Identifier qualifier</Name>
-                <Reference type="CODE_LIST">ICD</Reference>
+                <Reference type="CODE_LIST">espd-ICD</Reference>
                 <Value type="FIXED">NO:ORGNR</Value>
             </Attribute>
 
@@ -38,7 +38,7 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Identifier qualifier</Name>
-                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Reference type="CODE_LIST">espd-ICD</Reference>
                     <Value type="FIXED">NO:ORGNR</Value>
                 </Attribute>
 
@@ -71,7 +71,7 @@
                     <Term>cbc:IdentificationCode</Term>
                     <Name>Country code</Name>
                     <Description>The country code of the contracting body</Description>
-                    <Reference type="CODE_LIST">CountryCodeIdentifier</Reference>
+                    <Reference type="CODE_LIST">espd-CountryCodeIdentifier</Reference>
 
                     <Attribute>
                         <Term>listID</Term>

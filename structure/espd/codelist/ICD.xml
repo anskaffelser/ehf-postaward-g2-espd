@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>ISO 6523 International Code Designator (ICD)</Title>
-    <Identifier>ICD</Identifier>
+    <Identifier>espd-ICD</Identifier>
     <Version>4.0 DRAFT</Version>
     <Agency>OpenPEPPOL</Agency>
     <Subset>Participant Identifier Issuing Agencies in OpenPEPPOL</Subset>

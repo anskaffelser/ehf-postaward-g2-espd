@@ -11,10 +11,10 @@
     <xsl:template match="/ct:CriteriaTaxonomy">
         <CodeList>
             <Title>Optional criterias</Title>
-            <Identifier>CriteriaOptional</Identifier>
+            <Identifier>espd-CriteriaOptional</Identifier>
             <Version><xsl:value-of select="ct:Version[1]/text()"/></Version>
             <Agency>Agency of Public Management and eGovernment</Agency>
-            
+
             <xsl:for-each select="ct:Criterion[@required='false']">
                 <Code>
                     <Id><xsl:value-of select="@id"/></Id>

@@ -21,13 +21,13 @@
 
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/espd-request.xml</Path>
+        <Path>structure/espd/syntax/espd-request.xml</Path>
         <Title>ESPD Request</Title>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/espd-response.xml</Path>
+        <Path>structure/espd/syntax/espd-response.xml</Path>
         <Title>ESPD Response</Title>
         <Tag>espd-1.1</Tag>
     </Resource>
@@ -58,22 +58,22 @@
 
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/DocRefContentType.xml</Path>
+        <Path>structure/espd/codelist/DocRefContentType.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
+        <Path>structure/espd/codelist/CountryCodeIdentifier.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CriterionJurisdictionLevel.xml</Path>
+        <Path>structure/espd/codelist/CriterionJurisdictionLevel.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CriteriaTypeCode.xml</Path>
+        <Path>structure/espd/codelist/CriteriaTypeCode.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
@@ -83,42 +83,42 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CurrencyCode.xml</Path>
+        <Path>structure/espd/codelist/CurrencyCode.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/espd/codelist/ICD.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/LanguageCodeEU.xml</Path>
+        <Path>structure/espd/codelist/LanguageCodeEU.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/PeriodMeasureTypeCodes.xml</Path>
+        <Path>structure/espd/codelist/PeriodMeasureTypeCodes.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProfileID.xml</Path>
+        <Path>structure/espd/codelist/ProfileID.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ResponseDataType.xml</Path>
+        <Path>structure/espd/codelist/ResponseDataType.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/EconomicOperatorIdentifierType.xml</Path>
+        <Path>structure/espd/codelist/EconomicOperatorIdentifierType.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+        <Path>structure/espd/codelist/UNECERec20-11e.xml</Path>
         <Tag>espd-1.1</Tag>
     </Resource>
 
@@ -134,7 +134,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>structure/codelist/sources/CriteriaTaxonomy.xlsx</Path>
+        <Path>structure/espd/codelist/sources/CriteriaTaxonomy.xlsx</Path>
         <Title>Criteria taxonomy</Title>
         <Description>Official criteria taxonomy part of ESPD 1.0.2.</Description>
         <Property key="download">CriteriaTaxonomy.xlsx</Property>
@@ -142,7 +142,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>structure/codelist/sources/ESPD-CodeLists.xls</Path>
+        <Path>structure/espd/codelist/sources/ESPD-CodeLists.xls</Path>
         <Title>Code lists</Title>
         <Description>Official code lists part of ESPD 1.0.2.</Description>
         <Property key="download">ESPD-CodeLists.xls</Property>
@@ -168,7 +168,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>structure/codelist/CriteriaTaxonomy.xml</Path>
+        <Path>structure/espd/codelist/CriteriaTaxonomy.xml</Path>
         <Title>Criteria taxonomy for EHF ESPD 1.1 as XML</Title>
         <Description>Criteria taxonomy restructured as XML file including Norwegian translation organized by type and assigned UUIDs.</Description>
         <Property key="download">CriteriaTaxonomy.xml</Property>

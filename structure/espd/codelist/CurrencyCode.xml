@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>ISO 4217 Currency Codes</Title>
-    <Identifier>CurrencyCode</Identifier>
+    <Identifier>espd-CurrencyCode</Identifier>
     <Version>1.0.2</Version>
     <Agency>DG GROW (European Commission)</Agency>
 

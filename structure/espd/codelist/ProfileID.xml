@@ -3,7 +3,7 @@
 
     <Title>Profile identifiers</Title>
     <Description>Currently empty list of identifiers.</Description>
-    <Identifier>ProfileID</Identifier>
+    <Identifier>espd-ProfileID</Identifier>
     <Version>1.0</Version>
     <Agency>Difi</Agency>
 

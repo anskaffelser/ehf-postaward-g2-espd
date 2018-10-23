@@ -7,8 +7,8 @@
         Information about the party submitting the qualification. A placeholder for the data related to only one Economic Operator (EO) that tenders solely to a procurement project, to one of the EOs that tender as part of a group (e.g. a Consortium), or to one possible sub-contractor of the EO.
         Consortia grouping more than one EO need to draft and submit as many ESPDResponses as Economic Operators and sub-contractors participate in the tender.</Description>
 
-    <Property key="doc">structure/docs/economic-operator.adoc</Property>
-    
+    <Property key="doc">structure/espd/docs/economic-operator.adoc</Property>
+
     <Element cardinality="0..1">
         <Term>espd-cbc:SMEIndicator</Term>
         <Name>SME indicator</Name>
@@ -33,7 +33,7 @@
             <Term>espd-cbc:NaturalPersonRegistrationCountryCode</Term>
             <Name>Country code</Name>
             <Description>Country of registration of the natural person</Description>
-            <Reference type="CODE_LIST">CountryCodeIdentifier</Reference>
+            <Reference type="CODE_LIST">espd-CountryCodeIdentifier</Reference>
         </Element>
 
         <Element cardinality="0..1">
@@ -140,7 +140,7 @@
                                 <Term>cbc:IdentificationCode</Term>
                                 <Name>Representative natural person country code</Name>
                                 <Description>Country code of the natural person.</Description>
-                                <Reference type="CODE_LIST">CountryCodeIdentifier</Reference>
+                                <Reference type="CODE_LIST">espd-CountryCodeIdentifier</Reference>
 
                                 <Attribute>
                                     <Term>listID</Term>
@@ -192,7 +192,7 @@
 
             <Attribute>
                 <Term>schemeID</Term>
-                <Reference type="CODE_LIST">ICD</Reference>
+                <Reference type="CODE_LIST">espd-ICD</Reference>
                 <Value type="FIXED">NO:ORGNR</Value>
             </Attribute>
 
@@ -212,7 +212,7 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Description>The schemeID attribute specifies if it is a VAT number or another national number. The possible values are: VAT_Number and National_Number.</Description>
-                    <Reference type="CODE_LIST">EconomicOperatorIdentifierType</Reference>
+                    <Reference type="CODE_LIST">espd-EconomicOperatorIdentifierType</Reference>
 
                     <Value type="FIXED">National_Number</Value>
                 </Attribute>
@@ -269,7 +269,7 @@
                     <Term>cbc:IdentificationCode</Term>
                     <Name>Country code</Name>
                     <Description>A code that identifies the country.</Description>
-                    <Reference type="CODE_LIST">CountryCodeIdentifier</Reference>
+                    <Reference type="CODE_LIST">espd-CountryCodeIdentifier</Reference>
 
                     <Attribute>
                         <Term>listID</Term>

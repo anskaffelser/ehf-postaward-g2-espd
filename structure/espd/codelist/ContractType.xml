@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Contract Type</Title>
-    <Identifier>ContractType</Identifier>
+    <Identifier>espd-ContractType</Identifier>
     <Version>1.0</Version>
     <Agency>BII</Agency>
 
