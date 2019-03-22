@@ -14,13 +14,13 @@
             <Term>cbc:EndpointID</Term>
             <Name>Contracting body electronic address identifier</Name>
 
-            <Reference type="RULE">EHF-ESPD-R022</Reference>
+<!--            <Reference type="RULE">EHF-ESPD-R022</Reference>-->
 
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Identifier qualifier</Name>
                 <Reference type="CODE_LIST">espd-ICD</Reference>
-                <Value type="FIXED">NO:ORGNR</Value>
+                <Value type="EXAMPLE">NO:ORGNR</Value>
             </Attribute>
 
             <Value type="EXAMPLE">991825827</Value>
@@ -39,7 +39,7 @@
                     <Term>schemeID</Term>
                     <Name>Identifier qualifier</Name>
                     <Reference type="CODE_LIST">espd-ICD</Reference>
-                    <Value type="FIXED">NO:ORGNR</Value>
+                    <Value type="EXAMPLE">NO:ORGNR</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">991825827</Value>
@@ -98,7 +98,7 @@
                         <Value type="FIXED">1.0.2</Value>
                     </Attribute>
 
-                    <Value type="FIXED">NO</Value>
+                    <Value type="EXAMPLE">NO</Value>
                 </Element>
             </Element>
         </Element>

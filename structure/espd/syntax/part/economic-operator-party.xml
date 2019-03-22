@@ -188,12 +188,12 @@
             <Term>cbc:EndpointID</Term>
             <Name>Economic operator electronic address identifier</Name>
 
-            <Reference type="RULE">EHF-ESPD-R022</Reference>
+<!--            <Reference type="RULE">EHF-ESPD-R022</Reference>-->
 
             <Attribute>
                 <Term>schemeID</Term>
                 <Reference type="CODE_LIST">espd-ICD</Reference>
-                <Value type="FIXED">NO:ORGNR</Value>
+                <Value type="EXAMPLE">NO:ORGNR</Value>
             </Attribute>
 
             <Value type="EXAMPLE">987654325</Value>
@@ -207,14 +207,14 @@
                 <Term>cbc:ID</Term>
                 <Name>Economic operator identifier</Name>
 
-                <Reference type="RULE">EHF-ESPD-R022</Reference>
+<!--                <Reference type="RULE">EHF-ESPD-R022</Reference>-->
 
                 <Attribute>
                     <Term>schemeID</Term>
                     <Description>The schemeID attribute specifies if it is a VAT number or another national number. The possible values are: VAT_Number and National_Number.</Description>
                     <Reference type="CODE_LIST">espd-EconomicOperatorIdentifierType</Reference>
 
-                    <Value type="FIXED">National_Number</Value>
+                    <Value type="EXAMPLE">National_Number</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">987654321</Value>
@@ -291,7 +291,7 @@
                         <Value type="FIXED">1.0.2</Value>
                     </Attribute>
 
-                    <Value type="FIXED">NO</Value>
+                    <Value type="EXAMPLE">NO</Value>
                 </Element>
             </Element>
         </Element>
