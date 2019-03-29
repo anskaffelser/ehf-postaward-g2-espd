@@ -9,7 +9,9 @@ The two main groups of Criteria relevant for the ESPD are the ones required in t
 :leveloffset: +1
 
 include::core-criterion.adoc[]
+
 include::criterion-taxonomy.adoc[]
+
 include::structure.adoc[]
 
 :leveloffset: -1

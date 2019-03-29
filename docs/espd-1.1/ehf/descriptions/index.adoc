@@ -13,4 +13,6 @@ include::additional-docs.adoc[]
 
 include::lots.adoc[]
 
+include::selection.adoc[]
+
 :leveloffset: -1

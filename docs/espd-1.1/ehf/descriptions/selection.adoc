@@ -1,0 +1,179 @@
+= Selection criteria,
+
+The contracting authority can in the ESPD request indicate if the economic operator can provide a global indication for all selection criteria (alpha criterion, α:), or if the economic operator must answer the specified selection criteria.
+
+== Global indication for all selection criteria (part IV, α:)
+
+In the EPSD request, the contracting authority indicate that the economic operator only need to fill in information for the alpha criterion (α:, in Norwegian often referred to as "lille-a"), by using the criterion code `CRITERION.SELECTION.ALL_SATISFIED`. If this scenario is used, the details of the specific selection criteria *shall not* be sent in either the ESPD request or the response.
+
+
+[source,xml]
+.Example of use of the alpha-criterion in the ESPD request
+----
+<ccv:Criterion>
+     <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7e7db838-eeac-46d9-ab39-42927486f22d</cbc:ID>
+     <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ALL_SATISFIED</cbc:TypeCode>
+     <cbc:Name>All selection criteria will be satisfied</cbc:Name>
+     <cbc:Description>It satisfies all the required selection criteria indicated in the relevant notice or in the procurement documents referred to in the notice.</cbc:Description>
+     <ccv:RequirementGroup>
+        <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f3a6836d-2de2-4cd1-81ca-fb06178d05c5</cbc:ID>
+        <ccv:Requirement responseDataType="INDICATOR">
+           <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+           <cbc:Description>Your answer?</cbc:Description>
+        </ccv:Requirement>
+     </ccv:RequirementGroup>
+  </ccv:Criterion>
+----
+
+[source,xml]
+.Example of use of the alpha-criterion in the ESPD response
+----
+<ccv:Criterion>
+   <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7e7db838-eeac-46d9-ab39-42927486f22d</cbc:ID>
+   <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ALL_SATISFIED</cbc:TypeCode>
+   <cbc:Name>All selection criteria will be satisfied</cbc:Name>
+   <cbc:Description>It satisfies all the required selection criteria indicated in the relevant notice or in the procurement documents referred to in the notice.</cbc:Description>
+   <ccv:RequirementGroup>
+      <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f3a6836d-2de2-4cd1-81ca-fb06178d05c5</cbc:ID>
+      <ccv:Requirement responseDataType="INDICATOR">
+         <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+         <cbc:Description>Your answer?</cbc:Description>
+         <ccv:Response>
+            <ccv-cbc:Indicator>true</ccv-cbc:Indicator> <1>
+         </ccv:Response>
+      </ccv:Requirement>
+   </ccv:RequirementGroup>
+</ccv:Criterion>
+----
+<1> The economic operator verifies that all the selection criteria will be satisfied.
+
+
+== Use of different selection criteria, part IV, A to D
+
+If the different selection criteria are used (part IV, A to D), the economic operator *shall* answer each of the criteria as listed in the request, they cannot give a global indicator in this scenario.
+
+[source,xml]
+.Example of use of a specific selection criterion in the ESPD request
+----
+<ccv:Criterion>
+      <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">87b3fa26-3549-4f92-b8e0-3fd8f04bf5c7</cbc:ID>
+      <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</cbc:TypeCode>
+      <cbc:Name>Enrolment in a trade register</cbc:Name>
+      <cbc:Description>It is enrolled in trade registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.</cbc:Description>
+      <ccv:LegislationReference>
+         <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+         <cbc:Description>Directive 2014/24/EU</cbc:Description>
+         <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+         <ccv-cbc:Article>58(2)</ccv-cbc:Article>
+         <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+      </ccv:LegislationReference>
+      <ccv:RequirementGroup>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1768de86-a6c8-48e4-bd8e-de2f2f7424d0</cbc:ID>
+         <ccv:Requirement responseDataType="INDICATOR">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+            <cbc:Description>Your answer?</cbc:Description>
+         </ccv:Requirement>
+      </ccv:RequirementGroup>
+      <ccv:RequirementGroup>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+         <ccv:Requirement responseDataType="INDICATOR">
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+            <cbc:Description>Is this information available electronically?</cbc:Description>
+         </ccv:Requirement>
+         <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+            <ccv:Requirement responseDataType="EVIDENCE_URL">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+               <cbc:Description>URL</cbc:Description>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="CODE">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+               <cbc:Description>Code</cbc:Description>
+            </ccv:Requirement>
+            <ccv:Requirement responseDataType="DESCRIPTION">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5cbf74d9-a1e2-4233-921d-8b298842ee7d</cbc:ID>
+               <cbc:Description>Issuer</cbc:Description>
+            </ccv:Requirement>
+         </ccv:RequirementGroup>
+      </ccv:RequirementGroup>
+   </ccv:Criterion>
+----
+
+[source,xml]
+.Example of use of a specific selection criterion in the ESPD  response
+----
+<ccv:Criterion>
+       <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">87b3fa26-3549-4f92-b8e0-3fd8f04bf5c7</cbc:ID>
+       <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</cbc:TypeCode>
+       <cbc:Name>Enrolment in a trade register</cbc:Name>
+       <cbc:Description>It is enrolled in trade registers kept in the Member State of its
+        establishment as described in Annex XI of Directive 2014/24/EU; economic operators from
+        certain Member States may have to comply with other requirements set out in that
+        Annex.</cbc:Description>
+       <ccv:LegislationReference>
+           <ccv-cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26
+           February 2014 on public procurement and repealing Directive 2004/18/EC</ccv-cbc:Title>
+           <cbc:Description>Directive 2014/24/EU</cbc:Description>
+           <ccv-cbc:JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">EU_DIRECTIVE</ccv-cbc:JurisdictionLevelCode>
+           <ccv-cbc:Article>58(2)</ccv-cbc:Article>
+           <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
+       </ccv:LegislationReference>
+       <ccv:RequirementGroup>
+           <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1768de86-a6c8-48e4-bd8e-de2f2f7424d0</cbc:ID>
+           <ccv:Requirement responseDataType="INDICATOR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+               <cbc:Description>Your answer?</cbc:Description>
+               <ccv:Response> <1>
+                   <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+               </ccv:Response>
+           </ccv:Requirement>
+       </ccv:RequirementGroup>
+       <ccv:RequirementGroup>
+           <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9026e403-3eb6-4705-a9e9-e21a1efc867d</cbc:ID>
+           <ccv:Requirement responseDataType="INDICATOR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">9dae5670-cb75-4c97-901b-96ddac5a633a</cbc:ID>
+               <cbc:Description>Is this information available electronically?</cbc:Description>
+               <ccv:Response> <2>
+                   <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+               </ccv:Response>
+           </ccv:Requirement>
+           <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+               <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</cbc:ID>
+               <ccv:Requirement responseDataType="EVIDENCE_URL">
+                   <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</cbc:ID>
+                   <cbc:Description>URL</cbc:Description>
+                   <ccv:Response> <3>
+                       <cev:Evidence>
+                           <cev:EvidenceDocumentReference>
+                               <cbc:ID schemeAgencyID="EU-COM-GROW">a77cd875-3fc9-46eb-8792-b2ed8ad29638</cbc:ID>
+                               <cac:Attachment>
+                                   <cac:ExternalReference>
+                                       <cbc:URI>www.brreg.no</cbc:URI>
+                                   </cac:ExternalReference>
+                               </cac:Attachment>
+                           </cev:EvidenceDocumentReference>
+                       </cev:Evidence>
+                   </ccv:Response>
+               </ccv:Requirement>
+               <ccv:Requirement responseDataType="CODE">
+                   <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e2d863a0-60cb-4e58-8c14-4c1595af48b7</cbc:ID>
+                   <cbc:Description>Code</cbc:Description>
+                   <ccv:Response> <4>
+                       <ccv-cbc:Code>999888777</ccv-cbc:Code>
+                   </ccv:Response>
+               </ccv:Requirement>
+               <ccv:Requirement responseDataType="DESCRIPTION">
+                   <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5cbf74d9-a1e2-4233-921d-8b298842ee7d</cbc:ID>
+                   <cbc:Description>Issuer</cbc:Description>
+                   <ccv:Response>
+                       <cbc:Description>Brønnøysund</cbc:Description>
+                   </ccv:Response>
+               </ccv:Requirement>
+           </ccv:RequirementGroup>
+       </ccv:RequirementGroup>
+   </ccv:Criterion>
+----
+<1> The EO operator answers true to the criteria of enrolment in a business register
+<2> The EO operator answers true to the question if this information is available electronically.
+<3> The EO provide the URL to the registry
+<4> The EO states the registration code (Norwegian organizational number)

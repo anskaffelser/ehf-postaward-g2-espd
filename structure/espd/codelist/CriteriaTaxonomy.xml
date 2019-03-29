@@ -505,6 +505,24 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
    </Criterion>
+   
+   <!-- Support for alpha-criterion added -->
+   <Criterion id="7e7db838-eeac-46d9-ab39-42927486f22d" required="false">
+      <Type>CRITERION.SELECTION.ALL_SATISFIED</Type>
+      <Name code="crit_selection_all_satisfied_main">
+         <Source>All selection criteria will be satisfied</Source>
+         <Translation lang="nb">Oppfyller alle de angitte kvalifikasjonskravene</Translation>
+      </Name>
+      <Description code="crit_selection_all_satisfied_description">
+         <Source>It satisfies all the required selection criteria indicated in the relevant notice or in the procurement documents referred to in the notice.</Source>
+         <Translation lang="nb">Leverandøren oppfyller de angitte kvalifikasjonskravene</Translation>
+      </Description>
+      <!-- Need legislation info if required -->
+      <RequirementGroupId>f3a6836d-2de2-4cd1-81ca-fb06178d05c5</RequirementGroupId>
+   </Criterion>
+   <!-- End of alpha-criterion --> 
+   
+   
    <Criterion id="6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f" required="false">
       <Type>CRITERION.SELECTION.SUITABILITY.PROFESSIONAL_REGISTER_ENROLMENT</Type>
       <Name code="crit_selection_suitability_enrolment_professional_register_main">
@@ -1336,6 +1354,12 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementGroupId>f5276600-a2b6-4ff6-a90e-b31fe19dae41</RequirementGroupId>
       <Comment>RequirementGroup '41dd2e..' is replaced with 'f52766..'. This is done to align towards the ESPD Service. Identifier '41dd2e..' is also used for a different RequirementGroup.</Comment>
    </RequirementGroup>
+   
+   <!-- Requirementgroup for selection.all_satisfied -->
+   <RequirementGroup id="f3a6836d-2de2-4cd1-81ca-fb06178d05c5">
+      <RequirementId>15335c12-ad77-4728-b5ad-3c06a60d65a4</RequirementId>
+   </RequirementGroup>
+   
    <RequirementGroup id="f5276600-a2b6-4ff6-a90e-b31fe19dae41">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>ecf40999-7b64-4e10-b960-7f8ff8674cf6</RequirementId>
