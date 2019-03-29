@@ -122,10 +122,17 @@
             confidential information of this procedure
         </Name>
     </Code>
-
+    
     <Code>
-        <Id>CRITERION.EXCLUSION.NATIONAL.OTHER</Id>
-        <Name>Purely national exclusion grounds</Name>
+        <Id>CRITERION.EXCLUSION.NATIONAL.NO.ACCEPTED.FINE</Id>
+        <Name>Accepted fine for criminal behaviour</Name>
+        <Description>One of two mandatory national criteria for Norway, to be used instead of the generic NATIONAL.OTHER criterion</Description>
+    </Code>
+    
+    <Code>
+        <Id>CRITERION.EXCLUSION.NATIONAL.GRAVE.MISCONDUCT</Id>
+        <Name>Grave misconduct</Name>
+        <Description>One of two mandatory national criteria for Norway, to be used instead of the generic NATIONAL.OTHER criterion</Description>
     </Code>
 
     <Code>

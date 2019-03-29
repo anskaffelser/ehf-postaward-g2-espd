@@ -1777,6 +1777,81 @@
     </ccv:Criterion>
     
     <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+            >aef56865-3cdc-42a8-87ed-7e5e93088279</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2"
+            >CRITERION.EXCLUSION.NATIONAL.NO.ACCEPTED.FINE</cbc:TypeCode>
+        <cbc:Name>Accepted fine for criminal behaviour</cbc:Name>
+        <cbc:Description>Has the economic operator itself or any person who is a member of its
+            administrative, management or supervisory body or has powers of representation, decision or
+            control therein accepted a fine for the circumstances listed above, within the meaning of
+            Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (2)
+            a-f?</cbc:Description>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+                >30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
+                    schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+                    >73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
+                        schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                    <ccv:Response>
+                        <cbc:Description>Description about the national criteria</cbc:Description>
+                    </ccv:Response>
+                </ccv:Requirement>
+                
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>        
+        
+    </ccv:Criterion>
+    
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+            >588e9cbb-aaaf-48de-b5df-46254e5d2742</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2"
+            >CRITERION.EXCLUSION.NATIONAL.GRAVE.MISCONDUCT</cbc:TypeCode>
+        <cbc:Name>Grave misconduct</cbc:Name>
+        <cbc:Description>Has the economic operator itself or any person who is a member of its
+            administrative, management or supervisory body or has powers of representation, decision or
+            control therein commited significant breaches of his professonial integrety, within the
+            meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (3)
+            i?</cbc:Description>
+        
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+                >30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
+                    schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+                <ccv:Response>
+                    <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
+                </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
+                    >73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+                <ccv:Requirement responseDataType="DESCRIPTION">
+                    <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
+                        schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+                    <cbc:Description>Please describe them</cbc:Description>
+                </ccv:Requirement>
+            </ccv:RequirementGroup>
+        </ccv:RequirementGroup>
+        
+    </ccv:Criterion>
+    
+    <ccv:Criterion>
         <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7e7db838-eeac-46d9-ab39-42927486f22d</cbc:ID>
         <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ALL_SATISFIED</cbc:TypeCode>
         <cbc:Name>All selection criteria will be satisfied</cbc:Name>

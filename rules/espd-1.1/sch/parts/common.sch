@@ -180,12 +180,4 @@
                 flag="fatal">A time must be formatted hh:mm:ss.</assert>
     </rule>
 
-<!--  Rule removed to allow for foreign economic operators
-                
-                <rule context="espd-cac:EconomicOperatorParty/cac:Party/cac:PartyIdentification/cbc:ID | cbc:EndpointID">
-        <assert id="EHF-ESPD-R022"
-                test="matches(normalize-space(text()), '^[0-9]{9}$') and u:mod11(normalize-space(text()))"
-                flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed</assert>
-    </rule>-->
-
 </pattern>
