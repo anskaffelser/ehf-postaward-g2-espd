@@ -1,4 +1,4 @@
-= Selection criteria,
+= Selection criteria
 
 The contracting authority can in the ESPD request indicate if the economic operator can provide a global indication for all selection criteria (alpha criterion, α:), or if the economic operator must answer the specified selection criteria.
 
@@ -7,7 +7,7 @@ The contracting authority can in the ESPD request indicate if the economic opera
 In the EPSD request, the contracting authority indicate that the economic operator only need to fill in information for the alpha criterion (α:, in Norwegian often referred to as "lille-a"), by using the criterion code `CRITERION.SELECTION.ALL_SATISFIED`.
 
 ====
-IMPORTANT: If the alpha criterion is used, the details of the specific selection criteria *shall not* be sent in either the ESPD request or the response.
+IMPORTANT: If the alpha criterion is used, the details of the specific selection criteria *shall not* be sent in either the ESPD request or the response, and if the different selection criteria (part IV, A to D) is used, the alpha criterion cannot be used.
 ====
 
 [source,xml]
