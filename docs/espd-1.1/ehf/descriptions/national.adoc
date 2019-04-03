@@ -4,11 +4,11 @@
 In Norway there are two *mandatory* national exclusion grounds:
 
 CRITERION.EXCLUSION.NATIONAL.NO.ACCEPTED.FINE::
-. Purely national exclusion grounds related to criminal convictions or accepted fine ( Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (2) a-f ).
+. Purely national exclusion grounds related to criminal convictions or accepted fine ( Regulations Regarding Public Procurement https://lovdata.no/dokument/SF/forskrift/2016-08-12-974/KAPITTEL_3-13-2#%C2%A724-2[FOR-2016-08-12-974 § 24-2 (2) a-f ]).
 ** In Norwegian legislation "accepted fine" is an additional condition equal to "criminal conviction"
 
 CRITERION.EXCLUSION.NATIONAL.GRAVE.MISCONDUCT::
-. Purely national exclusion grounds related to grave professional misconduct (Regulations Regarding Public Procurement FOR-2016-08-12-974 §24-2 (3) i)
+. Purely national exclusion grounds related to grave professional misconduct (Regulations Regarding Public Procurement https://lovdata.no/dokument/SF/forskrift/2016-08-12-974/KAPITTEL_3-13-2#%C2%A724-2[FOR-2016-08-12-974 §24-2 (3) i])
 ** The grounds for refusal referred to in article 24-2 (3) i, of which it is stated that the supplier in general has committed serious errors which raise doubts about his professional integrity. The rejection criteria in the ESPD applies only to grave misconduct in the profession, while the Norwegian grounds for rejection also include other grave misconduct that may cause doubts regarding the professional integrity of the supplier
 
 IMPORTANT: The general national criterion `CRITERION.EXCLUSION.NATIONAL.OTHER` is not on use in EHF ESPD

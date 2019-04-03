@@ -1,0 +1,47 @@
+= Parties
+
+====
+NOTE: For this specification we allow for foreign parties in the EHF, as its use is required by law and currently used in a 3-corner model, and at the time of writing there exists no corresponding PEPPOL BIS
+====
+
+
+== Contracting body
+
+.Definition
+****
+The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the {link-anskaffelse} and {link-forsyning}.
+****
+
+The contracting body must be identified, hence information about the party is required, such as party name, identification, endpoint id, and country.
+
+The ESPDRequest uses the aggregate element `cac:ContractingParty` to represent information on the contracting body, but uses only a reduced subset of its element. The XSD Schema however imports the entire aggregate element, but only the elements shown in the example below, is expected in the ESPD Request
+
+
+.Example of contracting body
+[source, xml, indent=0]
+----
+include::../shared/files/snippet1.xml[tags=ca]
+----
+
+
+== Economic Operator
+
+.Definition
+****
+*Economic operator* means any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market
+****
+
+
+The ESPDResponse was explicitly designed to hold data about one single Economic Operator.
+Thus, the ESPDResponse Exchange Data Model associates a class `EconomicOperatorParty` as
+a placeholder for the data related to only one Economic Operator (EO) that
+tenders solely to a procurement project, to one of the EOs that tender as part of a group (e.g. a Consortium), or to one possible sub-contractor of the EO.
+
+Consortia grouping more than one EO need to draft and submit as many ESPDResponses as Economic Operators and sub-contractors participate in the tender.
+
+
+.Example of economic operator
+[source, xml, indent=0]
+----
+include::../shared/files/snippet-response.xml[tags=eo]
+----
