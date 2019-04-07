@@ -31,9 +31,10 @@
         <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
     </function>
 
-<!--    <include href="parts/empty-elements.sch"/>-->
+    <include href="parts/empty-elements.sch"/>
     <include href="parts/common.sch"/>
     <include href="../../../target/generated/response-basic.sch"/>
     <include href="../../../target/taxonomy/CriteriaTaxonomy.sch"/>
+    <include href="../../../target/taxonomy/CriteriaTaxonomy-response.sch"/>
 
 </schema>

@@ -298,7 +298,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
       </Name>
       <Description code="crit_eu_text_arrangement_creditors">
          <Source>Is the economic operator in arrangement with creditors? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</Source>
-         <Translation lang="nb">Er leverandøren i en situasjon hvor han har fått tvungen gjeldsordning?  Angi hvorfor man under nevnte omstendigheter likevel er i stand til å utføre kontrakten, tatt i betraktning gjeldende nasjonale bestemmelser og tiltak vedrørende fortsettelse av forretningsaktivitetene? Det er ikke nødvendig å angi disse opplysningene hvis avvisning av leverandører, som befinner seg i en slik situasjon, er gjort obligatorisk i henhold til gjeldende nasjonal rett uten mulighet for unntak, når leverandør likevel er i stand til å utføre kontrakten.</Translation>
+         <Translation lang="nb">Er leverandøren i en situasjon hvor han har fått tvungen gjeldsordning? Angi hvorfor man under nevnte omstendigheter likevel er i stand til å utføre kontrakten, tatt i betraktning gjeldende nasjonale bestemmelser og tiltak vedrørende fortsettelse av forretningsaktivitetene? Det er ikke nødvendig å angi disse opplysningene hvis avvisning av leverandører, som befinner seg i en slik situasjon, er gjort obligatorisk i henhold til gjeldende nasjonal rett uten mulighet for unntak, når leverandør likevel er i stand til å utføre kontrakten.</Translation>
       </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
@@ -340,7 +340,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
          <Translation lang="nb">Er leverandøren i en situasjon hvor han har sine aktiva forvaltet av en konkursforvalter eller av retten?</Translation>
       </Name>
       <Description code="crit_eu_text_liquidator">
-         <Source>Are the assets of the economic operator being administered by a liquidator or by the court?  This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</Source>
+         <Source>Are the assets of the economic operator being administered by a liquidator or by the court? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</Source>
          <Translation lang="nb">Angi hvorfor man under nevnte omstendigheter likevel er i stand til å utføre kontrakten, tatt i betraktning gjeldende nasjonale bestemmelser og tiltak vedrørende fortsettelse av forretningsaktivitetene? Det er ikke nødvendig å angi disse opplysningene hvis avvisning av leverandører, som befinner seg i en slik situasjon, er gjort obligatorisk i henhold til gjeldende nasjonal rett uten mulighet for unntak, når leverandør likevel er i stand til å utføre kontrakten.</Translation>
       </Description>
       <LegislationTitle>
@@ -361,7 +361,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
          <Source>Business activities are suspended</Source>
       </Name>
       <Description code="crit_eu_title_suspended_business">
-         <Source>Are the business activities of the economic operator suspended?  This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</Source>
+         <Source>Are the business activities of the economic operator suspended? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.</Source>
          <Translation lang="nb">Har leverandørens forretningsførsel har blitt stanset?</Translation>
       </Description>
       <LegislationTitle>
@@ -631,10 +631,10 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <Article>58(3)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -739,7 +739,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
          <Translation lang="nb">Finansielle nøkkeltall</Translation>
       </Name>
       <Description code="crit_selection_economic_financial_ratio_description">
-         <Source>Concerning the financial ratios  specified in the relevant notice, the procurement documents or the ESPD, the economic operator declares that the actual values for the required ratios are as follows:</Source>
+         <Source>Concerning the financial ratios specified in the relevant notice, the procurement documents or the ESPD, the economic operator declares that the actual values for the required ratios are as follows:</Source>
          <Translation lang="nb">Når det gjelder finansielle nøkkeltall som er angitt i kunngjøringen eller i anskaffelsesdokumentene erklærer leverandøren at den eller de faktiske verdien(e) for det eller de nøkkeltall(ene) som det anmodes om er som følger:</Translation>
       </Description>
       <LegislationTitle>
@@ -800,7 +800,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Name>
       <Description code="crit_selection_technical_work_contracts_performance_works_description">
          <Source>For public works contracts only: During the reference period, the economic operator has performed the following works of the specified type. Contracting authorities may require up to five years and allow experience dating from more than five years.</Source>
-         <Translation lang="nb">Bare for offentlige bygg- og anleggsarbeider: I referanseperioden  har leverandøren utført følgende arbeider av den etterspurte type. Oppdragsgiver kan kreve opp til fem års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste fem år.</Translation>
+         <Translation lang="nb">Bare for offentlige bygg- og anleggsarbeider: I referanseperioden har leverandøren utført følgende arbeider av den etterspurte type. Oppdragsgiver kan kreve opp til fem års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste fem år.</Translation>
       </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
@@ -827,7 +827,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Name>
       <Description code="crit_selection_technical_supply_contracts_performance_deliveries_description">
          <Source>For public supply contracts only: During the reference period, the economic operator has delivered the following principal deliveries of the type specified. Contracting authorities may require up to three years and allow experience dating from more than three years.</Source>
-         <Translation lang="nb">Bare for offentlige vareleveranser: I referanseperioden  har leverandøren utført følgende viktige vareleveranser av den etterspurte type, eller følgende viktige tjenester av den etterspurte type. Oppdragsgiver kan kreve opp til tre års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste tre år.</Translation>
+         <Translation lang="nb">Bare for offentlige vareleveranser: I referanseperioden har leverandøren utført følgende viktige vareleveranser av den etterspurte type, eller følgende viktige tjenester av den etterspurte type. Oppdragsgiver kan kreve opp til tre års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste tre år.</Translation>
       </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
@@ -854,7 +854,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Name>
       <Description code="crit_selection_technical_service_contracts_performance_services_description">
          <Source>For public service contracts only: During the reference period, the economic operator has provided the following main services of the type specified. Contracting authorities may require up to three years and allow experience dating from more than three years.</Source>
-         <Translation lang="nb">Bare for tjenester: I referanseperioden  har leverandøren utført følgende viktige vareleveranser av den etterspurte type, eller følgende viktige tjenester av den etterspurte type. Oppdragsgiver kan kreve opp til tre års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste tre år.</Translation>
+         <Translation lang="nb">Bare for tjenester: I referanseperioden har leverandøren utført følgende viktige vareleveranser av den etterspurte type, eller følgende viktige tjenester av den etterspurte type. Oppdragsgiver kan kreve opp til tre års erfaring og tillate at det tas hensyn til erfaring fra tiden før de seneste tre år.</Translation>
       </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
@@ -988,8 +988,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
          <Translation lang="nb">Tillatelse til kontroll</Translation>
       </Name>
       <Description code="crit_selection_technical_allowance_of_checks_description">
-         <Source>For complex products or services to be supplied or, exceptionally, for products or services which are required for a special purpose: The economic operator will allow checks  to be conducted on the production capacities or the technical capacity of the economic operator and, where necessary, on the means of study and research which are available to it and on the quality control measures? The check is to be performed by the contracting authority or, in case the latter consents to this, on its behalf by a competent official body of the country in which the supplier or service provider is established.</Source>
-         <Translation lang="nb">For varer eller tjenester som er kompliserte,  eller som unntaksvis skal benyttes til et spesielt formål: Vil leverandøren tillate, at det foretas kontroll av leverandørens produksjonskapasitet eller tekniske kapasitet og, hvor det er nødvendig, av de undersøkelses- og forskningsfasiliteter som leverandøren råder over, og av kvalitetskontrolltiltak? Kontrollen skal foretas av oppdragsgiveren eller oppdragsgiver kan overlate det til et kompetent offentlige organ i den staten leverandøren er etablert.</Translation>
+         <Source>For complex products or services to be supplied or, exceptionally, for products or services which are required for a special purpose: The economic operator will allow checks to be conducted on the production capacities or the technical capacity of the economic operator and, where necessary, on the means of study and research which are available to it and on the quality control measures? The check is to be performed by the contracting authority or, in case the latter consents to this, on its behalf by a competent official body of the country in which the supplier or service provider is established.</Source>
+         <Translation lang="nb">For varer eller tjenester som er kompliserte, eller som unntaksvis skal benyttes til et spesielt formål: Vil leverandøren tillate, at det foretas kontroll av leverandørens produksjonskapasitet eller tekniske kapasitet og, hvor det er nødvendig, av de undersøkelses- og forskningsfasiliteter som leverandøren råder over, og av kvalitetskontrolltiltak? Kontrollen skal foretas av oppdragsgiveren eller oppdragsgiver kan overlate det til et kompetent offentlige organ i den staten leverandøren er etablert.</Translation>
       </Description>
       <LegislationTitle>
          <Source>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Source>
@@ -1050,7 +1050,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</Type>
       <Name code="crit_selection_technical_number_managerial_staff_main">
          <Source>Number of managerial staff</Source>
-         <Translation lang="nb">Antall  medarbeidere i ledelsen</Translation>
+         <Translation lang="nb">Antall medarbeidere i ledelsen</Translation>
       </Name>
       <Description code="crit_selection_technical_number_managerial_staff_description">
          <Source>The economic operator’s number of managerial staff for the last three years were as follows:</Source>
@@ -1125,7 +1125,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
          <Translation lang="nb">Andel av kontrakt til underleverandør</Translation>
       </Name>
       <Description code="crit_selection_technical_subcontracting_proportion_description">
-         <Source>The economic operator intends possibly to subcontract  the following proportion (i.e. percentage) of the contract. Please note that if the economic operator has decided to subcontract a part of the contract and relies on the subcontractor’s capacities to perform that part, then please fill in a separate ESPD for such subcontractors, see Part II, Section C above.</Source>
+         <Source>The economic operator intends possibly to subcontract the following proportion (i.e. percentage) of the contract. Please note that if the economic operator has decided to subcontract a part of the contract and relies on the subcontractor’s capacities to perform that part, then please fill in a separate ESPD for such subcontractors, see Part II, Section C above.</Source>
          <Translation lang="nb">Leverandør vurderer å sette bort følgende del (i prosent) av kontrakten til underleverandører. Legg merke til at hvis leverandøren har besluttet å sette bort en del av kontrakten til underleverandører og støtter seg på underleverandørenes kapasitet til å utføre denne del, utfylles et særskilt ESPD for slike underleverandører, se del II, avsnitt C, ovenfor.</Translation>
       </Description>
       <LegislationTitle>
@@ -1293,8 +1293,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Name>
       <Description code="createeo_eo_rely_other_entities">
          <Source>Does the economic operator rely on the capacities of other entities in order to meet the selection criteria set out under Part IV and the criteria and rules (if any) set out under Part V below?</Source>
-         <Translation lang="nb">Støtter leverandør seg på andre virksomheters kapasitet for å oppfylle kvalifikasjonskravene  i del IV og eventuelle kriterier og regler fastsatt i del V nedenfor?
-createeo_first_name=Fornavn</Translation>
+         <Translation lang="nb">Støtter leverandør seg på andre virksomheters kapasitet for å oppfylle kvalifikasjonskravene i del IV og eventuelle kriterier og regler fastsatt i del V nedenfor?</Translation>
       </Description>
       <RequirementGroupId>e688f7d6-dcef-4726-bc61-052e63ead60f</RequirementGroupId>
    </Criterion>
@@ -1315,8 +1314,7 @@ createeo_first_name=Fornavn</Translation>
       <Name code="createcafinish_title_eo_declares_that">
          <Source>It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way: In case certain certificates or other forms of documentary evidence are required, please indicate for each whether the economic operator has the required documents:</Source>
          <Translation lang="nb">Denne oppfyller de objektive og ikke-diskriminerende kriterier eller regler som skal anvendes for å velge ut antallet av leverandører på følgende måte: 
-Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis for hver enkelt om leverandøren er i besittelse av dokumentene som etterspørres: 
-</Translation>
+Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis for hver enkelt om leverandøren er i besittelse av dokumentene som etterspørres:</Translation>
       </Name>
       <Description code="createcafinish_text_eo_declares_that">
          <Source>If some of these certificates or forms of documentary evidence are available electronically, please indicate for each:</Source>
@@ -1414,7 +1412,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="815422d6-f8a1-418a-8bf0-3524f7c8f721">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>ecf40999-7b64-4e10-b960-7f8ff8674cf6</RequirementId>
-      <RequirementId>9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</RequirementId>
+      <RequirementId optional="true">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</RequirementId>
    </RequirementGroup>
    <RequirementGroup id="fc57e473-d63e-4a04-b589-dcf81cab8052">
       <RequirementId>70f8697b-8953-411a-a489-4ff62e5250d2</RequirementId>

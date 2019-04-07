@@ -12,6 +12,12 @@ xslt \
 
 xslt \
   -s:/src/structure/espd/codelist/CriteriaTaxonomy.xml \
+  -xsl:/src/tools/xslt/CriteriaTaxonomy-schematron-response.xslt \
+  -o:/target/taxonomy/CriteriaTaxonomy-response.sch \
+  pattern_only=true
+
+xslt \
+  -s:/src/structure/espd/codelist/CriteriaTaxonomy.xml \
   -xsl:/src/tools/xslt/CriteriaTaxonomy-codelist-optional.xslt \
   -o:/target/taxonomy/CriteriaTaxonomy-Optional.xml
 
