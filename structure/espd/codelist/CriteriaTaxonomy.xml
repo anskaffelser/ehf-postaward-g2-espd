@@ -164,6 +164,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
       <RequirementGroupId>098fd3cc-466e-4233-af1a-affe09471bce</RequirementGroupId>
       <RequirementGroupId>7458d42a-e581-4640-9283-34ceb3ad4345</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="7d85e333-bbab-49c0-be8d-c36d71a72f5e" required="true">
       <Type>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_SOCIAL_SECURITY</Type>
       <Name code="crit_eu_title_payment_social_security">
@@ -186,6 +187,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
       <RequirementGroupId>098fd3cc-466e-4233-af1a-affe09471bce</RequirementGroupId>
       <RequirementGroupId>7458d42a-e581-4640-9283-34ceb3ad4345</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="a80ddb62-d25b-4e4e-ae22-3968460dc0a9" required="true">
       <Type>CRITERION.EXCLUSION.SOCIAL.ENVIRONMENTAL_LAW</Type>
       <Name code="crit_eu_title_breaching_obligations_environmental">
@@ -1142,6 +1144,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
       <RequirementGroupId>575f7550-8a2d-4bad-b9d8-be07ab570076</RequirementGroupId>
    </Criterion>
+   
+   
    <Criterion id="bdf0601d-2480-4250-b870-658d0ee95be6" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.NO_AUTHENTICATED_ARTEFACTS</Type>
       <Name code="crit_selection_technical_supply_contracts_without_ca_main">
@@ -1164,6 +1168,8 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>cb73544d-e8bb-4cc6-819b-b8e04f1e240e</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
    </Criterion>
+   
+   
    <Criterion id="7662b7a9-bcb8-4763-a0a7-7505d8e8470d" required="false">
       <Type>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.ARTEFACTS.AUTHENTICATED_ARTEFACTS</Type>
       <Name code="crit_selection_technical_supply_contracts_with_ca_main">
@@ -1292,6 +1298,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Description>
       <RequirementGroupId>d939f2c6-ba25-4dc4-889c-11d1853add19</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="0d62c6ed-f074-4fcf-8e9f-f691351d52ad" required="false">
       <Type>CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES</Type>
       <Name code="createeo_info_reliance">
@@ -1304,6 +1311,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       </Description>
       <RequirementGroupId>e688f7d6-dcef-4726-bc61-052e63ead60f</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="72c0c4b1-ca50-4667-9487-461f3eed4ed7" required="false">
       <Type>CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES</Type>
       <Name code="createeo_information_subcontractors">
@@ -1381,6 +1389,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementId optional="true">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</RequirementId>
       <RequirementGroupId>5f9f09f7-f701-432c-9fdc-c22c124a74c9</RequirementGroupId>
    </RequirementGroup>
+   
    <RequirementGroup id="5f9f09f7-f701-432c-9fdc-c22c124a74c9">
       <RequirementId>20c5361b-7599-4ee6-b030-7f8323174d1e</RequirementId>
       <RequirementGroupId>74e6c7b4-757b-4b40-ada6-fad6a997c310</RequirementGroupId>
@@ -1396,8 +1405,8 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="41dd2e9b-1bfd-44c7-93ee-56bd74a4334b">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>f4313bb6-21b6-499e-bdff-debe10e11d2c</RequirementId>
-      <RequirementId>1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</RequirementId>
-      <RequirementId>c3ccfa31-0c5e-4e3a-a3fd-db9fb83d78d4</RequirementId>
+      <RequirementId optional="true">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</RequirementId>
+      <RequirementId optional="true">c3ccfa31-0c5e-4e3a-a3fd-db9fb83d78d4</RequirementId>
       <Comment>Requirement 'c3ccfa..' is not part of the official 1.0.2, however it is added to align towards the ESPD Service and the Norwegian schema.</Comment>
    </RequirementGroup>
    <RequirementGroup id="098fd3cc-466e-4233-af1a-affe09471bce">
@@ -1408,7 +1417,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>6c87d3d4-e8eb-4253-b385-6373020ab886</RequirementId>
       <RequirementId>9052cc59-cfe5-41c6-a314-02a7f378ffe8</RequirementId>
-      <RequirementGroupId>7c2aec9f-4876-4c33-89e6-2ab6d6cf5d02</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">7c2aec9f-4876-4c33-89e6-2ab6d6cf5d02</RequirementGroupId>
       <RequirementGroupId>c882afa4-6971-4b00-8970-0c283eb122cc</RequirementGroupId>
       <RequirementGroupId>fc57e473-d63e-4a04-b589-dcf81cab8052</RequirementGroupId>
    </RequirementGroup>
@@ -1588,17 +1597,18 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="dc4acf0c-c761-40d0-b031-4ee1f224be5c">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>30064ad3-fc11-4579-8528-fdd0b9a5ba75</RequirementId>
-      <RequirementId>b3403349-cbc0-4d84-879e-fc0f2d90ecbd</RequirementId>
+      <RequirementId optional="true">b3403349-cbc0-4d84-879e-fc0f2d90ecbd</RequirementId>
       <RequirementId>792ff522-6f3f-4a62-ab6e-a8b272bc290e</RequirementId>
       <RequirementGroupId>92e44d3b-af8e-4a29-91a8-24d27aa27fee</RequirementGroupId>
    </RequirementGroup>
    <RequirementGroup id="92e44d3b-af8e-4a29-91a8-24d27aa27fee">
       <RequirementId>d9996ef5-49f9-4cf8-a2f5-31c9f4efd894</RequirementId>
    </RequirementGroup>
+   
    <RequirementGroup id="59e6f3ef-15cd-4e21-82ac-ea497ccd44e2">
       <ProsessingInstruction>GROUP_FULFILLED.ON_FALSE</ProsessingInstruction>
       <RequirementId>0e71abd3-198e-49c5-8128-5708617bb191</RequirementId>
-      <RequirementId>caa72cea-5443-49fb-84ba-ab6c64427f77</RequirementId>
+      <RequirementId optional="true">caa72cea-5443-49fb-84ba-ab6c64427f77</RequirementId>
    </RequirementGroup>
    <RequirementGroup id="d939f2c6-ba25-4dc4-889c-11d1853add19">
       <RequirementId>7f18c64e-ae09-4646-9400-f3666d50af51</RequirementId>
@@ -1608,14 +1618,14 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>907fd62b-02f1-452c-81a8-785bedb0c536</RequirementId>
       <RequirementId>7c267f95-a3a7-49ef-abd9-e121dcd641a9</RequirementId>
-      <RequirementId>96f38793-4469-4153-aba6-c613282cdbdc</RequirementId>
+      <RequirementId optional="true">96f38793-4469-4153-aba6-c613282cdbdc</RequirementId>
    </RequirementGroup>
    <RequirementGroup id="e688f7d6-dcef-4726-bc61-052e63ead60f">
       <RequirementId>7f18c64e-ae09-4646-9400-f3666d50af51</RequirementId>
    </RequirementGroup>
    <RequirementGroup id="d5fe5a71-7fd3-4910-b6f4-5cd2a4d23524">
       <RequirementId>7f18c64e-ae09-4646-9400-f3666d50af51</RequirementId>
-      <RequirementGroupId>b638edf6-4f00-4e24-92c4-cf96846f2c17</RequirementGroupId>
+      <RequirementGroupId optionalFields="true">b638edf6-4f00-4e24-92c4-cf96846f2c17</RequirementGroupId>
    </RequirementGroup>
    <RequirementGroup id="b638edf6-4f00-4e24-92c4-cf96846f2c17">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
