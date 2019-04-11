@@ -635,11 +635,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(3)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId optionalFields="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId repeatable="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -685,11 +681,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(3)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
-      <RequirementGroupId>c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
+      <RequirementGroupId repeatable="true">c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -815,11 +807,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId repeatable="true">96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -842,11 +830,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId repeatable="true">96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -869,9 +853,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
-      <RequirementGroupId>96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
+      <RequirementGroupId repeatable="true">96f00020-0a25-402e-b850-2378e83b5695</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -1069,9 +1051,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
+      <RequirementGroupId repeatable="true">96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
@@ -1094,9 +1074,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <JurisdictionLevel>EU_DIRECTIVE</JurisdictionLevel>
       <Article>58(4)</Article>
       <URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
-      <RequirementGroupId>96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
+      <RequirementGroupId repeatable="true">96defecc-7d32-4957-82e9-aad5f3c5b736</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
       <Comment>Structure of RequirementGroups and Requirements are completely rewritten for the ESPD Service and it not in line with the official 1.0.2. We've kept the changes done in the ESPD Service to allow receivers of EHF ESPD to use the ESPD service when evaluating EHF ESPD Response.</Comment>
    </Criterion>
