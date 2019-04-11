@@ -572,6 +572,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>1768de86-a6c8-48e4-bd8e-de2f2f7424d0</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="9eeb6d5c-0eb8-48e8-a4c5-5087a7c095a4" required="false">
       <Type>CRITERION.SELECTION.SUITABILITY.AUTHORISATION</Type>
       <Name code="crit_selection_suitability_service_contracts_auth_main">
@@ -594,6 +595,7 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>a109e144-f65e-469d-bcda-220f1af34b6c</RequirementGroupId>
       <RequirementGroupId>9026e403-3eb6-4705-a9e9-e21a1efc867d</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="73f10e36-ed7a-412e-995c-aa76463e3776" required="false">
       <Type>CRITERION.SELECTION.SUITABILITY.MEMBERSHIP</Type>
       <Name code="crit_selection_suitability_service_contracts_membership_main">
@@ -1496,8 +1498,8 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    <RequirementGroup id="0a166f0a-0c5f-42b0-81e9-0fc9fa598a48">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
       <RequirementId>03bb1954-13ae-47d8-8ef8-b7fe0f22d700</RequirementId>
-      <RequirementId>e2d863a0-60cb-4e58-8c14-4c1595af48b7</RequirementId>
-      <RequirementId>5cbf74d9-a1e2-4233-921d-8b298842ee7d</RequirementId>
+      <RequirementId optional="true">e2d863a0-60cb-4e58-8c14-4c1595af48b7</RequirementId>
+      <RequirementId optional="true">5cbf74d9-a1e2-4233-921d-8b298842ee7d</RequirementId>
    </RequirementGroup>
    <RequirementGroup id="a109e144-f65e-469d-bcda-220f1af34b6c">
       <RequirementId>15335c12-ad77-4728-b5ad-3c06a60d65a4</RequirementId>
