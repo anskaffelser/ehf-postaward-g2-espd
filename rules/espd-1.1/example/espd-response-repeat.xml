@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+Errors:
+EHF-ESPD-CT-RG0103
+EHF-ESPD-CT-RG0121
+EHF-ESPD-CT-C-0222
 
 Warnings:
 EHF-ESPD-CTR-010701
 EHF-ESPD-CTR-012001
 EHF-ESPD-CTR-011901
 EHF-ESPD-CTR-071101
-EHF-ESPD-CTR-491101
-EHF-ESPD-CTR-491201
 EHF-ESPD-CTR-570501
 EHF-ESPD-CTR-590601
 EHF-ESPD-CTR-610401
@@ -251,7 +253,9 @@ EHF-ESPD-CTR-620901
             </ccv:Response>
          </ccv:Requirement>
          
-         <!-- Repeatable test with false indicator -->
+         <!-- Repeatable test -->
+         
+   
 
          <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f5276600-a2b6-4ff6-a90e-b31fe19dae41</cbc:ID>
@@ -293,6 +297,35 @@ EHF-ESPD-CTR-620901
             </ccv:RequirementGroup>
          </ccv:RequirementGroup>
          
+         <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
+               <cbc:Description>Is this information available electronically?</cbc:Description>
+               <ccv:Response>
+                  <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
+               </ccv:Response>
+            </ccv:Requirement>
+            <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
+               <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
+               <ccv:Requirement responseDataType="EVIDENCE_URL">
+                  <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
+                  <cbc:Description>URL</cbc:Description>
+                  
+               </ccv:Requirement>
+               <ccv:Requirement responseDataType="CODE">
+                  <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
+                  <cbc:Description>Code</cbc:Description>
+                  
+               </ccv:Requirement>
+               <ccv:Requirement responseDataType="DESCRIPTION">
+                  <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c3ccfa31-0c5e-4e3a-a3fd-db9fb83d78d4</cbc:ID>
+                  <cbc:Description>Issuer</cbc:Description>
+                  
+               </ccv:Requirement>
+            </ccv:RequirementGroup>
+         </ccv:RequirementGroup>
+         
          <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
             <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f5276600-a2b6-4ff6-a90e-b31fe19dae41</cbc:ID>
             <ccv:Requirement responseDataType="DATE">
@@ -334,34 +367,8 @@ EHF-ESPD-CTR-620901
          </ccv:RequirementGroup>
          
       </ccv:RequirementGroup>
-      <ccv:RequirementGroup>
-         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
-         <ccv:Requirement responseDataType="INDICATOR">
-            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c1347b74-1872-4060-a6db-f4044edcd7c4</cbc:ID>
-            <cbc:Description>Is this information available electronically?</cbc:Description>
-            <ccv:Response>
-               <ccv-cbc:Indicator>false</ccv-cbc:Indicator>
-            </ccv:Response>
-         </ccv:Requirement>
-         <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
-            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</cbc:ID>
-            <ccv:Requirement responseDataType="EVIDENCE_URL">
-               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">f4313bb6-21b6-499e-bdff-debe10e11d2c</cbc:ID>
-               <cbc:Description>URL</cbc:Description>
-               
-            </ccv:Requirement>
-            <ccv:Requirement responseDataType="CODE">
-               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</cbc:ID>
-               <cbc:Description>Code</cbc:Description>
-               
-            </ccv:Requirement>
-            <ccv:Requirement responseDataType="DESCRIPTION">
-               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">c3ccfa31-0c5e-4e3a-a3fd-db9fb83d78d4</cbc:ID>
-               <cbc:Description>Issuer</cbc:Description>
-               
-            </ccv:Requirement>
-         </ccv:RequirementGroup>
-      </ccv:RequirementGroup>
+      
+
    </ccv:Criterion>
    <ccv:Criterion>
       <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">297d2323-3ede-424e-94bc-a91561e6f320</cbc:ID>
@@ -4394,7 +4401,12 @@ EHF-ESPD-CTR-620901
    <cac:AdditionalDocumentReference>
       <cbc:ID schemeID="COM-GROW-TEMPORARY-ID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">2019/S 123-983324</cbc:ID>
       <cbc:DocumentTypeCode listID="ReferencesTypeCodes" listAgencyID="EU-COM-GROW" listVersionID="1.0">TED_CN</cbc:DocumentTypeCode>
- 
+      <cac:Attachment>
+         <cac:ExternalReference>
+            <cbc:FileName>Tester tittel</cbc:FileName>
+            <cbc:Description>-</cbc:Description>
+         </cac:ExternalReference>
+      </cac:Attachment>
    </cac:AdditionalDocumentReference>
    <cac:AdditionalDocumentReference>
       <cbc:ID schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">2018-213123</cbc:ID>
