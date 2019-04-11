@@ -74,6 +74,15 @@
                 test="cbc:Quantity[@unitCode and @unitCode != 'YEAR']"
                 flag="fatal">Quantity element MUST be provided as response when specified.</assert>
     </rule>
+        
+   
+        <rule context="ccv:Criterion[@ID = '7e7db838-eeac-46d9-ab39-42927486f22d']">
+                <assert id="EHF-ESPD-R300"
+                        test="count(starts-with(ccv:Criterion/Type['CRITERION.SELECTION'])=1"
+                        flag ="falal">An ESPD document that contains the alpha-criterion, cannot include any other selection criteria.
+                </assert>
+           
+   </rule>
 
     <!-- Additional Document Reference -->
 
