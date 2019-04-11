@@ -185,23 +185,25 @@
                 </xsl:apply-templates>
             </xsl:for-each>
 
-            <xsl:for-each select="ct:RequirementId">
-                <xsl:apply-templates select=".">
-                    <xsl:with-param name="path" select="concat($path, u:getpineg($pi))"/>
-                    <xsl:with-param name="position" select="position()"/>
-                    <xsl:with-param name="optional" select="$optional or @optional = 'true'"/>
-                    <xsl:with-param name="expected" select="false()"/>
-                </xsl:apply-templates>
-            </xsl:for-each>
+            <xsl:if test="$expected">
+                <xsl:for-each select="ct:RequirementId">
+                    <xsl:apply-templates select=".">
+                        <xsl:with-param name="path" select="concat($path, u:getpineg($pi))"/>
+                        <xsl:with-param name="position" select="position()"/>
+                        <xsl:with-param name="optional" select="$optional or @optional = 'true'"/>
+                        <xsl:with-param name="expected" select="false()"/>
+                    </xsl:apply-templates>
+                </xsl:for-each>
 
-            <xsl:for-each select="ct:RequirementGroupId">
-                <xsl:apply-templates select=".">
-                    <xsl:with-param name="path" select="concat($path, u:getpineg($pi))"/>
-                    <xsl:with-param name="position" select="position()"/>
-                    <xsl:with-param name="optional" select="$optional or @optionalFields = 'true'"/>
-                    <xsl:with-param name="expected" select="false()"/>
-                </xsl:apply-templates>
-            </xsl:for-each>
+                <xsl:for-each select="ct:RequirementGroupId">
+                    <xsl:apply-templates select=".">
+                        <xsl:with-param name="path" select="concat($path, u:getpineg($pi))"/>
+                        <xsl:with-param name="position" select="position()"/>
+                        <xsl:with-param name="optional" select="$optional or @optionalFields = 'true'"/>
+                        <xsl:with-param name="expected" select="false()"/>
+                    </xsl:apply-templates>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:if>
 
         <xsl:if test="not($pi)">

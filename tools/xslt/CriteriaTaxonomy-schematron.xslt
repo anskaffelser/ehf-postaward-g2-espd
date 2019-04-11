@@ -65,25 +65,25 @@
                 <xsl:call-template name="Criterion"/>
             </xsl:for-each>
 
+            <xsl:for-each select="ct:RequirementGroup">
+                <xsl:call-template name="RequirementGroup"/>
+            </xsl:for-each>
+
+            <xsl:for-each select="ct:Requirement">
+                <xsl:call-template name="Requirement"/>
+            </xsl:for-each>
+
             <rule context="ccv:Criterion">
                 <assert id="{concat($prefix, '-C0001')}"
                         test="false()"
                         flag="fatal">Invalid criterion.</assert>
             </rule>
 
-            <xsl:for-each select="ct:RequirementGroup">
-                <xsl:call-template name="RequirementGroup"/>
-            </xsl:for-each>
-
             <rule context="ccv:RequirementGroup">
                 <assert id="{concat($prefix, '-RG0001')}"
                         test="false()"
                         flag="fatal">Invalid requirement group.</assert>
             </rule>
-
-            <xsl:for-each select="ct:Requirement">
-                <xsl:call-template name="Requirement"/>
-            </xsl:for-each>
 
             <rule context="ccv:Requirement">
                 <assert id="{concat($prefix, '-R0001')}"
@@ -95,40 +95,71 @@
 
     <xsl:template name="Criterion">
         <xsl:variable name="position" select="u:pid(position())"/>
+        <xsl:variable name="path" select="concat('ccv:Criterion[cbc:ID[normalize-space(text()) = ''', @id , ''']]')"/>
+        <xsl:variable name="id" select="concat($prefix, '-C-', u:pid(position()))"/>
 
-        <rule context="{concat('ccv:Criterion[cbc:ID[text() = ''', @id , ''']]')}">
+        <rule context="{$path}">
             <!-- cbc:TypeCode -->
-            <assert id="{concat($prefix, '-C', $position, '01')}"
+            <assert id="{concat($id, '01')}"
                     test="{concat('normalize-space(cbc:TypeCode) = ''', u:escape(ct:Type/text()) ,'''')}"
                     flag="fatal">Element 'TypeCode' MUST have value "<xsl:value-of select="ct:Type/text()" />".</assert>
 
             <!-- cbc:Name -->
-            <assert id="{concat($prefix, '-C', $position, '02')}"
+            <assert id="{concat($id, '02')}"
                     test="{concat('normalize-space(cbc:Name) = ''', u:escape(ct:Name/ct:Source/text()) ,'''')}"
                     flag="fatal">Element 'Name' MUST have value "<xsl:value-of select="ct:Name/ct:Source/text()" />".</assert>
 
             <!-- cbc:Description -->
-            <assert id="{concat($prefix, '-C', $position, '03')}"
+            <assert id="{concat($id, '03')}"
                     test="{concat('normalize-space(cbc:Description) = ''', u:escape(ct:Description/ct:Source/text()) ,'''')}"
                     flag="fatal">Element 'Description' MUST have value "<xsl:value-of select="ct:Description/ct:Source/text()" />".</assert>
 
             <!-- ccv:LegislationReference -->
             <xsl:if test="not(ct:LegislationTitle)">
-                <assert id="{concat($prefix, '-C', $position, '04')}"
+                <assert id="{concat($id, '04')}"
                         test="not(ccv:LegislationReference)"
                         flag="fatal">Element 'LegislationReference' MUST NOT be provided.</assert>
             </xsl:if>
             <xsl:if test="ct:LegislationTitle">
-                <assert id="{concat($prefix, '-C', $position, '04')}"
+                <assert id="{concat($id, '04')}"
                         test="ccv:LegislationReference"
                         flag="fatal">Element 'LegislationReference' MUST be provided.</assert>
             </xsl:if>
 
-            <xsl:for-each select="ct:RequirementGroupId">
-                <assert id="{concat($prefix, '-C', $position, '2', position())}"
-                        test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
-                        flag="fatal">Criterion '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
-            </xsl:for-each>
+            <xsl:if test="ct:RequirementGroupId[@repeatable]">
+                <xsl:variable name="index" select="index-of(ct:RequirementGroupId, ct:RequirementGroupId[@repeatable])"/>
+
+                <let name="count" value="count(ccv:RequirementGroup[cbc:ID[normalize-space(text())] = '{ct:RequirementGroupId[@repeatable]}'])"/>
+
+                <xsl:for-each select="ct:RequirementGroupId">
+                    <xsl:if test="position() &lt; $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                                flag="fatal">Criterion '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                    </xsl:if>
+                    <xsl:if test="position() = $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="$count &gt; 0"
+                                flag="fatal">Criterion '<xsl:value-of select="parent::node()/@id" />' MUST have minimum one RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                    </xsl:if>
+                    <xsl:if test="position() &gt; $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="{concat('ccv:RequirementGroup[', position() ,' + $count - 1] and normalize-space(ccv:RequirementGroup[', position() , ' + $count - 1][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                                flag="fatal">Criterion '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <value-of select="{position()} + $count - 1"/>.</assert>
+                    </xsl:if>
+                </xsl:for-each>
+
+                <!-- <assert id="{concat($id, '30')}"
+                        test="{concat('ccv:RequirementGroup[', count(ct:RequirementGroupId), ' + $count]')}"
+                        flag="fatal">Criterion '<xsl:value-of select="@id" />' MUST NOT have extra RequirementGroup elements.</assert> -->
+            </xsl:if>
+            <xsl:if test="not(ct:RequirementGroupId[@repeatable])">
+                <xsl:for-each select="ct:RequirementGroupId">
+                    <assert id="{concat($id, '2', position())}"
+                            test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                            flag="fatal">Criterion '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                </xsl:for-each>
+            </xsl:if>
         </rule>
 
         <xsl:if test="ct:LegislationTitle">
@@ -163,39 +194,72 @@
 
     <xsl:template name="RequirementGroup">
         <xsl:variable name="position" select="u:pid(position())"/>
+        <xsl:variable name="id" select="concat($prefix, '-RG', $position)"/>
 
         <rule context="{concat('ccv:RequirementGroup[cbc:ID[text() = ''', @id , ''']]')}">
             <!-- @pi -->
             <xsl:if test="ct:ProsessingInstruction">
-                <assert id="{concat($prefix, '-RG', $position, '01')}"
+                <assert id="{concat($id, '01')}"
                         test="{concat('@pi = ''', ct:ProsessingInstruction/text(), '''')}"
                         flag="fatal">Attribute 'pi' MUST have value "<xsl:value-of select="ct:ProsessingInstruction/text()" />".</assert>
             </xsl:if>
             <xsl:if test="not(ct:ProsessingInstruction)">
-                <assert id="{concat($prefix, '-RG', $position, '01')}"
+                <assert id="{concat($id, '01')}"
                         test="not(@pi)"
                         flag="fatal">Attribute 'pi' MUST NOT be provided.</assert>
             </xsl:if>
 
-            <assert id="{concat($prefix, '-RG', $position, '02')}"
+            <assert id="{concat($id, '02')}"
                     test="{concat('count(ccv:Requirement) = ', count(ct:RequirementId))}"
                     flag="fatal">Requirement group MUST contain <xsl:value-of select="count(ct:RequirementId)" /> requirement<xsl:if test="count(ct:RequirementId) != 1">s</xsl:if>.</assert>
 
-            <assert id="{concat($prefix, '-RG', $position, '03')}"
-                    test="{concat('count(ccv:RequirementGroup) = ', count(ct:RequirementGroupId))}"
-                    flag="fatal">Requirement group MUST contain <xsl:value-of select="count(ct:RequirementGroupId)" /> requirement group<xsl:if test="count(ct:RequirementGroupId) != 1">s</xsl:if>.</assert>
+            <xsl:if test="ct:RequirementGroupId[@repeatable]">
+                <assert id="{concat($id, '03')}"
+                        test="{concat('count(ccv:RequirementGroup) &gt;= ', count(ct:RequirementGroupId))}"
+                        flag="fatal">Requirement group MUST contain minimum <xsl:value-of select="count(ct:RequirementGroupId)" /> requirement group<xsl:if test="count(ct:RequirementGroupId) != 1">s</xsl:if>.</assert>
+            </xsl:if>
+            <xsl:if test="not(ct:RequirementGroupId[@repeatable])">
+                <assert id="{concat($id, '03')}"
+                        test="{concat('count(ccv:RequirementGroup) = ', count(ct:RequirementGroupId))}"
+                        flag="fatal">Requirement group MUST contain <xsl:value-of select="count(ct:RequirementGroupId)" /> requirement group<xsl:if test="count(ct:RequirementGroupId) != 1">s</xsl:if>.</assert>
+            </xsl:if>
 
             <xsl:for-each select="ct:RequirementId">
-                <assert id="{concat($prefix, '-RG', $position, '1', position())}"
+                <assert id="{concat($id, '1', position())}"
                         test="{concat('ccv:Requirement[', position() ,'] and normalize-space(ccv:Requirement[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
                         flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have Requirement '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
             </xsl:for-each>
 
-            <xsl:for-each select="ct:RequirementGroupId">
-                <assert id="{concat($prefix, '-RG', $position, '2', position())}"
-                        test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
-                        flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
-            </xsl:for-each>
+            <xsl:if test="ct:RequirementGroupId[@repeatable]">
+                <xsl:variable name="index" select="index-of(ct:RequirementGroupId, ct:RequirementGroupId[@repeatable])"/>
+
+                <let name="count" value="count(ccv:RequirementGroup[cbc:ID[normalize-space(text())] = '{ct:RequirementGroupId[@repeatable]}'])"/>
+
+                <xsl:for-each select="ct:RequirementGroupId">
+                    <xsl:if test="position() &lt; $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                                flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                    </xsl:if>
+                    <xsl:if test="position() = $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="$count &gt; 0"
+                                flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have minimum one RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                    </xsl:if>
+                    <xsl:if test="position() &gt; $index">
+                        <assert id="{concat($id, '2', position())}"
+                                test="{concat('ccv:RequirementGroup[', position() ,' + $count - 1] and normalize-space(ccv:RequirementGroup[', position() , ' + $count - 1][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                                flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <value-of select="{position()} + $count - 1"/>.</assert>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test="not(ct:RequirementGroupId[@repeatable])">
+                <xsl:for-each select="ct:RequirementGroupId">
+                    <assert id="{concat($id, '2', position())}"
+                            test="{concat('ccv:RequirementGroup[', position() ,'] and normalize-space(ccv:RequirementGroup[', position() , '][current()]/cbc:ID/text()) = ''', normalize-space(text()),'''')}"
+                            flag="fatal">RequirementGroup '<xsl:value-of select="parent::node()/@id" />' MUST have RequirementGroup '<xsl:value-of select="normalize-space(text())" />' as child number <xsl:value-of select="position()"/>.</assert>
+                </xsl:for-each>
+            </xsl:if>
 
         </rule>
     </xsl:template>

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <CriteriaTaxonomy xmlns="urn:fdc:difi.no:2017:vefa:espd:CriteriaTaxonomy-1">
    <Version>2018-09-12</Version>
    <Criterion id="005eb9ed-1347-4ca3-bb29-9bc0db64e1ab" required="true">
@@ -740,7 +738,6 @@ d) urettmessig påvirket oppdragsgivers beslutningsprosess for å tilegne seg ko
       <RequirementGroupId>e9aa7763-c167-4352-8060-1a3d7d3e2662</RequirementGroupId>
    </Criterion>
    
-   <!-- added repeatable attribute to first req.group -->
    <Criterion id="e4d37adc-08cd-4f4d-a8d8-32b62b0a1f46" required="false">
       <Type>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.FINANCIAL_RATIO</Type>
       <Name code="crit_selection_economic_financial_ratio_main">
@@ -1370,8 +1367,6 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
       <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
    </Criterion>
    
-   
-   <!-- added repeatable attribute to first req.group -->
    <RequirementGroup id="7c637c0c-7703-4389-ba52-02997a055bd7">
       <RequirementId>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</RequirementId>
       <RequirementGroupId repeatable="true">f5276600-a2b6-4ff6-a90e-b31fe19dae41</RequirementGroupId>
