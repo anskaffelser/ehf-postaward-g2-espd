@@ -2,7 +2,7 @@
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
 	<testfolder>example</testfolder>
-	<!-- <testfolder>unit-ESPD</testfolder> -->
+	<testfolder>unit-ESPD</testfolder>
 
 	<!-- Request -->
 	<configuration>

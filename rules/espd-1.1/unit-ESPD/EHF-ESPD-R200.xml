@@ -20,7 +20,7 @@
     </test>
     <test>
         <assert>
-            <error number="5">EHF-ESPD-R200</error>
+            <error number="4">EHF-ESPD-R200</error>
         </assert>
         <ESPDRequest xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
                            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

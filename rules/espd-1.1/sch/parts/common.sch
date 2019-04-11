@@ -78,18 +78,15 @@
 
     <!-- Additional Document Reference -->
 
-    <rule context="cac:AdditionalDocumentReference[/espd:ESPDResponse][normalize-space(cbc:DocumentTypeCode) = 'TED_CN']">
+    <rule context="cac:AdditionalDocumentReference[normalize-space(cbc:DocumentTypeCode) = 'TED_CN']">
         <assert id="EHF-ESPD-R211"
-                test="not(cbc:IssueDate) and not(cbc:IssueTime)"
-                flag="fatal">TED reference MUST NOT contain issue date and issue time.</assert>
-        <assert id="EHF-ESPD-R212"
-                test="cbc:ID"
-                flag="fatal">TED reference MUST contain an identifier.</assert>
+                test="not(cbc:IssueDate) and not(cbc:IssueTime) and cac:Attachment/cac:ExternalReference/cbc:FileName and cac:Attachment/cac:ExternalReference/cbc:Description"
+                flag="fatal">TED reference MUST NOT contain issue date and issue time and MUST contain filename and description.</assert>
         <assert id="EHF-ESPD-R213"
                 test="matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$')"
                 flag="fatal">TED reference MUST match '[][][][]/S [][][]-[][][][][][]' (e.g. 2015/S 252-461137).</assert>
         <assert id="EHF-ESPD-R214"
-                test="normalize-space(cbc:ID/text()) != '0000/S 000-000000'"
+                test="/espd-req:ESPDRequest or normalize-space(cbc:ID/text()) != '0000/S 000-000000'"
                 flag="fatal">TED reference MUST not be a temporary value.</assert>
     </rule>
 
@@ -119,7 +116,7 @@
         <!-- Not allowed type -->
         <assert id="EHF-ESPD-R200"
                 test="not(/espd-req:ESPDRequest)"
-                flag="fatal">ESPD Request MUST contain only document reference 'NGOJ'.</assert>
+                flag="fatal">ESPD Request MUST contain only document references 'TED_CN' and 'NGOJ'.</assert>
         <assert id="EHF-ESPD-R201"
                 test="not(/espd:ESPDResponse)"
                 flag="fatal">ESPD Responst MUST contain only document references 'TED_CN', 'ESPD_REQUEST', 'NGOJ' and 'LOTS'.</assert>
