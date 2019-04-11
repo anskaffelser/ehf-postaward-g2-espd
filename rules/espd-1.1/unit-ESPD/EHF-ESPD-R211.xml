@@ -14,8 +14,15 @@
 
             <cac:AdditionalDocumentReference>
                 <cbc:DocumentTypeCode>TED_CN</cbc:DocumentTypeCode>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:FileName/>
+                        <cbc:Description/>
+                    </cac:ExternalReference>
+                </cac:Attachment>
             </cac:AdditionalDocumentReference>
-
+            
+          
         </ESPDResponse>
     </test>
     <test>
