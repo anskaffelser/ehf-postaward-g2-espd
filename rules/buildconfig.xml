@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0" capabilities="espd">
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-	<package>EHF ESPD 1.1.0</package>
+	<package>EHF ESPD 1.2.0</package>
 
 </buildConfigurations>

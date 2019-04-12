@@ -3,7 +3,7 @@
 
 	<!-- Request -->
 	<configuration>
-		<identifier>espd-request-1.1-xsd</identifier>
+		<identifier>espd-request-1.2-xsd</identifier>
 		<title>ESPD Request 1.0.2 XSD</title>
 		<file
 			source="../../espd-edm/exchange-model/src/main/resources/schema/maindoc/ESPDRequest-1.0.xsd"
@@ -12,7 +12,7 @@
 
 	<!-- Response -->
 	<configuration>
-		<identifier>espd-response-1.1-xsd</identifier>
+		<identifier>espd-response-1.2-xsd</identifier>
 		<title>ESPD Response 1.0.2 XSD</title>
 		<file
 			source="../../espd-edm/exchange-model/src/main/resources/schema/maindoc/ESPDResponse-1.0.xsd"

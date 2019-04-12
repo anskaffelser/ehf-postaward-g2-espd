@@ -8,5 +8,5 @@ Information on representative is not mandatory.
 .Example of economic operator
 [source, xml, indent=0]
 ----
-include::docs/espd-1.1/ehf/shared/files/snippet-response.xml[tags=eo]
+include::docs/espd-1.2/ehf/shared/files/snippet-response.xml[tags=eo]
 ----

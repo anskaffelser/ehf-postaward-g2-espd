@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CriteriaTaxonomy xmlns="urn:fdc:difi.no:2017:vefa:espd:CriteriaTaxonomy-1">
-   <Version>2018-09-12</Version>
+   <Version>2019-04-12</Version>
    <Criterion id="005eb9ed-1347-4ca3-bb29-9bc0db64e1ab" required="true">
       <Type>CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</Type>
       <Name code="crit_eu_title_grounds_criminal_conv">

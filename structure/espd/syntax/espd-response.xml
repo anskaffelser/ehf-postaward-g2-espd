@@ -64,7 +64,7 @@
                 <Value type="FIXED">3.0</Value>
             </Attribute>
 
-            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.1</Value>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.2</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -365,12 +365,6 @@
                     <Term>ccv:Requirement</Term>
                     <Name>Criterion requirement</Name>
                     <Description>Requirement to fulfill an specific criterion.</Description>
-                    <Reference type="RULE">EHF-ESPD-R100</Reference>
-                    <Reference type="RULE">EHF-ESPD-R101</Reference>
-                    <Reference type="RULE">EHF-ESPD-R110</Reference>
-                    <Reference type="RULE">EHF-ESPD-R111</Reference>
-                    <Reference type="RULE">EHF-ESPD-R112</Reference>
-                    <Reference type="RULE">EHF-ESPD-R113</Reference>
 
                     <Property key="sch:context">AS_ROOT</Property>
 
