@@ -1,3 +1,4 @@
+[[selection]]
 = Selection criteria
 
 The contracting authority can in the ESPD request indicate if the economic operator can provide a global indication for all selection criteria (alpha criterion, α:), or if the economic operator must answer the specified selection criteria.

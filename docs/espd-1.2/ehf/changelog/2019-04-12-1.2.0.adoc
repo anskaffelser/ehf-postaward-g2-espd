@@ -9,7 +9,8 @@
 | Validation
 
 | -
-| Allowing to use alpha-criterion instead of part IV, A-D in both request and response
+| Allowing to use alpha-criterion in addition to part IV, A-D (mutually exclusive) in both request and response +
+(See https://test-vefa.difi.no/ehf-pre/guide/espd/1.2/espd-1.2/ehf/#_selection_criteria[chapter on selection])
 | CriteriaTaxonomy, Validation and guide
 
 | -
@@ -17,11 +18,13 @@
 | CriteriaTaxonomy and Validation
 
 | -
-| Allowing repeatable requirement groups, to provide opportunity to give more than one response where needed/legal obligation.
+| Allowing repeatable requirement groups, to provide opportunity to give more than one response where needed/legal obligation. +
+(See https://test-vefa.difi.no/ehf-pre/guide/espd/1.2/espd-1.2/ehf/#_repeatable_requirement_groups[chapter on repeatable groups])
 | CriteriaTaxonomy, Validation and guide
 
 | -
-| Allowing for optional response on requirements and requirement groups.
+| Allowing for optional response on requirements and requirement groups. +
+(See https://test-vefa.difi.no/ehf-pre/guide/espd/1.2/espd-1.2/ehf/#_optional_requirements_and_requirement_groups[chapter on optional groups])
 | CriteriaTaxonomy, Validation and guide
 
 |===
