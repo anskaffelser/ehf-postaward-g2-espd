@@ -4,7 +4,7 @@
 .Example of criterion
 [source, xml, indent=0]
 ----
-include::docs/espd-1.1/ehf/shared/files/snippet1.xml[tags=criterion]
+include::docs/espd-1.2/ehf/shared/files/snippet1.xml[tags=criterion]
 ----
 <1> UUID from Criteria Taxonomy
 <2> Legislation reference

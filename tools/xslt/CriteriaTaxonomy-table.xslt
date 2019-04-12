@@ -23,7 +23,7 @@
                 <div class="container">
                     <h1>Critieria Taxonomy</h1>
 
-                    <p class="lead">This documents outlines the ESPD criteria taxonomy version '<xsl:value-of select="ct:Version"/>' part of EHF ESPD 1.1.</p>
+                    <p class="lead">This documents outlines the ESPD criteria taxonomy version '<xsl:value-of select="ct:Version"/>' part of EHF ESPD 1.2.</p>
 
                     <table class="table table-condensed table-striped">
                         <thead>
