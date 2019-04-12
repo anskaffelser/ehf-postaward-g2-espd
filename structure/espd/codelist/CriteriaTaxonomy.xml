@@ -1375,7 +1375,7 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
    </RequirementGroup>
    <RequirementGroup id="7458d42a-e581-4640-9283-34ceb3ad4345">
       <RequirementId>c1347b74-1872-4060-a6db-f4044edcd7c4</RequirementId>
-      <RequirementGroupId>41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</RequirementGroupId>
+      <RequirementGroupId repeatable="true">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</RequirementGroupId>
    </RequirementGroup>
    <RequirementGroup id="41dd2e9b-1bfd-44c7-93ee-56bd74a4334b">
       <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
