@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-Warnings:
+Errors:
+EHF-ESPD-CTR-290301
+EHF-ESPD-CTR-290401
+EHF-ESPD-CTR-290501
 
 -->
 <espd:ESPDResponse
@@ -1900,12 +1903,16 @@ Warnings:
             <ccv:Requirement responseDataType="DATE">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3641b897-f9f0-4d90-909a-b6d4c4b1d645</cbc:ID>
                 <cbc:Description>End Date</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Date>2018-01-01</cbc:Date>
+                </ccv:Response>
             </ccv:Requirement>
             <ccv:Requirement responseDataType="AMOUNT">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</cbc:ID>
                 <cbc:Description>Amount</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Amount currencyID="SEK">123999</cbc:Amount>
+                </ccv:Response>
             </ccv:Requirement>
         </ccv:RequirementGroup>
         <ccv:RequirementGroup>
@@ -1913,17 +1920,23 @@ Warnings:
             <ccv:Requirement responseDataType="DATE">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42ec8116-31a7-4118-8612-5b04f5c8bde7</cbc:ID>
                 <cbc:Description>Start Date</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Date>2017-01-01</cbc:Date>
+                </ccv:Response>
             </ccv:Requirement>
             <ccv:Requirement responseDataType="DATE">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3641b897-f9f0-4d90-909a-b6d4c4b1d645</cbc:ID>
                 <cbc:Description>End Date</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Date>2018-01-01</cbc:Date>
+                </ccv:Response>
             </ccv:Requirement>
             <ccv:Requirement responseDataType="AMOUNT">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</cbc:ID>
                 <cbc:Description>Amount</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Amount currencyID="SEK">123999</cbc:Amount>
+                </ccv:Response>
             </ccv:Requirement>
         </ccv:RequirementGroup>
         <ccv:RequirementGroup>
@@ -1931,17 +1944,23 @@ Warnings:
             <ccv:Requirement responseDataType="DATE">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42ec8116-31a7-4118-8612-5b04f5c8bde7</cbc:ID>
                 <cbc:Description>Start Date</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Date>2017-01-01</cbc:Date>
+                </ccv:Response>
             </ccv:Requirement>
             <ccv:Requirement responseDataType="DATE">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">3641b897-f9f0-4d90-909a-b6d4c4b1d645</cbc:ID>
                 <cbc:Description>End Date</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Date>2018-01-01</cbc:Date>
+                </ccv:Response>
             </ccv:Requirement>
             <ccv:Requirement responseDataType="AMOUNT">
                 <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</cbc:ID>
                 <cbc:Description>Amount</cbc:Description>
-                 
+                <ccv:Response>
+                    <cbc:Amount currencyID="SEK">123999</cbc:Amount>
+                </ccv:Response>
             </ccv:Requirement>
         </ccv:RequirementGroup>
         <ccv:RequirementGroup>
