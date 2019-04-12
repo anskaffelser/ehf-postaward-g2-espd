@@ -133,7 +133,6 @@
             <xsl:for-each select="ct:RequirementGroupId">
                 <xsl:apply-templates select=".">
                     <xsl:with-param name="path" select="$location"/>
-                    <xsl:with-param name="position" select="position()"/>
                     <xsl:with-param name="optional" select="@optionalFields = 'true'"/>
                     <xsl:with-param name="expected" select="true()"/>
                 </xsl:apply-templates>
@@ -144,12 +143,11 @@
 
     <xsl:template match="ct:RequirementGroupId">
         <xsl:param name="path"/>
-        <xsl:param name="position"/>
         <xsl:param name="optional"/>
         <xsl:param name="expected"/>
 
         <xsl:variable name="id" select="normalize-space(text())"/>
-        <xsl:variable name="location" select="concat('ccv:RequirementGroup[', $position, ']')"/>
+        <xsl:variable name="location" select="concat('ccv:RequirementGroup[normalize-space(cbc:ID/text()) = ''', $id , ''']')"/>
 
         <xsl:apply-templates select="//ct:RequirementGroup[@id = $id]">
             <xsl:with-param name="path" select="concat($path, '/', $location)"/>

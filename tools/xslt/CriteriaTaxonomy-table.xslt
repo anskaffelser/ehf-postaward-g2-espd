@@ -30,6 +30,7 @@
                             <tr>
                                 <th style="width: 80pt;">Tree</th>
                                 <th style="width: 60pt;">UUID</th>
+                                <th style="width: 60py;">...</th>
                                 <th>Description</th>
                             </tr>
                         </thead>
@@ -49,6 +50,7 @@
         <tr>
             <td>C</td>
             <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
+            <td><xsl:value-of select="if (@required) then 'Required' else 'Optional'"/></td>
             <xsl:if test="string-length(ct:Description/ct:Source/text()) &gt; 120"><td><xsl:value-of select="substring(ct:Description/ct:Source/text(), 1, 120)"/> <small>[..]</small></td></xsl:if>
             <xsl:if test="string-length(ct:Description/ct:Source/text()) &lt;= 120"><td><xsl:value-of select="ct:Description/ct:Source/text()"/></td></xsl:if>
         </tr>
@@ -56,33 +58,43 @@
 
         <xsl:apply-templates select="ct:RequirementGroupId">
             <xsl:with-param name="parent" select="'C'"/>
+            <xsl:with-param name="optional" select="false()"/>
         </xsl:apply-templates>
     </xsl:template>
 
     <xsl:template match="ct:RequirementGroup">
         <xsl:param name="parent"/>
+        <xsl:param name="optional"/>
+        <xsl:param name="repeatable"/>
+
         <xsl:variable name="location" select="concat($parent, '.G')"/>
         <tr>
             <td><xsl:value-of select="$location" /></td>
             <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
+            <td><xsl:value-of select="if ($repeatable) then '1..n' else '1..1'"/></td>
             <xsl:if test="ct:ProsessingInstruction"><td><span class="label label-info" title="Processing instruction"><xsl:value-of select="ct:ProsessingInstruction/text()"/></span></td></xsl:if>
             <xsl:if test="not(ct:ProsessingInstruction)"><td></td></xsl:if>
         </tr>
         <xsl:apply-templates select="ct:Comment"/>
         <xsl:apply-templates select="ct:RequirementId">
             <xsl:with-param name="parent" select="$location"/>
+            <xsl:with-param name="optional" select="$optional"/>
         </xsl:apply-templates>
         <xsl:apply-templates select="ct:RequirementGroupId">
             <xsl:with-param name="parent" select="$location"/>
+            <xsl:with-param name="optional" select="$optional"/>
         </xsl:apply-templates>
     </xsl:template>
 
     <xsl:template match="ct:Requirement">
         <xsl:param name="parent"/>
+        <xsl:param name="optional"/>
+
         <xsl:variable name="location" select="concat($parent, '.R')"/>
         <tr>
             <td><xsl:value-of select="$location" /></td>
             <td><code title="{@id}"><xsl:value-of select="concat(substring(@id, 1, 6), '..')" /></code></td>
+            <td><xsl:value-of select="if ($optional) then 'Optional' else 'Mandatory'"/></td>
             <td><xsl:value-of select="ct:Description/ct:Source/text()"/></td>
         </tr>
         <xsl:apply-templates select="ct:Comment"/>
@@ -90,7 +102,7 @@
 
     <xsl:template match="ct:Comment">
         <tr>
-            <td colspan="2"></td>
+            <td colspan="3"></td>
             <td><small><xsl:value-of select="text()"/></small></td>
         </tr>
     </xsl:template>
@@ -98,17 +110,24 @@
 
     <xsl:template match="ct:RequirementGroupId">
         <xsl:param name="parent"/>
+        <xsl:param name="optional"/>
+
         <xsl:variable name="id" select="text()"/>
         <xsl:apply-templates select="//ct:RequirementGroup[@id = $id]">
             <xsl:with-param name="parent" select="$parent"/>
+            <xsl:with-param name="optional" select="if ($optional or @optionalFields = 'true') then true() else $optional"/>
+            <xsl:with-param name="repeatable" select="@repeatable = 'true'"/>
         </xsl:apply-templates>
     </xsl:template>
 
     <xsl:template match="ct:RequirementId">
         <xsl:param name="parent"/>
+        <xsl:param name="optional"/>
+
         <xsl:variable name="id" select="text()"/>
         <xsl:apply-templates select="//ct:Requirement[@id = $id]">
             <xsl:with-param name="parent" select="$parent"/>
+            <xsl:with-param name="optional" select="if ($optional or @optional = 'true') then true() else $optional"/>
         </xsl:apply-templates>
     </xsl:template>
 
