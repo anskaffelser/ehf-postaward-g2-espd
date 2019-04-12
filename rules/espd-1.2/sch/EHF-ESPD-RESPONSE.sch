@@ -34,7 +34,7 @@
     <include href="parts/empty-elements.sch"/>
     <include href="parts/common.sch"/>
     <include href="../../../target/generated/response-basic.sch"/>
-    <include href="../../../target/taxonomy/CriteriaTaxonomy.sch"/>
-    <include href="../../../target/taxonomy/CriteriaTaxonomy-response.sch"/>
+    <include href="../../../target/taxonomy/CriteriaTaxonomy-taxonomy-1.2.sch"/>
+    <include href="../../../target/taxonomy/CriteriaTaxonomy-response-1.2.sch"/>
 
 </schema>

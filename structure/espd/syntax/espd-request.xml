@@ -2,7 +2,7 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
     <Term>request</Term>
-    <Name>EHF ESPD 1.0 Request</Name>
+    <Name>EHF ESPD 1.2 Request</Name>
     <Description>Document type used to provide ESPD schema to be filled out by potential contracting parties.</Description>
 
     <Property key="sch:prefix">EHF-ESPD-REQ</Property>

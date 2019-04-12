@@ -6,14 +6,14 @@ mkdir -p /target/taxonomy
 
 xslt \
   -s:/src/structure/espd/codelist/CriteriaTaxonomy-1.2.xml \
-  -xsl:/src/tools/xslt/espd-1.2/CriteriaTaxonomy-schematron.xslt \
-  -o:/target/taxonomy/CriteriaTaxonomy.sch \
+  -xsl:/src/tools/xslt/espd-1.2/CriteriaTaxonomy-schematron-taxonomy.xslt \
+  -o:/target/taxonomy/CriteriaTaxonomy-taxonomy-1.2.sch \
   pattern_only=true
 
 xslt \
   -s:/src/structure/espd/codelist/CriteriaTaxonomy-1.2.xml \
   -xsl:/src/tools/xslt/espd-1.2/CriteriaTaxonomy-schematron-response.xslt \
-  -o:/target/taxonomy/CriteriaTaxonomy-response.sch \
+  -o:/target/taxonomy/CriteriaTaxonomy-response-1.2.sch \
   pattern_only=true
 
 xslt \
@@ -33,6 +33,6 @@ xslt \
   -o:/target/taxonomy/CriteriaTaxonomy-snippet.xml
 
 xslt \
-  -s:/target/taxonomy/CriteriaTaxonomy.sch \
+  -s:/target/taxonomy/CriteriaTaxonomy-taxonomy-1.2.sch \
   -xsl:/src/tools/xslt/espd-1.2/CriteriaTaxonomy-structure.xslt \
   -o:/target/taxonomy/CriteriaTaxonomy.xml

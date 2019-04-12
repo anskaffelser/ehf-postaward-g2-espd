@@ -2,7 +2,7 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
     <Term>response</Term>
-    <Name>EHF ESPD 1.0 Response</Name>
+    <Name>EHF ESPD 1.2 Response</Name>
     <Description>Document type used by potential contracting parties to document their answers questioned in an ESPD Response.</Description>
 
     <Property key="sch:prefix">EHF-ESPD-RES</Property>

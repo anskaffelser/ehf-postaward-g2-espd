@@ -12,7 +12,7 @@
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
-        <Path>espd-1.2/edm/</Path>
+        <Path>espd-edm/</Path>
         <Title>ESPD Response XML Instantiation Guide (EU Commission)</Title>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
@@ -58,22 +58,22 @@
 
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/DocRefContentType.xml</Path>
+        <Path>structure/espd-common/codelist/DocRefContentType.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/CountryCodeIdentifier.xml</Path>
+        <Path>structure/espd-common/codelist/CountryCodeIdentifier.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/CriterionJurisdictionLevel.xml</Path>
+        <Path>structure/espd-common/codelist/CriterionJurisdictionLevel.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/CriteriaTypeCode.xml</Path>
+        <Path>structure/espd-common/codelist/CriteriaTypeCode.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
@@ -83,42 +83,42 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/CurrencyCode.xml</Path>
+        <Path>structure/espd-common/codelist/CurrencyCode.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/ICD.xml</Path>
+        <Path>structure/espd-common/codelist/ICD.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/LanguageCodeEU.xml</Path>
+        <Path>structure/espd-common/codelist/LanguageCodeEU.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/PeriodMeasureTypeCodes.xml</Path>
+        <Path>structure/espd-common/codelist/PeriodMeasureTypeCodes.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/ProfileID.xml</Path>
+        <Path>structure/espd-common/codelist/ProfileID.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/ResponseDataType.xml</Path>
+        <Path>structure/espd-common/codelist/ResponseDataType.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/EconomicOperatorIdentifierType.xml</Path>
+        <Path>structure/espd-common/codelist/EconomicOperatorIdentifierType.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/espd/codelist/UNECERec20-11e.xml</Path>
+        <Path>structure/espd-common/codelist/UNECERec20-11e.xml</Path>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
 
@@ -134,7 +134,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>structure/espd/codelist/sources/CriteriaTaxonomy.xlsx</Path>
+        <Path>structure/espd-common/codelist/sources/CriteriaTaxonomy.xlsx</Path>
         <Title>Criteria taxonomy</Title>
         <Description>Official criteria taxonomy part of ESPD 1.0.2.</Description>
         <Property key="download">CriteriaTaxonomy.xlsx</Property>
@@ -142,7 +142,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>structure/espd/codelist/sources/ESPD-CodeLists.xls</Path>
+        <Path>structure/espd-common/codelist/sources/ESPD-CodeLists.xls</Path>
         <Title>Code lists</Title>
         <Description>Official code lists part of ESPD 1.0.2.</Description>
         <Property key="download">ESPD-CodeLists.xls</Property>
@@ -199,48 +199,6 @@
         <Property key="virtual">true</Property>
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
-
-    <!-- Namespace -->
-    <!-- <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cac.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cbc.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/ccv-cac.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/ccv-cbc.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cev-cac.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cev-cbc.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/espd.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/espd-cac.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/espd-cbc.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/espd-req.xml</Path>
-    </Resource> -->
 
     <!-- <Tag>
       <Identifier>espd-1.2</Identifier>

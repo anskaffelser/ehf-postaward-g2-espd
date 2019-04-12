@@ -9,8 +9,8 @@
 		<identifier>ehf-espd-request-1.2</identifier>
 		<title>EHF ESPD Request 1.2</title>
 		<declaration type="xml.espd">urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1::ESPDRequest::urn:www.cenbii.eu:transaction:biitrns070:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.2</declaration>
-		<inherit>espd-request-1.2-xsd</inherit>
-		<file source="sch/EHF-ESPD-REQUEST.sch" path="xsl/EHF-ESPD-REQUEST.xsl" infoUrl="/ehf/guide/espd/1.2/rules/{}/"/>
+		<inherit>espd-request-edm-1.0.2-xsd</inherit>
+		<file source="sch/EHF-ESPD-REQUEST.sch" path="xsl/EHF-ESPD-REQUEST-1.2.xsl" infoUrl="/ehf/guide/espd/1.2/rules/{}/"/>
 	</configuration>
 
 	<!-- Response -->
@@ -18,8 +18,8 @@
 		<identifier>ehf-espd-response-1.2</identifier>
 		<title>EHF ESPD Response 1.2</title>
 		<declaration type="xml.espd">urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1::ESPDResponse::urn:www.cenbii.eu:transaction:biitrns092:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.2</declaration>
-		<inherit>espd-response-1.2-xsd</inherit>
-		<file source="sch/EHF-ESPD-RESPONSE.sch" path="xsl/EHF-ESPD-RESPONSE.xsl" infoUrl="/ehf/guide/espd/1.2/rules/{}/"/>
+		<inherit>espd-response-edm-1.0.2-xsd</inherit>
+		<file source="sch/EHF-ESPD-RESPONSE.sch" path="xsl/EHF-ESPD-RESPONSE-1.2.xsl" infoUrl="/ehf/guide/espd/1.2/rules/{}/"/>
 	</configuration>
 
 </buildConfigurations>

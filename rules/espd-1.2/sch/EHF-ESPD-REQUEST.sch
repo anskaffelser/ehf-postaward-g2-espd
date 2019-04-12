@@ -33,6 +33,6 @@
     <include href="parts/empty-elements.sch"/>
     <include href="parts/common.sch"/>
     <include href="../../../target/generated/request-basic.sch"/>
-    <include href="../../../target/taxonomy/CriteriaTaxonomy.sch"/>
+    <include href="../../../target/taxonomy/CriteriaTaxonomy-taxonomy-1.2.sch"/>
 
 </schema>
