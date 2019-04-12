@@ -77,7 +77,8 @@ EHF-ESPD-CTR-620901
          <ccv-cbc:Article>57(1)</ccv-cbc:Article>
          <cbc:URI>http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</cbc:URI>
       </ccv:LegislationReference>
-      <!--tag::optional[]-->
+   
+      <!-- tag::optional[] -->
       <ccv:RequirementGroup>
          <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7c637c0c-7703-4389-ba52-02997a055bd7</cbc:ID>
          <ccv:Requirement responseDataType="INDICATOR">
@@ -136,7 +137,7 @@ EHF-ESPD-CTR-620901
             </ccv:RequirementGroup>
          </ccv:RequirementGroup>
       </ccv:RequirementGroup>
-      <!--end::optional[]-->
+      <!-- end::optional[] -->
       <ccv:RequirementGroup>
          <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7458d42a-e581-4640-9283-34ceb3ad4345</cbc:ID>
          <ccv:Requirement responseDataType="INDICATOR">
