@@ -1822,20 +1822,16 @@
          Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (2)
          a-f?</cbc:Description>
       <ccv:RequirementGroup>
-         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
-            >30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</cbc:ID>
          <ccv:Requirement responseDataType="INDICATOR">
-            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
-               schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
             <cbc:Description>Your answer?</cbc:Description>
          </ccv:Requirement>
          <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
-            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
-               >73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</cbc:ID>
             <ccv:Requirement responseDataType="DESCRIPTION">
-               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
-                  schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
-               <cbc:Description>Please describe them</cbc:Description>
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+               <cbc:Description>Please describe them</cbc:Description>              
             </ccv:Requirement>
             <ccv:RequirementGroup>
                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
@@ -1897,20 +1893,16 @@
          meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (3)
          i?</cbc:Description>
       <ccv:RequirementGroup>
-         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
-            >30450436-f559-4dfa-98ba-f0842ed9d2a0</cbc:ID>
+         <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</cbc:ID>
          <ccv:Requirement responseDataType="INDICATOR">
-            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
-               schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+            <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
             <cbc:Description>Your answer?</cbc:Description>
          </ccv:Requirement>
          <ccv:RequirementGroup pi="GROUP_FULFILLED.ON_TRUE">
-            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0"
-               >73f0fe4c-4ed9-4343-8096-d898cf200146</cbc:ID>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</cbc:ID>
             <ccv:Requirement responseDataType="DESCRIPTION">
-               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW"
-                  schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
-               <cbc:Description>Please describe them</cbc:Description>
+               <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e098da8e-4717-4500-965f-f882d5b4e1ad</cbc:ID>
+               <cbc:Description>Please describe them</cbc:Description>              
             </ccv:Requirement>
             <ccv:RequirementGroup>
                <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5f9f09f7-f701-432c-9fdc-c22c124a74c9</cbc:ID>
