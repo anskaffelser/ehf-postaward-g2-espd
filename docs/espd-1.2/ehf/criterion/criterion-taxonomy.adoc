@@ -16,6 +16,54 @@ The following "rules" has been established on how to build up a data structure:
 
 Respect the structure for each criterion in the {link-taxonomy}
 
+=== Repeatable requirement groups
+
+In the espd response there is a need to provide more than one repetition of an answer. To cater for this, some requirement groups are repeatable, this is documented in the https://vefa.difi.no/ehf-pre/guide/espd/1.1/files/CriteriaTaxonomy.xml[CriteriaTaxonomy.xml for EHF] with the attribute `repeatable` set to true. The attribute has a default value of false, meaning that if the attribute is not present for a group, the group is not repeatable.
+
+Both groups directly connected to a criterion and nested groups can have this attribute. If a group is repeatable it must exist at least once.
+
+.Example of a repeatable requirement group in the Criteria Taxonomy
+[source, xml, indent=0]
+----
+<RequirementGroup id="7458d42a-e581-4640-9283-34ceb3ad4345">
+   <RequirementId>c1347b74-1872-4060-a6db-f4044edcd7c4</RequirementId>
+   <RequirementGroupId repeatable="true">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</RequirementGroupId> <1>
+</RequirementGroup>
+----
+<1> Attribute repeatable is set to true
+
+=== Optional requirements and requirement groups
+
+In an ESPD response some requirements are conditional and the requirements are phrased like "Where applicable, name of the participating group:"
+
+For these requirements, the response is technically set to optional, but if a response is not provided, a warning is thrown, to give guidance that this is information that might be needed in particular scenarios, and prevent economic operators from omitting the response by mistake.
+
+.Example of how a requirement is set to optional in the Criteria taxonomy
+[source, xml, indent=0]
+----
+<RequirementGroup id="f5276600-a2b6-4ff6-a90e-b31fe19dae41">
+     <ProsessingInstruction>GROUP_FULFILLED.ON_TRUE</ProsessingInstruction>
+     <RequirementId>ecf40999-7b64-4e10-b960-7f8ff8674cf6</RequirementId>
+     <RequirementId>7d35fb7c-da5b-4830-b598-4f347a04dceb</RequirementId>
+     <RequirementId>c5012430-14da-454c-9d01-34cedc6a7ded</RequirementId>
+     <RequirementId optional="true">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</RequirementId> <1>
+     <RequirementGroupId>5f9f09f7-f701-432c-9fdc-c22c124a74c9</RequirementGroupId>
+  </RequirementGroup>
+----
+<1> The 4th requirement in this group is set to optional, all other requirements must be answered.
+
+In the espd response message, if the economic operator does not answer an optional requirement, the requirement it self must be present in the response-instance document, but the entire `ccv:Response` element must be omitted. (See example below)
+
+.Example of use of an optional requirement in an ESPD response
+[source, xml, indent=0]
+----
+include::../shared/files/espd-response-optional.xml[tags=optional]
+----
+<1> Response indicator set to true, meaning the requirement group must be filled (See further details in the chapter <<Indicator>> below)
+<2> Mandatory requirements is responded to
+<3> Requirement is set to optional in the Criteria Taxonomy, and no response element is provided
+
+
 == Indicator
 
 The first requirement of a requirement group is reserved to ask a question where the response is an *INDICATOR* (boolean true or false).
