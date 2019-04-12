@@ -1330,8 +1330,11 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
          <Source>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein accepted a fine for the circumstances listed above, within the meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (2) a-f?</Source>
          <Translation lang="nb">Har leverandøren selv eller en person, som er medlem av leverandørens administrasjons-, ledelses- eller kontrollorgan eller har kompetanse til å representere eller kontrollere eller treffe beslutninger i slike organer, vedtatt forelegg for noen av de straffbare forhold som er nevnt over, j.f. anskaffelsesforskriftens § 24-2, (2) ledd, a-f?</Translation>
       </Description>
-      <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
+      <!--<RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>-->
+      <RequirementGroupId>976b5acb-c00f-46ca-8f83-5ce6abfdfe43</RequirementGroupId>
+      <RequirementGroupId>7458d42a-e581-4640-9283-34ceb3ad4345</RequirementGroupId>
    </Criterion>
+   
    <Criterion id="588e9cbb-aaaf-48de-b5df-46254e5d2742" required="true">
       <Type>CRITERION.EXCLUSION.NATIONAL.GRAVE.MISCONDUCT</Type>
       <Name>
@@ -1342,8 +1345,12 @@ Hvis det anmodes om visse attester eller andre former for dokumentasjon, angis f
          <Source>Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein commited significant breaches of his professonial integrety, within the meaning of Regulations Regarding Public Procurement FOR-2016-08-12-974 § 24-2 (3) i?</Source>
          <Translation lang="nb">Har leverandøren for øvrig har begått alvorlige feil som medfører tvil om hans yrkesmessige integritet, j.f. anskaffelsesforskriftens § 24-2, (3) bokstav i?</Translation>
       </Description>
-      <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>
+     <!-- <RequirementGroupId>30450436-f559-4dfa-98ba-f0842ed9d2a0</RequirementGroupId>-->
+      <RequirementGroupId>976b5acb-c00f-46ca-8f83-5ce6abfdfe43</RequirementGroupId>
+      <RequirementGroupId>7458d42a-e581-4640-9283-34ceb3ad4345</RequirementGroupId>
    </Criterion>
+   
+   
    
    <RequirementGroup id="7c637c0c-7703-4389-ba52-02997a055bd7">
       <RequirementId>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</RequirementId>
