@@ -17,6 +17,13 @@
         <!-- <Tag>espd-1.2</Tag> -->
     </Resource>
 
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>release/2019-04-12/</Path>
+        <Title>Release notes for EHF ESPD</Title>
+        <!-- <Tag>espd-1.2</Tag> -->
+    </Resource>
+
     <!-- Data models -->
 
     <Resource>
@@ -204,5 +211,6 @@
       <Identifier>espd-1.2</Identifier>
       <Title>EHF ESPD 1.2</Title>
     </Tag> -->
+    
 
 </Project>

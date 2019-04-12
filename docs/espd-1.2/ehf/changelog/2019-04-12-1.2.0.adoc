@@ -1,0 +1,27 @@
+
+
+[cols="1,9,2", options="header"]
+|===
+| Issue | Description | Type
+
+| -
+| Allowing Economic operators and Contracting Authorities from different countries
+| Validation
+
+| -
+| Allowing to use alpha-criterion instead of part IV, A-D in both request and response
+| CriteriaTaxonomy, Validation and guide
+
+| -
+| Adding possibility for providing self-cleaning and electronic documentation for the national criteria.
+| CriteriaTaxonomy and Validation
+
+| -
+| Allowing repeatable requirement groups, to provide opportunity to give more than one response where needed/legal obligation.
+| CriteriaTaxonomy, Validation and guide
+
+| -
+| Allowing for optional response on requirements and requirement groups.
+| CriteriaTaxonomy, Validation and guide
+
+|===

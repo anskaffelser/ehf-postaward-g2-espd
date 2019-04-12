@@ -1,0 +1,18 @@
+include::../settings.adoc[]
+
+= EHF Release {release}
+{name-difi-no}
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:sectanchors:
+:release: 2019-04-12
+
+:leveloffset: +1
+
+
+
+= EHF ESPD version 1.2.0 RC
+
+include::../../espd-1.2/ehf/changelog/2019-04-12-1.2.0.adoc[]

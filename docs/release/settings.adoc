@@ -1,0 +1,3 @@
+include::../espd-1.2/settings.adoc[]
+
+:shared-dir: ../../shared
