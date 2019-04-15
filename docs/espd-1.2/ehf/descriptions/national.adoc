@@ -17,12 +17,12 @@ IMPORTANT: The general national criterion `CRITERION.EXCLUSION.NATIONAL.OTHER` i
 [source,xml]
 .Example of use of the specific national criteria in an ESPD request
 ----
-include::../shared/files/espd-request-national.xml[tags=national]
+include::../shared/files/example-request-national.xml[tags=national]
 ----
 
 
 [source,xml]
 .Example of use of the specific national criteria in an ESPD response
 ----
-include::../shared/files/espd-response-national.xml[tags=national]
+include::../shared/files/example-response-national.xml[tags=national]
 ----
