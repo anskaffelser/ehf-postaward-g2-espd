@@ -386,7 +386,7 @@ Barnearbeid og andre former for menneskehandel som definert i artikkel 2 i Europ
          <Translation lang="nb">Alvorlige feil i yrkesutøvelsen</Translation>
       </Name>
       <Description code="crit_eu_text_guilty_misconduct">
-         <Source>Is the economic operator  guilty of grave professional misconduct? Where applicable, see definitions in national law, the relevant notice or the procurement documents.</Source>
+         <Source>Is the economic operator guilty of grave professional misconduct? Where applicable, see definitions in national law, the relevant notice or the procurement documents.</Source>
          <Translation lang="nb">Har leverandøren begått alvorlige feil i yrkesutøvelsen? Hvis det er relevant, se definisjoner i nasjonal rett, den relevante kunngjøring eller anskaffelsesdokumentene.</Translation>
       </Description>
       <LegislationTitle>
