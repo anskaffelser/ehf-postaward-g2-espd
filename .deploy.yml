@@ -1,0 +1,16 @@
+site_draft:
+  id: ehf-preaward-g2-espd-draft
+  type: site
+  path: target/site
+  properties:
+    domain: anskaffelser.dev
+    path: preaward/g2/spec/draft/espd-1.2
+
+site_current:
+  mode: release
+  id: ehf-preaward-g2-espd-current
+  type: site
+  path: target/site
+  properties:
+    domain: anskaffelser.dev
+    path: preaward/g2/spec/current/espd-1.2
